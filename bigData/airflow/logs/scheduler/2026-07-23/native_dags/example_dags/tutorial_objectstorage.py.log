@@ -1,0 +1,21 @@
+[2026-07-23T15:52:14.324+0545] {processor.py:161} INFO - Started process (PID=149110) to work on /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_objectstorage.py
+[2026-07-23T15:52:14.325+0545] {processor.py:830} INFO - Processing file /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_objectstorage.py for tasks to queue
+[2026-07-23T15:52:14.326+0545] {logging_mixin.py:188} INFO - [2026-07-23T15:52:14.325+0545] {dagbag.py:545} INFO - Filling up the DagBag from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_objectstorage.py
+[2026-07-23T15:52:14.330+0545] {processor.py:840} INFO - DAG(s) 'tutorial_objectstorage' retrieved from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_objectstorage.py
+[2026-07-23T15:52:14.341+0545] {logging_mixin.py:188} INFO - [2026-07-23T15:52:14.341+0545] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-07-23T15:52:14.347+0545] {logging_mixin.py:188} INFO - [2026-07-23T15:52:14.347+0545] {dag.py:3947} INFO - Setting next_dagrun for tutorial_objectstorage to None, run_after=None
+[2026-07-23T15:52:14.359+0545] {processor.py:183} INFO - Processing /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_objectstorage.py took 0.038 seconds
+[2026-07-23T15:53:03.333+0545] {processor.py:161} INFO - Started process (PID=149484) to work on /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_objectstorage.py
+[2026-07-23T15:53:03.348+0545] {processor.py:830} INFO - Processing file /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_objectstorage.py for tasks to queue
+[2026-07-23T15:53:03.349+0545] {logging_mixin.py:188} INFO - [2026-07-23T15:53:03.349+0545] {dagbag.py:545} INFO - Filling up the DagBag from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_objectstorage.py
+[2026-07-23T15:53:03.354+0545] {processor.py:840} INFO - DAG(s) 'tutorial_objectstorage' retrieved from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_objectstorage.py
+[2026-07-23T15:53:03.361+0545] {logging_mixin.py:188} INFO - [2026-07-23T15:53:03.361+0545] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-07-23T15:53:03.367+0545] {logging_mixin.py:188} INFO - [2026-07-23T15:53:03.367+0545] {dag.py:3947} INFO - Setting next_dagrun for tutorial_objectstorage to None, run_after=None
+[2026-07-23T15:53:03.386+0545] {processor.py:183} INFO - Processing /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_objectstorage.py took 0.056 seconds
+[2026-07-23T15:53:53.677+0545] {processor.py:161} INFO - Started process (PID=149812) to work on /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_objectstorage.py
+[2026-07-23T15:53:53.681+0545] {processor.py:830} INFO - Processing file /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_objectstorage.py for tasks to queue
+[2026-07-23T15:53:53.682+0545] {logging_mixin.py:188} INFO - [2026-07-23T15:53:53.682+0545] {dagbag.py:545} INFO - Filling up the DagBag from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_objectstorage.py
+[2026-07-23T15:53:53.687+0545] {processor.py:840} INFO - DAG(s) 'tutorial_objectstorage' retrieved from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_objectstorage.py
+[2026-07-23T15:53:53.696+0545] {logging_mixin.py:188} INFO - [2026-07-23T15:53:53.695+0545] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-07-23T15:53:53.701+0545] {logging_mixin.py:188} INFO - [2026-07-23T15:53:53.701+0545] {dag.py:3947} INFO - Setting next_dagrun for tutorial_objectstorage to None, run_after=None
+[2026-07-23T15:53:53.715+0545] {processor.py:183} INFO - Processing /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_objectstorage.py took 0.042 seconds

@@ -1,0 +1,14 @@
+[2026-07-24T13:01:25.083+0545] {processor.py:161} INFO - Started process (PID=51731) to work on /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_trigger_target_dag.py
+[2026-07-24T13:01:25.085+0545] {processor.py:830} INFO - Processing file /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_trigger_target_dag.py for tasks to queue
+[2026-07-24T13:01:25.088+0545] {logging_mixin.py:188} INFO - [2026-07-24T13:01:25.087+0545] {dagbag.py:545} INFO - Filling up the DagBag from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_trigger_target_dag.py
+[2026-07-24T13:01:25.097+0545] {processor.py:840} INFO - DAG(s) 'example_trigger_target_dag' retrieved from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_trigger_target_dag.py
+[2026-07-24T13:01:25.127+0545] {logging_mixin.py:188} INFO - [2026-07-24T13:01:25.126+0545] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-07-24T13:01:25.144+0545] {logging_mixin.py:188} INFO - [2026-07-24T13:01:25.143+0545] {dag.py:3947} INFO - Setting next_dagrun for example_trigger_target_dag to None, run_after=None
+[2026-07-24T13:01:25.166+0545] {processor.py:183} INFO - Processing /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_trigger_target_dag.py took 0.092 seconds
+[2026-07-24T13:02:22.512+0545] {processor.py:161} INFO - Started process (PID=52078) to work on /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_trigger_target_dag.py
+[2026-07-24T13:02:22.516+0545] {processor.py:830} INFO - Processing file /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_trigger_target_dag.py for tasks to queue
+[2026-07-24T13:02:22.519+0545] {logging_mixin.py:188} INFO - [2026-07-24T13:02:22.518+0545] {dagbag.py:545} INFO - Filling up the DagBag from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_trigger_target_dag.py
+[2026-07-24T13:02:22.530+0545] {processor.py:840} INFO - DAG(s) 'example_trigger_target_dag' retrieved from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_trigger_target_dag.py
+[2026-07-24T13:02:22.554+0545] {logging_mixin.py:188} INFO - [2026-07-24T13:02:22.554+0545] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-07-24T13:02:22.573+0545] {logging_mixin.py:188} INFO - [2026-07-24T13:02:22.572+0545] {dag.py:3947} INFO - Setting next_dagrun for example_trigger_target_dag to None, run_after=None
+[2026-07-24T13:02:22.609+0545] {processor.py:183} INFO - Processing /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_trigger_target_dag.py took 0.107 seconds

@@ -1,0 +1,14 @@
+[2026-07-24T13:01:31.784+0545] {processor.py:161} INFO - Started process (PID=51778) to work on /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_sensors.py
+[2026-07-24T13:01:31.785+0545] {processor.py:830} INFO - Processing file /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_sensors.py for tasks to queue
+[2026-07-24T13:01:31.788+0545] {logging_mixin.py:188} INFO - [2026-07-24T13:01:31.787+0545] {dagbag.py:545} INFO - Filling up the DagBag from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_sensors.py
+[2026-07-24T13:01:31.801+0545] {processor.py:840} INFO - DAG(s) 'example_sensors' retrieved from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_sensors.py
+[2026-07-24T13:01:31.838+0545] {logging_mixin.py:188} INFO - [2026-07-24T13:01:31.838+0545] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-07-24T13:01:31.850+0545] {logging_mixin.py:188} INFO - [2026-07-24T13:01:31.850+0545] {dag.py:3947} INFO - Setting next_dagrun for example_sensors to None, run_after=None
+[2026-07-24T13:01:31.877+0545] {processor.py:183} INFO - Processing /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_sensors.py took 0.101 seconds
+[2026-07-24T13:02:29.077+0545] {processor.py:161} INFO - Started process (PID=52112) to work on /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_sensors.py
+[2026-07-24T13:02:29.080+0545] {processor.py:830} INFO - Processing file /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_sensors.py for tasks to queue
+[2026-07-24T13:02:29.081+0545] {logging_mixin.py:188} INFO - [2026-07-24T13:02:29.081+0545] {dagbag.py:545} INFO - Filling up the DagBag from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_sensors.py
+[2026-07-24T13:02:29.093+0545] {processor.py:840} INFO - DAG(s) 'example_sensors' retrieved from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_sensors.py
+[2026-07-24T13:02:29.116+0545] {logging_mixin.py:188} INFO - [2026-07-24T13:02:29.116+0545] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-07-24T13:02:29.127+0545] {logging_mixin.py:188} INFO - [2026-07-24T13:02:29.126+0545] {dag.py:3947} INFO - Setting next_dagrun for example_sensors to None, run_after=None
+[2026-07-24T13:02:29.151+0545] {processor.py:183} INFO - Processing /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_sensors.py took 0.081 seconds

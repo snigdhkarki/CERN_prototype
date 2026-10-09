@@ -1,0 +1,16 @@
+[2026-07-24T13:01:34.507+0545] {processor.py:161} INFO - Started process (PID=51793) to work on /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_python_operator.py
+[2026-07-24T13:01:34.508+0545] {processor.py:830} INFO - Processing file /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_python_operator.py for tasks to queue
+[2026-07-24T13:01:34.510+0545] {logging_mixin.py:188} INFO - [2026-07-24T13:01:34.509+0545] {dagbag.py:545} INFO - Filling up the DagBag from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_python_operator.py
+[2026-07-24T13:01:34.521+0545] {logging_mixin.py:188} INFO - [2026-07-24T13:01:34.521+0545] {example_python_operator.py:93} WARNING - The virtalenv_python example task requires virtualenv, please install it.
+[2026-07-24T13:01:34.522+0545] {processor.py:840} INFO - DAG(s) 'example_python_operator' retrieved from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_python_operator.py
+[2026-07-24T13:01:34.549+0545] {logging_mixin.py:188} INFO - [2026-07-24T13:01:34.549+0545] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-07-24T13:01:34.565+0545] {logging_mixin.py:188} INFO - [2026-07-24T13:01:34.564+0545] {dag.py:3947} INFO - Setting next_dagrun for example_python_operator to None, run_after=None
+[2026-07-24T13:01:34.595+0545] {processor.py:183} INFO - Processing /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_python_operator.py took 0.096 seconds
+[2026-07-24T13:02:31.917+0545] {processor.py:161} INFO - Started process (PID=52132) to work on /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_python_operator.py
+[2026-07-24T13:02:31.921+0545] {processor.py:830} INFO - Processing file /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_python_operator.py for tasks to queue
+[2026-07-24T13:02:31.924+0545] {logging_mixin.py:188} INFO - [2026-07-24T13:02:31.924+0545] {dagbag.py:545} INFO - Filling up the DagBag from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_python_operator.py
+[2026-07-24T13:02:31.933+0545] {logging_mixin.py:188} INFO - [2026-07-24T13:02:31.933+0545] {example_python_operator.py:93} WARNING - The virtalenv_python example task requires virtualenv, please install it.
+[2026-07-24T13:02:31.934+0545] {processor.py:840} INFO - DAG(s) 'example_python_operator' retrieved from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_python_operator.py
+[2026-07-24T13:02:31.959+0545] {logging_mixin.py:188} INFO - [2026-07-24T13:02:31.958+0545] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-07-24T13:02:31.975+0545] {logging_mixin.py:188} INFO - [2026-07-24T13:02:31.975+0545] {dag.py:3947} INFO - Setting next_dagrun for example_python_operator to None, run_after=None
+[2026-07-24T13:02:32.000+0545] {processor.py:183} INFO - Processing /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_python_operator.py took 0.090 seconds

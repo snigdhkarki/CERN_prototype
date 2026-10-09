@@ -1,0 +1,35 @@
+[2026-10-09T18:04:24.925+0545] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-10-09T18:04:24.936+0545] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: network_traffic_pipeline.prepare_features manual__2026-08-04T08:31:55.822556+00:00 [queued]>
+[2026-10-09T18:04:24.942+0545] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: network_traffic_pipeline.prepare_features manual__2026-08-04T08:31:55.822556+00:00 [queued]>
+[2026-10-09T18:04:24.942+0545] {taskinstance.py:2306} INFO - Starting attempt 2 of 2
+[2026-10-09T18:04:24.951+0545] {taskinstance.py:2330} INFO - Executing <Task(BashOperator): prepare_features> on 2026-08-04 08:31:55.822556+00:00
+[2026-10-09T18:04:24.954+0545] {standard_task_runner.py:64} INFO - Started process 172276 to run task
+[2026-10-09T18:04:24.955+0545] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'network_traffic_pipeline', 'prepare_features', 'manual__2026-08-04T08:31:55.822556+00:00', '--job-id', '194', '--raw', '--subdir', 'DAGS_FOLDER/network_traffic_pipeline_dag.py', '--cfg-path', '/tmp/tmpvgqgxump']
+[2026-10-09T18:04:24.956+0545] {standard_task_runner.py:91} INFO - Job 194: Subtask prepare_features
+[2026-10-09T18:04:24.974+0545] {task_command.py:426} INFO - Running <TaskInstance: network_traffic_pipeline.prepare_features manual__2026-08-04T08:31:55.822556+00:00 [running]> on host snigdh-IdeaPad-Slim-3-15IAH8
+[2026-10-09T18:04:25.007+0545] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='you' AIRFLOW_CTX_DAG_ID='network_traffic_pipeline' AIRFLOW_CTX_TASK_ID='prepare_features' AIRFLOW_CTX_EXECUTION_DATE='2026-08-04T08:31:55.822556+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-08-04T08:31:55.822556+00:00'
+[2026-10-09T18:04:25.007+0545] {taskinstance.py:430} INFO - ::endgroup::
+[2026-10-09T18:04:25.008+0545] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2026-10-09T18:04:25.008+0545] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'cd /home/snigdh/repos/bigData && docker-compose exec spark-master /opt/spark/bin/spark-submit --master spark://localhost:7077 --py-files /app/common.py --conf spark.ui.port=4040 --conf spark.sql.extensions=io.delta.sql.DeltaSparkSessionExtension --conf spark.sql.catalog.spark_catalog=org.apache.spark.sql.delta.catalog.DeltaCatalog /app/task_prepare_features.py']
+[2026-10-09T18:04:25.012+0545] {subprocess.py:86} INFO - Output:
+[2026-10-09T18:04:25.297+0545] {subprocess.py:97} INFO - Command exited with return code 1
+[2026-10-09T18:04:25.297+0545] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-10-09T18:04:25.300+0545] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 401, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/operators/bash.py", line 243, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 1.
+[2026-10-09T18:04:25.304+0545] {taskinstance.py:1206} INFO - Marking task as FAILED. dag_id=network_traffic_pipeline, task_id=prepare_features, run_id=manual__2026-08-04T08:31:55.822556+00:00, execution_date=20260804T083155, start_date=20261009T121924, end_date=20261009T121925
+[2026-10-09T18:04:25.310+0545] {standard_task_runner.py:110} ERROR - Failed to execute job 194 for task prepare_features (Bash command failed. The command returned a non-zero exit code 1.; 172276)
+[2026-10-09T18:04:25.328+0545] {local_task_job_runner.py:243} INFO - Task exited with return code 1
+[2026-10-09T18:04:25.343+0545] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-10-09T18:04:25.349+0545] {local_task_job_runner.py:222} INFO - ::endgroup::

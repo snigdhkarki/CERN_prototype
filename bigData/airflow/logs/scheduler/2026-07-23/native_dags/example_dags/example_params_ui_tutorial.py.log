@@ -1,0 +1,14 @@
+[2026-07-23T15:52:33.166+0545] {processor.py:161} INFO - Started process (PID=149300) to work on /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_params_ui_tutorial.py
+[2026-07-23T15:52:33.166+0545] {processor.py:830} INFO - Processing file /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_params_ui_tutorial.py for tasks to queue
+[2026-07-23T15:52:33.167+0545] {logging_mixin.py:188} INFO - [2026-07-23T15:52:33.167+0545] {dagbag.py:545} INFO - Filling up the DagBag from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_params_ui_tutorial.py
+[2026-07-23T15:52:33.170+0545] {processor.py:840} INFO - DAG(s) 'example_params_ui_tutorial' retrieved from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_params_ui_tutorial.py
+[2026-07-23T15:52:33.226+0545] {logging_mixin.py:188} INFO - [2026-07-23T15:52:33.226+0545] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-07-23T15:52:33.230+0545] {logging_mixin.py:188} INFO - [2026-07-23T15:52:33.230+0545] {dag.py:3947} INFO - Setting next_dagrun for example_params_ui_tutorial to None, run_after=None
+[2026-07-23T15:52:33.242+0545] {processor.py:183} INFO - Processing /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_params_ui_tutorial.py took 0.080 seconds
+[2026-07-23T15:53:21.674+0545] {processor.py:161} INFO - Started process (PID=149600) to work on /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_params_ui_tutorial.py
+[2026-07-23T15:53:21.677+0545] {processor.py:830} INFO - Processing file /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_params_ui_tutorial.py for tasks to queue
+[2026-07-23T15:53:21.679+0545] {logging_mixin.py:188} INFO - [2026-07-23T15:53:21.679+0545] {dagbag.py:545} INFO - Filling up the DagBag from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_params_ui_tutorial.py
+[2026-07-23T15:53:21.684+0545] {processor.py:840} INFO - DAG(s) 'example_params_ui_tutorial' retrieved from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_params_ui_tutorial.py
+[2026-07-23T15:53:21.702+0545] {logging_mixin.py:188} INFO - [2026-07-23T15:53:21.702+0545] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-07-23T15:53:21.708+0545] {logging_mixin.py:188} INFO - [2026-07-23T15:53:21.708+0545] {dag.py:3947} INFO - Setting next_dagrun for example_params_ui_tutorial to None, run_after=None
+[2026-07-23T15:53:21.720+0545] {processor.py:183} INFO - Processing /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_params_ui_tutorial.py took 0.051 seconds

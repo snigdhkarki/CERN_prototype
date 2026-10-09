@@ -1,0 +1,35 @@
+[2026-07-24T13:00:58.128+0545] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-07-24T13:00:58.147+0545] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: network_traffic_pipeline.sequential_ddp_models.omnianomaly manual__2026-07-23T10:08:53.754693+00:00 [queued]>
+[2026-07-24T13:00:58.153+0545] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: network_traffic_pipeline.sequential_ddp_models.omnianomaly manual__2026-07-23T10:08:53.754693+00:00 [queued]>
+[2026-07-24T13:00:58.153+0545] {taskinstance.py:2306} INFO - Starting attempt 1 of 3
+[2026-07-24T13:00:58.166+0545] {taskinstance.py:2330} INFO - Executing <Task(BashOperator): sequential_ddp_models.omnianomaly> on 2026-07-23 10:08:53.754693+00:00
+[2026-07-24T13:00:58.171+0545] {standard_task_runner.py:64} INFO - Started process 51528 to run task
+[2026-07-24T13:00:58.174+0545] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'network_traffic_pipeline', 'sequential_ddp_models.omnianomaly', 'manual__2026-07-23T10:08:53.754693+00:00', '--job-id', '150', '--raw', '--subdir', 'DAGS_FOLDER/network_traffic_pipeline_dag.py', '--cfg-path', '/tmp/tmpsp6bstg9']
+[2026-07-24T13:00:58.176+0545] {standard_task_runner.py:91} INFO - Job 150: Subtask sequential_ddp_models.omnianomaly
+[2026-07-24T13:00:58.214+0545] {task_command.py:426} INFO - Running <TaskInstance: network_traffic_pipeline.sequential_ddp_models.omnianomaly manual__2026-07-23T10:08:53.754693+00:00 [running]> on host snigdh-IdeaPad-Slim-3-15IAH8
+[2026-07-24T13:00:58.279+0545] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='you' AIRFLOW_CTX_DAG_ID='network_traffic_pipeline' AIRFLOW_CTX_TASK_ID='sequential_ddp_models.omnianomaly' AIRFLOW_CTX_EXECUTION_DATE='2026-07-23T10:08:53.754693+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-07-23T10:08:53.754693+00:00'
+[2026-07-24T13:00:58.281+0545] {taskinstance.py:430} INFO - ::endgroup::
+[2026-07-24T13:00:58.282+0545] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2026-07-24T13:00:58.282+0545] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'cd /home/snigdh/repos/bigData && docker-compose exec spark-master /opt/spark/bin/spark-submit --master spark://localhost:7077 --py-files /app/common.py --conf spark.ui.port=4040 --conf spark.sql.extensions=io.delta.sql.DeltaSparkSessionExtension --conf spark.sql.catalog.spark_catalog=org.apache.spark.sql.delta.catalog.DeltaCatalog /app/task_omnianomaly.py']
+[2026-07-24T13:00:58.295+0545] {subprocess.py:86} INFO - Output:
+[2026-07-24T13:00:58.748+0545] {subprocess.py:97} INFO - Command exited with return code 1
+[2026-07-24T13:00:58.749+0545] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-07-24T13:00:58.756+0545] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 401, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/operators/bash.py", line 243, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 1.
+[2026-07-24T13:00:58.759+0545] {taskinstance.py:1206} INFO - Marking task as UP_FOR_RETRY. dag_id=network_traffic_pipeline, task_id=sequential_ddp_models.omnianomaly, run_id=manual__2026-07-23T10:08:53.754693+00:00, execution_date=20260723T100853, start_date=20260724T071558, end_date=20260724T071558
+[2026-07-24T13:00:58.774+0545] {standard_task_runner.py:110} ERROR - Failed to execute job 150 for task sequential_ddp_models.omnianomaly (Bash command failed. The command returned a non-zero exit code 1.; 51528)
+[2026-07-24T13:00:58.788+0545] {local_task_job_runner.py:243} INFO - Task exited with return code 1
+[2026-07-24T13:00:58.816+0545] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-07-24T13:00:58.817+0545] {local_task_job_runner.py:222} INFO - ::endgroup::

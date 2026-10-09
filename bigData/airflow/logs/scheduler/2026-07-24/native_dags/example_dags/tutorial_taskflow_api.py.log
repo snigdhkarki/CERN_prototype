@@ -1,0 +1,21 @@
+[2026-07-24T13:01:10.005+0545] {processor.py:161} INFO - Started process (PID=51637) to work on /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_taskflow_api.py
+[2026-07-24T13:01:10.007+0545] {processor.py:830} INFO - Processing file /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_taskflow_api.py for tasks to queue
+[2026-07-24T13:01:10.010+0545] {logging_mixin.py:188} INFO - [2026-07-24T13:01:10.009+0545] {dagbag.py:545} INFO - Filling up the DagBag from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_taskflow_api.py
+[2026-07-24T13:01:10.024+0545] {processor.py:840} INFO - DAG(s) 'tutorial_taskflow_api' retrieved from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_taskflow_api.py
+[2026-07-24T13:01:10.051+0545] {logging_mixin.py:188} INFO - [2026-07-24T13:01:10.051+0545] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-07-24T13:01:10.064+0545] {logging_mixin.py:188} INFO - [2026-07-24T13:01:10.064+0545] {dag.py:3947} INFO - Setting next_dagrun for tutorial_taskflow_api to None, run_after=None
+[2026-07-24T13:01:10.091+0545] {processor.py:183} INFO - Processing /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_taskflow_api.py took 0.093 seconds
+[2026-07-24T13:02:09.253+0545] {processor.py:161} INFO - Started process (PID=52009) to work on /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_taskflow_api.py
+[2026-07-24T13:02:09.258+0545] {processor.py:830} INFO - Processing file /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_taskflow_api.py for tasks to queue
+[2026-07-24T13:02:09.261+0545] {logging_mixin.py:188} INFO - [2026-07-24T13:02:09.260+0545] {dagbag.py:545} INFO - Filling up the DagBag from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_taskflow_api.py
+[2026-07-24T13:02:09.270+0545] {processor.py:840} INFO - DAG(s) 'tutorial_taskflow_api' retrieved from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_taskflow_api.py
+[2026-07-24T13:02:09.294+0545] {logging_mixin.py:188} INFO - [2026-07-24T13:02:09.293+0545] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-07-24T13:02:09.308+0545] {logging_mixin.py:188} INFO - [2026-07-24T13:02:09.308+0545] {dag.py:3947} INFO - Setting next_dagrun for tutorial_taskflow_api to None, run_after=None
+[2026-07-24T13:02:09.344+0545] {processor.py:183} INFO - Processing /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_taskflow_api.py took 0.100 seconds
+[2026-07-24T13:05:58.984+0545] {processor.py:161} INFO - Started process (PID=56897) to work on /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_taskflow_api.py
+[2026-07-24T13:05:58.986+0545] {processor.py:830} INFO - Processing file /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_taskflow_api.py for tasks to queue
+[2026-07-24T13:05:58.987+0545] {logging_mixin.py:188} INFO - [2026-07-24T13:05:58.986+0545] {dagbag.py:545} INFO - Filling up the DagBag from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_taskflow_api.py
+[2026-07-24T13:05:59.002+0545] {processor.py:840} INFO - DAG(s) 'tutorial_taskflow_api' retrieved from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_taskflow_api.py
+[2026-07-24T13:05:59.032+0545] {logging_mixin.py:188} INFO - [2026-07-24T13:05:59.031+0545] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-07-24T13:05:59.042+0545] {logging_mixin.py:188} INFO - [2026-07-24T13:05:59.042+0545] {dag.py:3947} INFO - Setting next_dagrun for tutorial_taskflow_api to None, run_after=None
+[2026-07-24T13:05:59.067+0545] {processor.py:183} INFO - Processing /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_taskflow_api.py took 0.091 seconds

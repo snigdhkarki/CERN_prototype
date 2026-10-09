@@ -1,0 +1,14 @@
+[2026-07-23T15:52:30.902+0545] {processor.py:161} INFO - Started process (PID=149293) to work on /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_setup_teardown.py
+[2026-07-23T15:52:30.902+0545] {processor.py:830} INFO - Processing file /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2026-07-23T15:52:30.904+0545] {logging_mixin.py:188} INFO - [2026-07-23T15:52:30.904+0545] {dagbag.py:545} INFO - Filling up the DagBag from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_setup_teardown.py
+[2026-07-23T15:52:30.908+0545] {processor.py:840} INFO - DAG(s) 'example_setup_teardown' retrieved from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_setup_teardown.py
+[2026-07-23T15:52:30.920+0545] {logging_mixin.py:188} INFO - [2026-07-23T15:52:30.920+0545] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-07-23T15:52:30.931+0545] {logging_mixin.py:188} INFO - [2026-07-23T15:52:30.931+0545] {dag.py:3947} INFO - Setting next_dagrun for example_setup_teardown to 2026-07-22 00:00:00+00:00, run_after=2026-07-23 00:00:00+00:00
+[2026-07-23T15:52:30.948+0545] {processor.py:183} INFO - Processing /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_setup_teardown.py took 0.050 seconds
+[2026-07-23T15:53:19.941+0545] {processor.py:161} INFO - Started process (PID=149591) to work on /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_setup_teardown.py
+[2026-07-23T15:53:19.944+0545] {processor.py:830} INFO - Processing file /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2026-07-23T15:53:19.946+0545] {logging_mixin.py:188} INFO - [2026-07-23T15:53:19.945+0545] {dagbag.py:545} INFO - Filling up the DagBag from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_setup_teardown.py
+[2026-07-23T15:53:19.951+0545] {processor.py:840} INFO - DAG(s) 'example_setup_teardown' retrieved from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_setup_teardown.py
+[2026-07-23T15:53:19.959+0545] {logging_mixin.py:188} INFO - [2026-07-23T15:53:19.959+0545] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-07-23T15:53:19.968+0545] {logging_mixin.py:188} INFO - [2026-07-23T15:53:19.968+0545] {dag.py:3947} INFO - Setting next_dagrun for example_setup_teardown to 2026-07-22 00:00:00+00:00, run_after=2026-07-23 00:00:00+00:00
+[2026-07-23T15:53:19.981+0545] {processor.py:183} INFO - Processing /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_setup_teardown.py took 0.045 seconds

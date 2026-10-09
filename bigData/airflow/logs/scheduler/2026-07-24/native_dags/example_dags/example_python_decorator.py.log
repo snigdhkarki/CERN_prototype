@@ -1,0 +1,16 @@
+[2026-07-24T13:01:37.073+0545] {processor.py:161} INFO - Started process (PID=51808) to work on /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_python_decorator.py
+[2026-07-24T13:01:37.074+0545] {processor.py:830} INFO - Processing file /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_python_decorator.py for tasks to queue
+[2026-07-24T13:01:37.076+0545] {logging_mixin.py:188} INFO - [2026-07-24T13:01:37.076+0545] {dagbag.py:545} INFO - Filling up the DagBag from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_python_decorator.py
+[2026-07-24T13:01:37.087+0545] {logging_mixin.py:188} INFO - [2026-07-24T13:01:37.087+0545] {example_python_decorator.py:80} WARNING - The virtalenv_python example task requires virtualenv, please install it.
+[2026-07-24T13:01:37.088+0545] {processor.py:840} INFO - DAG(s) 'example_python_decorator' retrieved from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_python_decorator.py
+[2026-07-24T13:01:37.117+0545] {logging_mixin.py:188} INFO - [2026-07-24T13:01:37.117+0545] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-07-24T13:01:37.132+0545] {logging_mixin.py:188} INFO - [2026-07-24T13:01:37.132+0545] {dag.py:3947} INFO - Setting next_dagrun for example_python_decorator to None, run_after=None
+[2026-07-24T13:01:37.169+0545] {processor.py:183} INFO - Processing /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_python_decorator.py took 0.103 seconds
+[2026-07-24T13:02:34.155+0545] {processor.py:161} INFO - Started process (PID=52139) to work on /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_python_decorator.py
+[2026-07-24T13:02:34.159+0545] {processor.py:830} INFO - Processing file /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_python_decorator.py for tasks to queue
+[2026-07-24T13:02:34.162+0545] {logging_mixin.py:188} INFO - [2026-07-24T13:02:34.162+0545] {dagbag.py:545} INFO - Filling up the DagBag from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_python_decorator.py
+[2026-07-24T13:02:34.177+0545] {logging_mixin.py:188} INFO - [2026-07-24T13:02:34.177+0545] {example_python_decorator.py:80} WARNING - The virtalenv_python example task requires virtualenv, please install it.
+[2026-07-24T13:02:34.178+0545] {processor.py:840} INFO - DAG(s) 'example_python_decorator' retrieved from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_python_decorator.py
+[2026-07-24T13:02:34.199+0545] {logging_mixin.py:188} INFO - [2026-07-24T13:02:34.199+0545] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-07-24T13:02:34.210+0545] {logging_mixin.py:188} INFO - [2026-07-24T13:02:34.210+0545] {dag.py:3947} INFO - Setting next_dagrun for example_python_decorator to None, run_after=None
+[2026-07-24T13:02:34.236+0545] {processor.py:183} INFO - Processing /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_python_decorator.py took 0.090 seconds

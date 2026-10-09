@@ -1,0 +1,21 @@
+[2026-07-23T15:52:15.471+0545] {processor.py:161} INFO - Started process (PID=149119) to work on /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/tutorial.py
+[2026-07-23T15:52:15.472+0545] {processor.py:830} INFO - Processing file /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/tutorial.py for tasks to queue
+[2026-07-23T15:52:15.473+0545] {logging_mixin.py:188} INFO - [2026-07-23T15:52:15.473+0545] {dagbag.py:545} INFO - Filling up the DagBag from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/tutorial.py
+[2026-07-23T15:52:15.478+0545] {processor.py:840} INFO - DAG(s) 'tutorial' retrieved from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/tutorial.py
+[2026-07-23T15:52:15.491+0545] {logging_mixin.py:188} INFO - [2026-07-23T15:52:15.490+0545] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-07-23T15:52:15.502+0545] {logging_mixin.py:188} INFO - [2026-07-23T15:52:15.502+0545] {dag.py:3947} INFO - Setting next_dagrun for tutorial to 2026-07-22 00:00:00+00:00, run_after=2026-07-23 00:00:00+00:00
+[2026-07-23T15:52:15.518+0545] {processor.py:183} INFO - Processing /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/tutorial.py took 0.050 seconds
+[2026-07-23T15:53:04.301+0545] {processor.py:161} INFO - Started process (PID=149485) to work on /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/tutorial.py
+[2026-07-23T15:53:04.314+0545] {processor.py:830} INFO - Processing file /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/tutorial.py for tasks to queue
+[2026-07-23T15:53:04.316+0545] {logging_mixin.py:188} INFO - [2026-07-23T15:53:04.316+0545] {dagbag.py:545} INFO - Filling up the DagBag from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/tutorial.py
+[2026-07-23T15:53:04.322+0545] {processor.py:840} INFO - DAG(s) 'tutorial' retrieved from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/tutorial.py
+[2026-07-23T15:53:04.330+0545] {logging_mixin.py:188} INFO - [2026-07-23T15:53:04.329+0545] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-07-23T15:53:04.339+0545] {logging_mixin.py:188} INFO - [2026-07-23T15:53:04.339+0545] {dag.py:3947} INFO - Setting next_dagrun for tutorial to 2026-07-22 00:00:00+00:00, run_after=2026-07-23 00:00:00+00:00
+[2026-07-23T15:53:04.363+0545] {processor.py:183} INFO - Processing /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/tutorial.py took 0.067 seconds
+[2026-07-23T15:53:54.826+0545] {processor.py:161} INFO - Started process (PID=149821) to work on /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/tutorial.py
+[2026-07-23T15:53:54.829+0545] {processor.py:830} INFO - Processing file /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/tutorial.py for tasks to queue
+[2026-07-23T15:53:54.830+0545] {logging_mixin.py:188} INFO - [2026-07-23T15:53:54.830+0545] {dagbag.py:545} INFO - Filling up the DagBag from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/tutorial.py
+[2026-07-23T15:53:54.835+0545] {processor.py:840} INFO - DAG(s) 'tutorial' retrieved from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/tutorial.py
+[2026-07-23T15:53:54.844+0545] {logging_mixin.py:188} INFO - [2026-07-23T15:53:54.844+0545] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-07-23T15:53:54.855+0545] {logging_mixin.py:188} INFO - [2026-07-23T15:53:54.855+0545] {dag.py:3947} INFO - Setting next_dagrun for tutorial to 2026-07-22 00:00:00+00:00, run_after=2026-07-23 00:00:00+00:00
+[2026-07-23T15:53:54.870+0545] {processor.py:183} INFO - Processing /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/tutorial.py took 0.049 seconds

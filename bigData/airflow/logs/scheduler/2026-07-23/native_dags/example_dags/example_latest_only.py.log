@@ -1,0 +1,14 @@
+[2026-07-23T15:52:36.050+0545] {processor.py:161} INFO - Started process (PID=149321) to work on /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_latest_only.py
+[2026-07-23T15:52:36.051+0545] {processor.py:830} INFO - Processing file /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_latest_only.py for tasks to queue
+[2026-07-23T15:52:36.052+0545] {logging_mixin.py:188} INFO - [2026-07-23T15:52:36.051+0545] {dagbag.py:545} INFO - Filling up the DagBag from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_latest_only.py
+[2026-07-23T15:52:36.055+0545] {processor.py:840} INFO - DAG(s) 'latest_only' retrieved from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_latest_only.py
+[2026-07-23T15:52:36.065+0545] {logging_mixin.py:188} INFO - [2026-07-23T15:52:36.065+0545] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-07-23T15:52:36.075+0545] {logging_mixin.py:188} INFO - [2026-07-23T15:52:36.075+0545] {dag.py:3947} INFO - Setting next_dagrun for latest_only to 2026-07-23 04:00:00+00:00, run_after=2026-07-23 08:00:00+00:00
+[2026-07-23T15:52:36.090+0545] {processor.py:183} INFO - Processing /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_latest_only.py took 0.045 seconds
+[2026-07-23T15:53:26.401+0545] {processor.py:161} INFO - Started process (PID=149637) to work on /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_latest_only.py
+[2026-07-23T15:53:26.402+0545] {processor.py:830} INFO - Processing file /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_latest_only.py for tasks to queue
+[2026-07-23T15:53:26.404+0545] {logging_mixin.py:188} INFO - [2026-07-23T15:53:26.404+0545] {dagbag.py:545} INFO - Filling up the DagBag from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_latest_only.py
+[2026-07-23T15:53:26.407+0545] {processor.py:840} INFO - DAG(s) 'latest_only' retrieved from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_latest_only.py
+[2026-07-23T15:53:26.415+0545] {logging_mixin.py:188} INFO - [2026-07-23T15:53:26.415+0545] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-07-23T15:53:26.424+0545] {logging_mixin.py:188} INFO - [2026-07-23T15:53:26.424+0545] {dag.py:3947} INFO - Setting next_dagrun for latest_only to 2026-07-23 04:00:00+00:00, run_after=2026-07-23 08:00:00+00:00
+[2026-07-23T15:53:26.437+0545] {processor.py:183} INFO - Processing /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_latest_only.py took 0.040 seconds

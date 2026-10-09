@@ -1,0 +1,8 @@
+[2026-07-24T13:01:47.288+0545] {processor.py:161} INFO - Started process (PID=51870) to work on /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_external_task_marker_dag.py
+[2026-07-24T13:01:47.289+0545] {processor.py:830} INFO - Processing file /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_external_task_marker_dag.py for tasks to queue
+[2026-07-24T13:01:47.293+0545] {logging_mixin.py:188} INFO - [2026-07-24T13:01:47.292+0545] {dagbag.py:545} INFO - Filling up the DagBag from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_external_task_marker_dag.py
+[2026-07-24T13:01:47.302+0545] {processor.py:840} INFO - DAG(s) 'example_external_task_marker_parent', 'example_external_task_marker_child' retrieved from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_external_task_marker_dag.py
+[2026-07-24T13:01:47.328+0545] {logging_mixin.py:188} INFO - [2026-07-24T13:01:47.327+0545] {dag.py:3089} INFO - Sync 2 DAGs
+[2026-07-24T13:01:47.339+0545] {logging_mixin.py:188} INFO - [2026-07-24T13:01:47.339+0545] {dag.py:3947} INFO - Setting next_dagrun for example_external_task_marker_child to None, run_after=None
+[2026-07-24T13:01:47.343+0545] {logging_mixin.py:188} INFO - [2026-07-24T13:01:47.343+0545] {dag.py:3947} INFO - Setting next_dagrun for example_external_task_marker_parent to None, run_after=None
+[2026-07-24T13:01:47.372+0545] {processor.py:183} INFO - Processing /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_external_task_marker_dag.py took 0.092 seconds

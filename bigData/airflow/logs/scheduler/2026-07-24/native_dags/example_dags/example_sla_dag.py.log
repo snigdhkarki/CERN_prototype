@@ -1,0 +1,14 @@
+[2026-07-24T13:01:27.905+0545] {processor.py:161} INFO - Started process (PID=51747) to work on /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_sla_dag.py
+[2026-07-24T13:01:27.907+0545] {processor.py:830} INFO - Processing file /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_sla_dag.py for tasks to queue
+[2026-07-24T13:01:27.910+0545] {logging_mixin.py:188} INFO - [2026-07-24T13:01:27.909+0545] {dagbag.py:545} INFO - Filling up the DagBag from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_sla_dag.py
+[2026-07-24T13:01:27.923+0545] {processor.py:840} INFO - DAG(s) 'example_sla_dag' retrieved from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_sla_dag.py
+[2026-07-24T13:01:27.951+0545] {logging_mixin.py:188} INFO - [2026-07-24T13:01:27.951+0545] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-07-24T13:01:27.981+0545] {logging_mixin.py:188} INFO - [2026-07-24T13:01:27.981+0545] {dag.py:3947} INFO - Setting next_dagrun for example_sla_dag to 2026-07-24 07:14:00+00:00, run_after=2026-07-24 07:16:00+00:00
+[2026-07-24T13:01:28.012+0545] {processor.py:183} INFO - Processing /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_sla_dag.py took 0.114 seconds
+[2026-07-24T13:02:25.323+0545] {processor.py:161} INFO - Started process (PID=52093) to work on /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_sla_dag.py
+[2026-07-24T13:02:25.328+0545] {processor.py:830} INFO - Processing file /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_sla_dag.py for tasks to queue
+[2026-07-24T13:02:25.331+0545] {logging_mixin.py:188} INFO - [2026-07-24T13:02:25.330+0545] {dagbag.py:545} INFO - Filling up the DagBag from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_sla_dag.py
+[2026-07-24T13:02:25.345+0545] {processor.py:840} INFO - DAG(s) 'example_sla_dag' retrieved from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_sla_dag.py
+[2026-07-24T13:02:25.370+0545] {logging_mixin.py:188} INFO - [2026-07-24T13:02:25.369+0545] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-07-24T13:02:25.401+0545] {logging_mixin.py:188} INFO - [2026-07-24T13:02:25.400+0545] {dag.py:3947} INFO - Setting next_dagrun for example_sla_dag to 2026-07-24 07:14:00+00:00, run_after=2026-07-24 07:16:00+00:00
+[2026-07-24T13:02:25.431+0545] {processor.py:183} INFO - Processing /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_sla_dag.py took 0.118 seconds

@@ -1,0 +1,532 @@
+[2026-08-04T11:25:01.388+0545] {processor.py:161} INFO - Started process (PID=61142) to work on /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T11:25:01.388+0545] {processor.py:830} INFO - Processing file /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py for tasks to queue
+[2026-08-04T11:25:01.389+0545] {logging_mixin.py:188} INFO - [2026-08-04T11:25:01.389+0545] {dagbag.py:545} INFO - Filling up the DagBag from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T11:25:01.394+0545] {processor.py:840} INFO - DAG(s) 'example_xcom' retrieved from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T11:25:01.408+0545] {logging_mixin.py:188} INFO - [2026-08-04T11:25:01.408+0545] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-04T11:25:01.419+0545] {logging_mixin.py:188} INFO - [2026-08-04T11:25:01.419+0545] {dag.py:3947} INFO - Setting next_dagrun for example_xcom to 2021-01-01 00:00:00+00:00, run_after=2021-01-01 00:00:00+00:00
+[2026-08-04T11:25:01.433+0545] {processor.py:183} INFO - Processing /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py took 0.049 seconds
+[2026-08-04T11:25:49.074+0545] {processor.py:161} INFO - Started process (PID=61479) to work on /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T11:25:49.077+0545] {processor.py:830} INFO - Processing file /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py for tasks to queue
+[2026-08-04T11:25:49.078+0545] {logging_mixin.py:188} INFO - [2026-08-04T11:25:49.078+0545] {dagbag.py:545} INFO - Filling up the DagBag from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T11:25:49.082+0545] {processor.py:840} INFO - DAG(s) 'example_xcom' retrieved from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T11:25:49.091+0545] {logging_mixin.py:188} INFO - [2026-08-04T11:25:49.090+0545] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-04T11:25:49.100+0545] {logging_mixin.py:188} INFO - [2026-08-04T11:25:49.100+0545] {dag.py:3947} INFO - Setting next_dagrun for example_xcom to 2021-01-01 00:00:00+00:00, run_after=2021-01-01 00:00:00+00:00
+[2026-08-04T11:25:49.113+0545] {processor.py:183} INFO - Processing /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py took 0.042 seconds
+[2026-08-04T11:34:05.946+0545] {processor.py:161} INFO - Started process (PID=70489) to work on /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T11:34:05.950+0545] {processor.py:830} INFO - Processing file /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py for tasks to queue
+[2026-08-04T11:34:05.951+0545] {logging_mixin.py:188} INFO - [2026-08-04T11:34:05.951+0545] {dagbag.py:545} INFO - Filling up the DagBag from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T11:34:05.957+0545] {processor.py:840} INFO - DAG(s) 'example_xcom' retrieved from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T11:34:05.969+0545] {logging_mixin.py:188} INFO - [2026-08-04T11:34:05.969+0545] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-04T11:34:05.979+0545] {logging_mixin.py:188} INFO - [2026-08-04T11:34:05.979+0545] {dag.py:3947} INFO - Setting next_dagrun for example_xcom to 2021-01-01 00:00:00+00:00, run_after=2021-01-01 00:00:00+00:00
+[2026-08-04T11:34:05.991+0545] {processor.py:183} INFO - Processing /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py took 0.051 seconds
+[2026-08-04T11:40:03.790+0545] {processor.py:161} INFO - Started process (PID=77069) to work on /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T11:40:03.793+0545] {processor.py:830} INFO - Processing file /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py for tasks to queue
+[2026-08-04T11:40:03.794+0545] {logging_mixin.py:188} INFO - [2026-08-04T11:40:03.793+0545] {dagbag.py:545} INFO - Filling up the DagBag from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T11:40:03.798+0545] {processor.py:840} INFO - DAG(s) 'example_xcom' retrieved from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T11:40:03.813+0545] {logging_mixin.py:188} INFO - [2026-08-04T11:40:03.813+0545] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-04T11:40:03.822+0545] {logging_mixin.py:188} INFO - [2026-08-04T11:40:03.822+0545] {dag.py:3947} INFO - Setting next_dagrun for example_xcom to 2021-01-01 00:00:00+00:00, run_after=2021-01-01 00:00:00+00:00
+[2026-08-04T11:40:03.837+0545] {processor.py:183} INFO - Processing /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py took 0.052 seconds
+[2026-08-04T11:44:12.880+0545] {processor.py:161} INFO - Started process (PID=80660) to work on /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T11:44:12.882+0545] {processor.py:830} INFO - Processing file /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py for tasks to queue
+[2026-08-04T11:44:12.883+0545] {logging_mixin.py:188} INFO - [2026-08-04T11:44:12.882+0545] {dagbag.py:545} INFO - Filling up the DagBag from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T11:44:12.887+0545] {processor.py:840} INFO - DAG(s) 'example_xcom' retrieved from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T11:44:12.902+0545] {logging_mixin.py:188} INFO - [2026-08-04T11:44:12.902+0545] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-04T11:44:12.982+0545] {logging_mixin.py:188} INFO - [2026-08-04T11:44:12.982+0545] {dag.py:3947} INFO - Setting next_dagrun for example_xcom to 2021-01-01 00:00:00+00:00, run_after=2021-01-01 00:00:00+00:00
+[2026-08-04T11:44:13.001+0545] {processor.py:183} INFO - Processing /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py took 0.125 seconds
+[2026-08-04T13:23:27.441+0545] {processor.py:161} INFO - Started process (PID=16030) to work on /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T13:23:27.445+0545] {processor.py:830} INFO - Processing file /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py for tasks to queue
+[2026-08-04T13:23:27.447+0545] {logging_mixin.py:188} INFO - [2026-08-04T13:23:27.447+0545] {dagbag.py:545} INFO - Filling up the DagBag from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T13:23:27.463+0545] {processor.py:840} INFO - DAG(s) 'example_xcom' retrieved from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T13:23:27.491+0545] {logging_mixin.py:188} INFO - [2026-08-04T13:23:27.491+0545] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-04T13:23:27.511+0545] {logging_mixin.py:188} INFO - [2026-08-04T13:23:27.511+0545] {dag.py:3947} INFO - Setting next_dagrun for example_xcom to 2021-01-01 00:00:00+00:00, run_after=2021-01-01 00:00:00+00:00
+[2026-08-04T13:23:27.535+0545] {processor.py:183} INFO - Processing /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py took 0.102 seconds
+[2026-08-04T13:24:20.593+0545] {processor.py:161} INFO - Started process (PID=16404) to work on /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T13:24:20.597+0545] {processor.py:830} INFO - Processing file /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py for tasks to queue
+[2026-08-04T13:24:20.599+0545] {logging_mixin.py:188} INFO - [2026-08-04T13:24:20.598+0545] {dagbag.py:545} INFO - Filling up the DagBag from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T13:24:20.609+0545] {processor.py:840} INFO - DAG(s) 'example_xcom' retrieved from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T13:24:20.632+0545] {logging_mixin.py:188} INFO - [2026-08-04T13:24:20.632+0545] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-04T13:24:20.651+0545] {logging_mixin.py:188} INFO - [2026-08-04T13:24:20.651+0545] {dag.py:3947} INFO - Setting next_dagrun for example_xcom to 2021-01-01 00:00:00+00:00, run_after=2021-01-01 00:00:00+00:00
+[2026-08-04T13:24:20.674+0545] {processor.py:183} INFO - Processing /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py took 0.088 seconds
+[2026-08-04T13:25:06.007+0545] {processor.py:161} INFO - Started process (PID=16723) to work on /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T13:25:06.011+0545] {processor.py:830} INFO - Processing file /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py for tasks to queue
+[2026-08-04T13:25:06.014+0545] {logging_mixin.py:188} INFO - [2026-08-04T13:25:06.013+0545] {dagbag.py:545} INFO - Filling up the DagBag from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T13:25:06.024+0545] {processor.py:840} INFO - DAG(s) 'example_xcom' retrieved from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T13:25:06.045+0545] {logging_mixin.py:188} INFO - [2026-08-04T13:25:06.045+0545] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-04T13:25:06.068+0545] {logging_mixin.py:188} INFO - [2026-08-04T13:25:06.067+0545] {dag.py:3947} INFO - Setting next_dagrun for example_xcom to 2021-01-01 00:00:00+00:00, run_after=2021-01-01 00:00:00+00:00
+[2026-08-04T13:25:06.098+0545] {processor.py:183} INFO - Processing /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py took 0.098 seconds
+[2026-08-04T13:25:49.522+0545] {processor.py:161} INFO - Started process (PID=17010) to work on /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T13:25:49.526+0545] {processor.py:830} INFO - Processing file /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py for tasks to queue
+[2026-08-04T13:25:49.528+0545] {logging_mixin.py:188} INFO - [2026-08-04T13:25:49.528+0545] {dagbag.py:545} INFO - Filling up the DagBag from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T13:25:49.538+0545] {processor.py:840} INFO - DAG(s) 'example_xcom' retrieved from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T13:25:49.568+0545] {logging_mixin.py:188} INFO - [2026-08-04T13:25:49.567+0545] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-04T13:25:49.598+0545] {logging_mixin.py:188} INFO - [2026-08-04T13:25:49.597+0545] {dag.py:3947} INFO - Setting next_dagrun for example_xcom to 2021-01-01 00:00:00+00:00, run_after=2021-01-01 00:00:00+00:00
+[2026-08-04T13:25:49.637+0545] {processor.py:183} INFO - Processing /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py took 0.122 seconds
+[2026-08-04T13:26:35.170+0545] {processor.py:161} INFO - Started process (PID=17581) to work on /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T13:26:35.174+0545] {processor.py:830} INFO - Processing file /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py for tasks to queue
+[2026-08-04T13:26:35.177+0545] {logging_mixin.py:188} INFO - [2026-08-04T13:26:35.176+0545] {dagbag.py:545} INFO - Filling up the DagBag from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T13:26:35.187+0545] {processor.py:840} INFO - DAG(s) 'example_xcom' retrieved from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T13:26:35.208+0545] {logging_mixin.py:188} INFO - [2026-08-04T13:26:35.207+0545] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-04T13:26:35.229+0545] {logging_mixin.py:188} INFO - [2026-08-04T13:26:35.229+0545] {dag.py:3947} INFO - Setting next_dagrun for example_xcom to 2021-01-01 00:00:00+00:00, run_after=2021-01-01 00:00:00+00:00
+[2026-08-04T13:26:35.253+0545] {processor.py:183} INFO - Processing /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py took 0.090 seconds
+[2026-08-04T13:27:18.891+0545] {processor.py:161} INFO - Started process (PID=17871) to work on /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T13:27:18.893+0545] {processor.py:830} INFO - Processing file /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py for tasks to queue
+[2026-08-04T13:27:18.895+0545] {logging_mixin.py:188} INFO - [2026-08-04T13:27:18.895+0545] {dagbag.py:545} INFO - Filling up the DagBag from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T13:27:18.905+0545] {processor.py:840} INFO - DAG(s) 'example_xcom' retrieved from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T13:27:18.925+0545] {logging_mixin.py:188} INFO - [2026-08-04T13:27:18.925+0545] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-04T13:27:18.946+0545] {logging_mixin.py:188} INFO - [2026-08-04T13:27:18.945+0545] {dag.py:3947} INFO - Setting next_dagrun for example_xcom to 2021-01-01 00:00:00+00:00, run_after=2021-01-01 00:00:00+00:00
+[2026-08-04T13:27:18.969+0545] {processor.py:183} INFO - Processing /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py took 0.085 seconds
+[2026-08-04T13:28:02.001+0545] {processor.py:161} INFO - Started process (PID=18159) to work on /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T13:28:02.005+0545] {processor.py:830} INFO - Processing file /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py for tasks to queue
+[2026-08-04T13:28:02.007+0545] {logging_mixin.py:188} INFO - [2026-08-04T13:28:02.007+0545] {dagbag.py:545} INFO - Filling up the DagBag from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T13:28:02.017+0545] {processor.py:840} INFO - DAG(s) 'example_xcom' retrieved from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T13:28:02.038+0545] {logging_mixin.py:188} INFO - [2026-08-04T13:28:02.037+0545] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-04T13:28:02.058+0545] {logging_mixin.py:188} INFO - [2026-08-04T13:28:02.058+0545] {dag.py:3947} INFO - Setting next_dagrun for example_xcom to 2021-01-01 00:00:00+00:00, run_after=2021-01-01 00:00:00+00:00
+[2026-08-04T13:28:02.083+0545] {processor.py:183} INFO - Processing /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py took 0.088 seconds
+[2026-08-04T13:28:44.443+0545] {processor.py:161} INFO - Started process (PID=18444) to work on /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T13:28:44.447+0545] {processor.py:830} INFO - Processing file /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py for tasks to queue
+[2026-08-04T13:28:44.449+0545] {logging_mixin.py:188} INFO - [2026-08-04T13:28:44.449+0545] {dagbag.py:545} INFO - Filling up the DagBag from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T13:28:44.460+0545] {processor.py:840} INFO - DAG(s) 'example_xcom' retrieved from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T13:28:44.482+0545] {logging_mixin.py:188} INFO - [2026-08-04T13:28:44.481+0545] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-04T13:28:44.502+0545] {logging_mixin.py:188} INFO - [2026-08-04T13:28:44.502+0545] {dag.py:3947} INFO - Setting next_dagrun for example_xcom to 2021-01-01 00:00:00+00:00, run_after=2021-01-01 00:00:00+00:00
+[2026-08-04T13:28:44.528+0545] {processor.py:183} INFO - Processing /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py took 0.092 seconds
+[2026-08-04T13:29:28.751+0545] {processor.py:161} INFO - Started process (PID=18745) to work on /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T13:29:28.755+0545] {processor.py:830} INFO - Processing file /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py for tasks to queue
+[2026-08-04T13:29:28.757+0545] {logging_mixin.py:188} INFO - [2026-08-04T13:29:28.757+0545] {dagbag.py:545} INFO - Filling up the DagBag from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T13:29:28.767+0545] {processor.py:840} INFO - DAG(s) 'example_xcom' retrieved from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T13:29:28.788+0545] {logging_mixin.py:188} INFO - [2026-08-04T13:29:28.788+0545] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-04T13:29:28.806+0545] {logging_mixin.py:188} INFO - [2026-08-04T13:29:28.806+0545] {dag.py:3947} INFO - Setting next_dagrun for example_xcom to 2021-01-01 00:00:00+00:00, run_after=2021-01-01 00:00:00+00:00
+[2026-08-04T13:29:28.831+0545] {processor.py:183} INFO - Processing /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py took 0.087 seconds
+[2026-08-04T13:30:12.290+0545] {processor.py:161} INFO - Started process (PID=19035) to work on /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T13:30:12.293+0545] {processor.py:830} INFO - Processing file /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py for tasks to queue
+[2026-08-04T13:30:12.296+0545] {logging_mixin.py:188} INFO - [2026-08-04T13:30:12.295+0545] {dagbag.py:545} INFO - Filling up the DagBag from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T13:30:12.306+0545] {processor.py:840} INFO - DAG(s) 'example_xcom' retrieved from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T13:30:12.327+0545] {logging_mixin.py:188} INFO - [2026-08-04T13:30:12.327+0545] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-04T13:30:12.348+0545] {logging_mixin.py:188} INFO - [2026-08-04T13:30:12.347+0545] {dag.py:3947} INFO - Setting next_dagrun for example_xcom to 2021-01-01 00:00:00+00:00, run_after=2021-01-01 00:00:00+00:00
+[2026-08-04T13:30:12.370+0545] {processor.py:183} INFO - Processing /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py took 0.088 seconds
+[2026-08-04T13:31:00.871+0545] {processor.py:161} INFO - Started process (PID=19338) to work on /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T13:31:00.875+0545] {processor.py:830} INFO - Processing file /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py for tasks to queue
+[2026-08-04T13:31:00.878+0545] {logging_mixin.py:188} INFO - [2026-08-04T13:31:00.877+0545] {dagbag.py:545} INFO - Filling up the DagBag from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T13:31:00.888+0545] {processor.py:840} INFO - DAG(s) 'example_xcom' retrieved from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T13:31:00.909+0545] {logging_mixin.py:188} INFO - [2026-08-04T13:31:00.909+0545] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-04T13:31:00.929+0545] {logging_mixin.py:188} INFO - [2026-08-04T13:31:00.929+0545] {dag.py:3947} INFO - Setting next_dagrun for example_xcom to 2021-01-01 00:00:00+00:00, run_after=2021-01-01 00:00:00+00:00
+[2026-08-04T13:31:00.953+0545] {processor.py:183} INFO - Processing /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py took 0.089 seconds
+[2026-08-04T13:31:46.330+0545] {processor.py:161} INFO - Started process (PID=19648) to work on /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T13:31:46.334+0545] {processor.py:830} INFO - Processing file /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py for tasks to queue
+[2026-08-04T13:31:46.337+0545] {logging_mixin.py:188} INFO - [2026-08-04T13:31:46.336+0545] {dagbag.py:545} INFO - Filling up the DagBag from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T13:31:46.348+0545] {processor.py:840} INFO - DAG(s) 'example_xcom' retrieved from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T13:31:46.369+0545] {logging_mixin.py:188} INFO - [2026-08-04T13:31:46.369+0545] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-04T13:31:46.390+0545] {logging_mixin.py:188} INFO - [2026-08-04T13:31:46.390+0545] {dag.py:3947} INFO - Setting next_dagrun for example_xcom to 2021-01-01 00:00:00+00:00, run_after=2021-01-01 00:00:00+00:00
+[2026-08-04T13:31:46.415+0545] {processor.py:183} INFO - Processing /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py took 0.092 seconds
+[2026-08-04T13:32:36.161+0545] {processor.py:161} INFO - Started process (PID=19967) to work on /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T13:32:36.164+0545] {processor.py:830} INFO - Processing file /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py for tasks to queue
+[2026-08-04T13:32:36.167+0545] {logging_mixin.py:188} INFO - [2026-08-04T13:32:36.166+0545] {dagbag.py:545} INFO - Filling up the DagBag from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T13:32:36.176+0545] {processor.py:840} INFO - DAG(s) 'example_xcom' retrieved from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T13:32:36.198+0545] {logging_mixin.py:188} INFO - [2026-08-04T13:32:36.198+0545] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-04T13:32:36.221+0545] {logging_mixin.py:188} INFO - [2026-08-04T13:32:36.221+0545] {dag.py:3947} INFO - Setting next_dagrun for example_xcom to 2021-01-01 00:00:00+00:00, run_after=2021-01-01 00:00:00+00:00
+[2026-08-04T13:32:36.247+0545] {processor.py:183} INFO - Processing /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py took 0.093 seconds
+[2026-08-04T13:33:22.989+0545] {processor.py:161} INFO - Started process (PID=20282) to work on /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T13:33:22.992+0545] {processor.py:830} INFO - Processing file /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py for tasks to queue
+[2026-08-04T13:33:22.994+0545] {logging_mixin.py:188} INFO - [2026-08-04T13:33:22.994+0545] {dagbag.py:545} INFO - Filling up the DagBag from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T13:33:23.002+0545] {processor.py:840} INFO - DAG(s) 'example_xcom' retrieved from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T13:33:23.021+0545] {logging_mixin.py:188} INFO - [2026-08-04T13:33:23.020+0545] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-04T13:33:23.043+0545] {logging_mixin.py:188} INFO - [2026-08-04T13:33:23.042+0545] {dag.py:3947} INFO - Setting next_dagrun for example_xcom to 2021-01-01 00:00:00+00:00, run_after=2021-01-01 00:00:00+00:00
+[2026-08-04T13:33:23.069+0545] {processor.py:183} INFO - Processing /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py took 0.086 seconds
+[2026-08-04T13:34:09.392+0545] {processor.py:161} INFO - Started process (PID=20585) to work on /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T13:34:09.396+0545] {processor.py:830} INFO - Processing file /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py for tasks to queue
+[2026-08-04T13:34:09.398+0545] {logging_mixin.py:188} INFO - [2026-08-04T13:34:09.398+0545] {dagbag.py:545} INFO - Filling up the DagBag from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T13:34:09.408+0545] {processor.py:840} INFO - DAG(s) 'example_xcom' retrieved from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T13:34:09.431+0545] {logging_mixin.py:188} INFO - [2026-08-04T13:34:09.430+0545] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-04T13:34:09.451+0545] {logging_mixin.py:188} INFO - [2026-08-04T13:34:09.451+0545] {dag.py:3947} INFO - Setting next_dagrun for example_xcom to 2021-01-01 00:00:00+00:00, run_after=2021-01-01 00:00:00+00:00
+[2026-08-04T13:34:09.475+0545] {processor.py:183} INFO - Processing /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py took 0.091 seconds
+[2026-08-04T13:34:55.767+0545] {processor.py:161} INFO - Started process (PID=20896) to work on /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T13:34:55.772+0545] {processor.py:830} INFO - Processing file /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py for tasks to queue
+[2026-08-04T13:34:55.774+0545] {logging_mixin.py:188} INFO - [2026-08-04T13:34:55.773+0545] {dagbag.py:545} INFO - Filling up the DagBag from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T13:34:55.785+0545] {processor.py:840} INFO - DAG(s) 'example_xcom' retrieved from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T13:34:55.807+0545] {logging_mixin.py:188} INFO - [2026-08-04T13:34:55.806+0545] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-04T13:34:55.826+0545] {logging_mixin.py:188} INFO - [2026-08-04T13:34:55.826+0545] {dag.py:3947} INFO - Setting next_dagrun for example_xcom to 2021-01-01 00:00:00+00:00, run_after=2021-01-01 00:00:00+00:00
+[2026-08-04T13:34:55.851+0545] {processor.py:183} INFO - Processing /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py took 0.090 seconds
+[2026-08-04T13:35:41.408+0545] {processor.py:161} INFO - Started process (PID=21203) to work on /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T13:35:41.412+0545] {processor.py:830} INFO - Processing file /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py for tasks to queue
+[2026-08-04T13:35:41.414+0545] {logging_mixin.py:188} INFO - [2026-08-04T13:35:41.414+0545] {dagbag.py:545} INFO - Filling up the DagBag from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T13:35:41.425+0545] {processor.py:840} INFO - DAG(s) 'example_xcom' retrieved from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T13:35:41.446+0545] {logging_mixin.py:188} INFO - [2026-08-04T13:35:41.446+0545] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-04T13:35:41.466+0545] {logging_mixin.py:188} INFO - [2026-08-04T13:35:41.466+0545] {dag.py:3947} INFO - Setting next_dagrun for example_xcom to 2021-01-01 00:00:00+00:00, run_after=2021-01-01 00:00:00+00:00
+[2026-08-04T13:35:41.490+0545] {processor.py:183} INFO - Processing /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py took 0.090 seconds
+[2026-08-04T13:36:27.208+0545] {processor.py:161} INFO - Started process (PID=21502) to work on /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T13:36:27.212+0545] {processor.py:830} INFO - Processing file /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py for tasks to queue
+[2026-08-04T13:36:27.215+0545] {logging_mixin.py:188} INFO - [2026-08-04T13:36:27.214+0545] {dagbag.py:545} INFO - Filling up the DagBag from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T13:36:27.225+0545] {processor.py:840} INFO - DAG(s) 'example_xcom' retrieved from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T13:36:27.246+0545] {logging_mixin.py:188} INFO - [2026-08-04T13:36:27.245+0545] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-04T13:36:27.267+0545] {logging_mixin.py:188} INFO - [2026-08-04T13:36:27.267+0545] {dag.py:3947} INFO - Setting next_dagrun for example_xcom to 2021-01-01 00:00:00+00:00, run_after=2021-01-01 00:00:00+00:00
+[2026-08-04T13:36:27.290+0545] {processor.py:183} INFO - Processing /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py took 0.090 seconds
+[2026-08-04T13:37:11.834+0545] {processor.py:161} INFO - Started process (PID=21802) to work on /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T13:37:11.839+0545] {processor.py:830} INFO - Processing file /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py for tasks to queue
+[2026-08-04T13:37:11.841+0545] {logging_mixin.py:188} INFO - [2026-08-04T13:37:11.841+0545] {dagbag.py:545} INFO - Filling up the DagBag from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T13:37:11.851+0545] {processor.py:840} INFO - DAG(s) 'example_xcom' retrieved from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T13:37:11.873+0545] {logging_mixin.py:188} INFO - [2026-08-04T13:37:11.873+0545] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-04T13:37:11.894+0545] {logging_mixin.py:188} INFO - [2026-08-04T13:37:11.894+0545] {dag.py:3947} INFO - Setting next_dagrun for example_xcom to 2021-01-01 00:00:00+00:00, run_after=2021-01-01 00:00:00+00:00
+[2026-08-04T13:37:11.930+0545] {processor.py:183} INFO - Processing /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py took 0.104 seconds
+[2026-08-04T13:37:56.060+0545] {processor.py:161} INFO - Started process (PID=22085) to work on /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T13:37:56.064+0545] {processor.py:830} INFO - Processing file /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py for tasks to queue
+[2026-08-04T13:37:56.067+0545] {logging_mixin.py:188} INFO - [2026-08-04T13:37:56.066+0545] {dagbag.py:545} INFO - Filling up the DagBag from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T13:37:56.077+0545] {processor.py:840} INFO - DAG(s) 'example_xcom' retrieved from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T13:37:56.099+0545] {logging_mixin.py:188} INFO - [2026-08-04T13:37:56.098+0545] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-04T13:37:56.119+0545] {logging_mixin.py:188} INFO - [2026-08-04T13:37:56.119+0545] {dag.py:3947} INFO - Setting next_dagrun for example_xcom to 2021-01-01 00:00:00+00:00, run_after=2021-01-01 00:00:00+00:00
+[2026-08-04T13:37:56.142+0545] {processor.py:183} INFO - Processing /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py took 0.091 seconds
+[2026-08-04T13:38:36.687+0545] {processor.py:161} INFO - Started process (PID=22350) to work on /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T13:38:36.691+0545] {processor.py:830} INFO - Processing file /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py for tasks to queue
+[2026-08-04T13:38:36.693+0545] {logging_mixin.py:188} INFO - [2026-08-04T13:38:36.693+0545] {dagbag.py:545} INFO - Filling up the DagBag from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T13:38:36.703+0545] {processor.py:840} INFO - DAG(s) 'example_xcom' retrieved from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T13:38:36.724+0545] {logging_mixin.py:188} INFO - [2026-08-04T13:38:36.724+0545] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-04T13:38:36.745+0545] {logging_mixin.py:188} INFO - [2026-08-04T13:38:36.745+0545] {dag.py:3947} INFO - Setting next_dagrun for example_xcom to 2021-01-01 00:00:00+00:00, run_after=2021-01-01 00:00:00+00:00
+[2026-08-04T13:38:36.767+0545] {processor.py:183} INFO - Processing /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py took 0.087 seconds
+[2026-08-04T13:39:23.234+0545] {processor.py:161} INFO - Started process (PID=22650) to work on /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T13:39:23.238+0545] {processor.py:830} INFO - Processing file /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py for tasks to queue
+[2026-08-04T13:39:23.240+0545] {logging_mixin.py:188} INFO - [2026-08-04T13:39:23.240+0545] {dagbag.py:545} INFO - Filling up the DagBag from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T13:39:23.251+0545] {processor.py:840} INFO - DAG(s) 'example_xcom' retrieved from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T13:39:23.273+0545] {logging_mixin.py:188} INFO - [2026-08-04T13:39:23.273+0545] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-04T13:39:23.292+0545] {logging_mixin.py:188} INFO - [2026-08-04T13:39:23.292+0545] {dag.py:3947} INFO - Setting next_dagrun for example_xcom to 2021-01-01 00:00:00+00:00, run_after=2021-01-01 00:00:00+00:00
+[2026-08-04T13:39:23.316+0545] {processor.py:183} INFO - Processing /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py took 0.089 seconds
+[2026-08-04T13:40:07.202+0545] {processor.py:161} INFO - Started process (PID=22915) to work on /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T13:40:07.206+0545] {processor.py:830} INFO - Processing file /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py for tasks to queue
+[2026-08-04T13:40:07.208+0545] {logging_mixin.py:188} INFO - [2026-08-04T13:40:07.207+0545] {dagbag.py:545} INFO - Filling up the DagBag from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T13:40:07.218+0545] {processor.py:840} INFO - DAG(s) 'example_xcom' retrieved from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T13:40:07.239+0545] {logging_mixin.py:188} INFO - [2026-08-04T13:40:07.239+0545] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-04T13:40:07.260+0545] {logging_mixin.py:188} INFO - [2026-08-04T13:40:07.259+0545] {dag.py:3947} INFO - Setting next_dagrun for example_xcom to 2021-01-01 00:00:00+00:00, run_after=2021-01-01 00:00:00+00:00
+[2026-08-04T13:40:07.501+0545] {processor.py:183} INFO - Processing /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py took 0.306 seconds
+[2026-08-04T13:40:52.694+0545] {processor.py:161} INFO - Started process (PID=23196) to work on /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T13:40:52.698+0545] {processor.py:830} INFO - Processing file /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py for tasks to queue
+[2026-08-04T13:40:52.700+0545] {logging_mixin.py:188} INFO - [2026-08-04T13:40:52.699+0545] {dagbag.py:545} INFO - Filling up the DagBag from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T13:40:52.711+0545] {processor.py:840} INFO - DAG(s) 'example_xcom' retrieved from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T13:40:52.734+0545] {logging_mixin.py:188} INFO - [2026-08-04T13:40:52.733+0545] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-04T13:40:52.756+0545] {logging_mixin.py:188} INFO - [2026-08-04T13:40:52.756+0545] {dag.py:3947} INFO - Setting next_dagrun for example_xcom to 2021-01-01 00:00:00+00:00, run_after=2021-01-01 00:00:00+00:00
+[2026-08-04T13:40:52.784+0545] {processor.py:183} INFO - Processing /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py took 0.096 seconds
+[2026-08-04T13:41:36.019+0545] {processor.py:161} INFO - Started process (PID=23488) to work on /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T13:41:36.023+0545] {processor.py:830} INFO - Processing file /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py for tasks to queue
+[2026-08-04T13:41:36.026+0545] {logging_mixin.py:188} INFO - [2026-08-04T13:41:36.025+0545] {dagbag.py:545} INFO - Filling up the DagBag from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T13:41:36.036+0545] {processor.py:840} INFO - DAG(s) 'example_xcom' retrieved from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T13:41:36.059+0545] {logging_mixin.py:188} INFO - [2026-08-04T13:41:36.058+0545] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-04T13:41:36.198+0545] {logging_mixin.py:188} INFO - [2026-08-04T13:41:36.197+0545] {dag.py:3947} INFO - Setting next_dagrun for example_xcom to 2021-01-01 00:00:00+00:00, run_after=2021-01-01 00:00:00+00:00
+[2026-08-04T13:41:36.222+0545] {processor.py:183} INFO - Processing /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py took 0.212 seconds
+[2026-08-04T13:42:30.788+0545] {processor.py:161} INFO - Started process (PID=23834) to work on /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T13:42:30.792+0545] {processor.py:830} INFO - Processing file /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py for tasks to queue
+[2026-08-04T13:42:30.794+0545] {logging_mixin.py:188} INFO - [2026-08-04T13:42:30.794+0545] {dagbag.py:545} INFO - Filling up the DagBag from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T13:42:30.804+0545] {processor.py:840} INFO - DAG(s) 'example_xcom' retrieved from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T13:42:30.827+0545] {logging_mixin.py:188} INFO - [2026-08-04T13:42:30.826+0545] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-04T13:42:30.847+0545] {logging_mixin.py:188} INFO - [2026-08-04T13:42:30.847+0545] {dag.py:3947} INFO - Setting next_dagrun for example_xcom to 2021-01-01 00:00:00+00:00, run_after=2021-01-01 00:00:00+00:00
+[2026-08-04T13:42:31.080+0545] {processor.py:183} INFO - Processing /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py took 0.299 seconds
+[2026-08-04T13:43:16.148+0545] {processor.py:161} INFO - Started process (PID=24139) to work on /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T13:43:16.152+0545] {processor.py:830} INFO - Processing file /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py for tasks to queue
+[2026-08-04T13:43:16.155+0545] {logging_mixin.py:188} INFO - [2026-08-04T13:43:16.154+0545] {dagbag.py:545} INFO - Filling up the DagBag from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T13:43:16.165+0545] {processor.py:840} INFO - DAG(s) 'example_xcom' retrieved from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T13:43:16.186+0545] {logging_mixin.py:188} INFO - [2026-08-04T13:43:16.186+0545] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-04T13:43:16.206+0545] {logging_mixin.py:188} INFO - [2026-08-04T13:43:16.206+0545] {dag.py:3947} INFO - Setting next_dagrun for example_xcom to 2021-01-01 00:00:00+00:00, run_after=2021-01-01 00:00:00+00:00
+[2026-08-04T13:43:16.229+0545] {processor.py:183} INFO - Processing /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py took 0.088 seconds
+[2026-08-04T13:44:06.005+0545] {processor.py:161} INFO - Started process (PID=24455) to work on /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T13:44:06.008+0545] {processor.py:830} INFO - Processing file /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py for tasks to queue
+[2026-08-04T13:44:06.011+0545] {logging_mixin.py:188} INFO - [2026-08-04T13:44:06.010+0545] {dagbag.py:545} INFO - Filling up the DagBag from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T13:44:06.020+0545] {processor.py:840} INFO - DAG(s) 'example_xcom' retrieved from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T13:44:06.041+0545] {logging_mixin.py:188} INFO - [2026-08-04T13:44:06.041+0545] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-04T13:44:06.063+0545] {logging_mixin.py:188} INFO - [2026-08-04T13:44:06.063+0545] {dag.py:3947} INFO - Setting next_dagrun for example_xcom to 2021-01-01 00:00:00+00:00, run_after=2021-01-01 00:00:00+00:00
+[2026-08-04T13:44:06.086+0545] {processor.py:183} INFO - Processing /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py took 0.089 seconds
+[2026-08-04T13:44:58.713+0545] {processor.py:161} INFO - Started process (PID=24795) to work on /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T13:44:58.715+0545] {processor.py:830} INFO - Processing file /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py for tasks to queue
+[2026-08-04T13:44:58.717+0545] {logging_mixin.py:188} INFO - [2026-08-04T13:44:58.716+0545] {dagbag.py:545} INFO - Filling up the DagBag from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T13:44:58.727+0545] {processor.py:840} INFO - DAG(s) 'example_xcom' retrieved from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T13:44:58.749+0545] {logging_mixin.py:188} INFO - [2026-08-04T13:44:58.749+0545] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-04T13:44:58.903+0545] {logging_mixin.py:188} INFO - [2026-08-04T13:44:58.903+0545] {dag.py:3947} INFO - Setting next_dagrun for example_xcom to 2021-01-01 00:00:00+00:00, run_after=2021-01-01 00:00:00+00:00
+[2026-08-04T13:44:58.928+0545] {processor.py:183} INFO - Processing /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py took 0.223 seconds
+[2026-08-04T13:45:47.734+0545] {processor.py:161} INFO - Started process (PID=25116) to work on /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T13:45:47.738+0545] {processor.py:830} INFO - Processing file /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py for tasks to queue
+[2026-08-04T13:45:47.741+0545] {logging_mixin.py:188} INFO - [2026-08-04T13:45:47.740+0545] {dagbag.py:545} INFO - Filling up the DagBag from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T13:45:47.751+0545] {processor.py:840} INFO - DAG(s) 'example_xcom' retrieved from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T13:45:47.773+0545] {logging_mixin.py:188} INFO - [2026-08-04T13:45:47.773+0545] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-04T13:45:47.792+0545] {logging_mixin.py:188} INFO - [2026-08-04T13:45:47.791+0545] {dag.py:3947} INFO - Setting next_dagrun for example_xcom to 2021-01-01 00:00:00+00:00, run_after=2021-01-01 00:00:00+00:00
+[2026-08-04T13:45:47.816+0545] {processor.py:183} INFO - Processing /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py took 0.089 seconds
+[2026-08-04T13:46:32.449+0545] {processor.py:161} INFO - Started process (PID=25409) to work on /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T13:46:32.453+0545] {processor.py:830} INFO - Processing file /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py for tasks to queue
+[2026-08-04T13:46:32.455+0545] {logging_mixin.py:188} INFO - [2026-08-04T13:46:32.455+0545] {dagbag.py:545} INFO - Filling up the DagBag from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T13:46:32.466+0545] {processor.py:840} INFO - DAG(s) 'example_xcom' retrieved from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T13:46:32.488+0545] {logging_mixin.py:188} INFO - [2026-08-04T13:46:32.487+0545] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-04T13:46:32.506+0545] {logging_mixin.py:188} INFO - [2026-08-04T13:46:32.506+0545] {dag.py:3947} INFO - Setting next_dagrun for example_xcom to 2021-01-01 00:00:00+00:00, run_after=2021-01-01 00:00:00+00:00
+[2026-08-04T13:46:32.529+0545] {processor.py:183} INFO - Processing /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py took 0.086 seconds
+[2026-08-04T13:47:15.595+0545] {processor.py:161} INFO - Started process (PID=25696) to work on /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T13:47:15.599+0545] {processor.py:830} INFO - Processing file /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py for tasks to queue
+[2026-08-04T13:47:15.601+0545] {logging_mixin.py:188} INFO - [2026-08-04T13:47:15.601+0545] {dagbag.py:545} INFO - Filling up the DagBag from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T13:47:15.611+0545] {processor.py:840} INFO - DAG(s) 'example_xcom' retrieved from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T13:47:15.632+0545] {logging_mixin.py:188} INFO - [2026-08-04T13:47:15.631+0545] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-04T13:47:15.654+0545] {logging_mixin.py:188} INFO - [2026-08-04T13:47:15.653+0545] {dag.py:3947} INFO - Setting next_dagrun for example_xcom to 2021-01-01 00:00:00+00:00, run_after=2021-01-01 00:00:00+00:00
+[2026-08-04T13:47:15.678+0545] {processor.py:183} INFO - Processing /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py took 0.090 seconds
+[2026-08-04T13:47:56.982+0545] {processor.py:161} INFO - Started process (PID=25983) to work on /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T13:47:56.986+0545] {processor.py:830} INFO - Processing file /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py for tasks to queue
+[2026-08-04T13:47:56.988+0545] {logging_mixin.py:188} INFO - [2026-08-04T13:47:56.988+0545] {dagbag.py:545} INFO - Filling up the DagBag from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T13:47:56.999+0545] {processor.py:840} INFO - DAG(s) 'example_xcom' retrieved from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T13:47:57.020+0545] {logging_mixin.py:188} INFO - [2026-08-04T13:47:57.020+0545] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-04T13:47:57.041+0545] {logging_mixin.py:188} INFO - [2026-08-04T13:47:57.041+0545] {dag.py:3947} INFO - Setting next_dagrun for example_xcom to 2021-01-01 00:00:00+00:00, run_after=2021-01-01 00:00:00+00:00
+[2026-08-04T13:47:57.066+0545] {processor.py:183} INFO - Processing /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py took 0.091 seconds
+[2026-08-04T13:48:38.471+0545] {processor.py:161} INFO - Started process (PID=26255) to work on /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T13:48:38.475+0545] {processor.py:830} INFO - Processing file /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py for tasks to queue
+[2026-08-04T13:48:38.477+0545] {logging_mixin.py:188} INFO - [2026-08-04T13:48:38.476+0545] {dagbag.py:545} INFO - Filling up the DagBag from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T13:48:38.487+0545] {processor.py:840} INFO - DAG(s) 'example_xcom' retrieved from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T13:48:38.508+0545] {logging_mixin.py:188} INFO - [2026-08-04T13:48:38.507+0545] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-04T13:48:38.532+0545] {logging_mixin.py:188} INFO - [2026-08-04T13:48:38.532+0545] {dag.py:3947} INFO - Setting next_dagrun for example_xcom to 2021-01-01 00:00:00+00:00, run_after=2021-01-01 00:00:00+00:00
+[2026-08-04T13:48:38.561+0545] {processor.py:183} INFO - Processing /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py took 0.097 seconds
+[2026-08-04T13:49:23.192+0545] {processor.py:161} INFO - Started process (PID=26538) to work on /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T13:49:23.196+0545] {processor.py:830} INFO - Processing file /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py for tasks to queue
+[2026-08-04T13:49:23.199+0545] {logging_mixin.py:188} INFO - [2026-08-04T13:49:23.198+0545] {dagbag.py:545} INFO - Filling up the DagBag from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T13:49:23.208+0545] {processor.py:840} INFO - DAG(s) 'example_xcom' retrieved from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T13:49:23.229+0545] {logging_mixin.py:188} INFO - [2026-08-04T13:49:23.229+0545] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-04T13:49:23.250+0545] {logging_mixin.py:188} INFO - [2026-08-04T13:49:23.250+0545] {dag.py:3947} INFO - Setting next_dagrun for example_xcom to 2021-01-01 00:00:00+00:00, run_after=2021-01-01 00:00:00+00:00
+[2026-08-04T13:49:23.274+0545] {processor.py:183} INFO - Processing /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py took 0.089 seconds
+[2026-08-04T13:50:05.259+0545] {processor.py:161} INFO - Started process (PID=26808) to work on /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T13:50:05.263+0545] {processor.py:830} INFO - Processing file /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py for tasks to queue
+[2026-08-04T13:50:05.266+0545] {logging_mixin.py:188} INFO - [2026-08-04T13:50:05.265+0545] {dagbag.py:545} INFO - Filling up the DagBag from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T13:50:05.276+0545] {processor.py:840} INFO - DAG(s) 'example_xcom' retrieved from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T13:50:05.298+0545] {logging_mixin.py:188} INFO - [2026-08-04T13:50:05.298+0545] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-04T13:50:05.317+0545] {logging_mixin.py:188} INFO - [2026-08-04T13:50:05.317+0545] {dag.py:3947} INFO - Setting next_dagrun for example_xcom to 2021-01-01 00:00:00+00:00, run_after=2021-01-01 00:00:00+00:00
+[2026-08-04T13:50:05.341+0545] {processor.py:183} INFO - Processing /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py took 0.090 seconds
+[2026-08-04T13:50:48.239+0545] {processor.py:161} INFO - Started process (PID=27094) to work on /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T13:50:48.242+0545] {processor.py:830} INFO - Processing file /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py for tasks to queue
+[2026-08-04T13:50:48.245+0545] {logging_mixin.py:188} INFO - [2026-08-04T13:50:48.244+0545] {dagbag.py:545} INFO - Filling up the DagBag from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T13:50:48.255+0545] {processor.py:840} INFO - DAG(s) 'example_xcom' retrieved from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T13:50:48.276+0545] {logging_mixin.py:188} INFO - [2026-08-04T13:50:48.276+0545] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-04T13:50:48.297+0545] {logging_mixin.py:188} INFO - [2026-08-04T13:50:48.297+0545] {dag.py:3947} INFO - Setting next_dagrun for example_xcom to 2021-01-01 00:00:00+00:00, run_after=2021-01-01 00:00:00+00:00
+[2026-08-04T13:50:48.320+0545] {processor.py:183} INFO - Processing /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py took 0.089 seconds
+[2026-08-04T13:51:31.735+0545] {processor.py:161} INFO - Started process (PID=27420) to work on /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T13:51:31.739+0545] {processor.py:830} INFO - Processing file /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py for tasks to queue
+[2026-08-04T13:51:31.742+0545] {logging_mixin.py:188} INFO - [2026-08-04T13:51:31.741+0545] {dagbag.py:545} INFO - Filling up the DagBag from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T13:51:31.752+0545] {processor.py:840} INFO - DAG(s) 'example_xcom' retrieved from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T13:51:31.775+0545] {logging_mixin.py:188} INFO - [2026-08-04T13:51:31.774+0545] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-04T13:51:31.797+0545] {logging_mixin.py:188} INFO - [2026-08-04T13:51:31.797+0545] {dag.py:3947} INFO - Setting next_dagrun for example_xcom to 2021-01-01 00:00:00+00:00, run_after=2021-01-01 00:00:00+00:00
+[2026-08-04T13:51:31.827+0545] {processor.py:183} INFO - Processing /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py took 0.102 seconds
+[2026-08-04T13:52:15.059+0545] {processor.py:161} INFO - Started process (PID=27733) to work on /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T13:52:15.063+0545] {processor.py:830} INFO - Processing file /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py for tasks to queue
+[2026-08-04T13:52:15.066+0545] {logging_mixin.py:188} INFO - [2026-08-04T13:52:15.065+0545] {dagbag.py:545} INFO - Filling up the DagBag from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T13:52:15.076+0545] {processor.py:840} INFO - DAG(s) 'example_xcom' retrieved from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T13:52:15.098+0545] {logging_mixin.py:188} INFO - [2026-08-04T13:52:15.098+0545] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-04T13:52:15.119+0545] {logging_mixin.py:188} INFO - [2026-08-04T13:52:15.119+0545] {dag.py:3947} INFO - Setting next_dagrun for example_xcom to 2021-01-01 00:00:00+00:00, run_after=2021-01-01 00:00:00+00:00
+[2026-08-04T13:52:15.144+0545] {processor.py:183} INFO - Processing /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py took 0.093 seconds
+[2026-08-04T13:53:02.009+0545] {processor.py:161} INFO - Started process (PID=28031) to work on /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T13:53:02.013+0545] {processor.py:830} INFO - Processing file /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py for tasks to queue
+[2026-08-04T13:53:02.016+0545] {logging_mixin.py:188} INFO - [2026-08-04T13:53:02.015+0545] {dagbag.py:545} INFO - Filling up the DagBag from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T13:53:02.026+0545] {processor.py:840} INFO - DAG(s) 'example_xcom' retrieved from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T13:53:02.048+0545] {logging_mixin.py:188} INFO - [2026-08-04T13:53:02.047+0545] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-04T13:53:02.069+0545] {logging_mixin.py:188} INFO - [2026-08-04T13:53:02.069+0545] {dag.py:3947} INFO - Setting next_dagrun for example_xcom to 2021-01-01 00:00:00+00:00, run_after=2021-01-01 00:00:00+00:00
+[2026-08-04T13:53:02.093+0545] {processor.py:183} INFO - Processing /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py took 0.091 seconds
+[2026-08-04T13:53:45.122+0545] {processor.py:161} INFO - Started process (PID=28327) to work on /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T13:53:45.126+0545] {processor.py:830} INFO - Processing file /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py for tasks to queue
+[2026-08-04T13:53:45.128+0545] {logging_mixin.py:188} INFO - [2026-08-04T13:53:45.128+0545] {dagbag.py:545} INFO - Filling up the DagBag from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T13:53:45.139+0545] {processor.py:840} INFO - DAG(s) 'example_xcom' retrieved from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T13:53:45.162+0545] {logging_mixin.py:188} INFO - [2026-08-04T13:53:45.161+0545] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-04T13:53:45.183+0545] {logging_mixin.py:188} INFO - [2026-08-04T13:53:45.183+0545] {dag.py:3947} INFO - Setting next_dagrun for example_xcom to 2021-01-01 00:00:00+00:00, run_after=2021-01-01 00:00:00+00:00
+[2026-08-04T13:53:45.206+0545] {processor.py:183} INFO - Processing /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py took 0.093 seconds
+[2026-08-04T13:54:30.733+0545] {processor.py:161} INFO - Started process (PID=28639) to work on /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T13:54:30.736+0545] {processor.py:830} INFO - Processing file /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py for tasks to queue
+[2026-08-04T13:54:30.738+0545] {logging_mixin.py:188} INFO - [2026-08-04T13:54:30.738+0545] {dagbag.py:545} INFO - Filling up the DagBag from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T13:54:30.749+0545] {processor.py:840} INFO - DAG(s) 'example_xcom' retrieved from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T13:54:30.772+0545] {logging_mixin.py:188} INFO - [2026-08-04T13:54:30.772+0545] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-04T13:54:30.792+0545] {logging_mixin.py:188} INFO - [2026-08-04T13:54:30.791+0545] {dag.py:3947} INFO - Setting next_dagrun for example_xcom to 2021-01-01 00:00:00+00:00, run_after=2021-01-01 00:00:00+00:00
+[2026-08-04T13:54:30.814+0545] {processor.py:183} INFO - Processing /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py took 0.090 seconds
+[2026-08-04T13:55:16.729+0545] {processor.py:161} INFO - Started process (PID=28948) to work on /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T13:55:16.733+0545] {processor.py:830} INFO - Processing file /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py for tasks to queue
+[2026-08-04T13:55:16.736+0545] {logging_mixin.py:188} INFO - [2026-08-04T13:55:16.735+0545] {dagbag.py:545} INFO - Filling up the DagBag from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T13:55:16.746+0545] {processor.py:840} INFO - DAG(s) 'example_xcom' retrieved from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T13:55:16.767+0545] {logging_mixin.py:188} INFO - [2026-08-04T13:55:16.767+0545] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-04T13:55:16.788+0545] {logging_mixin.py:188} INFO - [2026-08-04T13:55:16.788+0545] {dag.py:3947} INFO - Setting next_dagrun for example_xcom to 2021-01-01 00:00:00+00:00, run_after=2021-01-01 00:00:00+00:00
+[2026-08-04T13:55:16.814+0545] {processor.py:183} INFO - Processing /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py took 0.092 seconds
+[2026-08-04T13:55:57.609+0545] {processor.py:161} INFO - Started process (PID=29231) to work on /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T13:55:57.613+0545] {processor.py:830} INFO - Processing file /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py for tasks to queue
+[2026-08-04T13:55:57.616+0545] {logging_mixin.py:188} INFO - [2026-08-04T13:55:57.615+0545] {dagbag.py:545} INFO - Filling up the DagBag from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T13:55:57.626+0545] {processor.py:840} INFO - DAG(s) 'example_xcom' retrieved from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T13:55:57.648+0545] {logging_mixin.py:188} INFO - [2026-08-04T13:55:57.648+0545] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-04T13:55:57.669+0545] {logging_mixin.py:188} INFO - [2026-08-04T13:55:57.669+0545] {dag.py:3947} INFO - Setting next_dagrun for example_xcom to 2021-01-01 00:00:00+00:00, run_after=2021-01-01 00:00:00+00:00
+[2026-08-04T13:55:57.693+0545] {processor.py:183} INFO - Processing /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py took 0.092 seconds
+[2026-08-04T13:56:41.167+0545] {processor.py:161} INFO - Started process (PID=29524) to work on /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T13:56:41.169+0545] {processor.py:830} INFO - Processing file /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py for tasks to queue
+[2026-08-04T13:56:41.172+0545] {logging_mixin.py:188} INFO - [2026-08-04T13:56:41.172+0545] {dagbag.py:545} INFO - Filling up the DagBag from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T13:56:41.183+0545] {processor.py:840} INFO - DAG(s) 'example_xcom' retrieved from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T13:56:41.206+0545] {logging_mixin.py:188} INFO - [2026-08-04T13:56:41.206+0545] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-04T13:56:41.228+0545] {logging_mixin.py:188} INFO - [2026-08-04T13:56:41.228+0545] {dag.py:3947} INFO - Setting next_dagrun for example_xcom to 2021-01-01 00:00:00+00:00, run_after=2021-01-01 00:00:00+00:00
+[2026-08-04T13:56:41.251+0545] {processor.py:183} INFO - Processing /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py took 0.091 seconds
+[2026-08-04T13:57:25.455+0545] {processor.py:161} INFO - Started process (PID=29822) to work on /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T13:57:25.459+0545] {processor.py:830} INFO - Processing file /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py for tasks to queue
+[2026-08-04T13:57:25.462+0545] {logging_mixin.py:188} INFO - [2026-08-04T13:57:25.461+0545] {dagbag.py:545} INFO - Filling up the DagBag from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T13:57:25.472+0545] {processor.py:840} INFO - DAG(s) 'example_xcom' retrieved from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T13:57:25.492+0545] {logging_mixin.py:188} INFO - [2026-08-04T13:57:25.491+0545] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-04T13:57:25.512+0545] {logging_mixin.py:188} INFO - [2026-08-04T13:57:25.511+0545] {dag.py:3947} INFO - Setting next_dagrun for example_xcom to 2021-01-01 00:00:00+00:00, run_after=2021-01-01 00:00:00+00:00
+[2026-08-04T13:57:25.535+0545] {processor.py:183} INFO - Processing /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py took 0.087 seconds
+[2026-08-04T13:58:11.280+0545] {processor.py:161} INFO - Started process (PID=30100) to work on /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T13:58:11.284+0545] {processor.py:830} INFO - Processing file /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py for tasks to queue
+[2026-08-04T13:58:11.286+0545] {logging_mixin.py:188} INFO - [2026-08-04T13:58:11.286+0545] {dagbag.py:545} INFO - Filling up the DagBag from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T13:58:11.296+0545] {processor.py:840} INFO - DAG(s) 'example_xcom' retrieved from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T13:58:11.318+0545] {logging_mixin.py:188} INFO - [2026-08-04T13:58:11.317+0545] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-04T13:58:11.338+0545] {logging_mixin.py:188} INFO - [2026-08-04T13:58:11.338+0545] {dag.py:3947} INFO - Setting next_dagrun for example_xcom to 2021-01-01 00:00:00+00:00, run_after=2021-01-01 00:00:00+00:00
+[2026-08-04T13:58:11.366+0545] {processor.py:183} INFO - Processing /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py took 0.093 seconds
+[2026-08-04T13:58:57.533+0545] {processor.py:161} INFO - Started process (PID=30402) to work on /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T13:58:57.537+0545] {processor.py:830} INFO - Processing file /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py for tasks to queue
+[2026-08-04T13:58:57.539+0545] {logging_mixin.py:188} INFO - [2026-08-04T13:58:57.539+0545] {dagbag.py:545} INFO - Filling up the DagBag from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T13:58:57.550+0545] {processor.py:840} INFO - DAG(s) 'example_xcom' retrieved from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T13:58:57.572+0545] {logging_mixin.py:188} INFO - [2026-08-04T13:58:57.572+0545] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-04T13:58:57.591+0545] {logging_mixin.py:188} INFO - [2026-08-04T13:58:57.591+0545] {dag.py:3947} INFO - Setting next_dagrun for example_xcom to 2021-01-01 00:00:00+00:00, run_after=2021-01-01 00:00:00+00:00
+[2026-08-04T13:58:57.614+0545] {processor.py:183} INFO - Processing /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py took 0.089 seconds
+[2026-08-04T13:59:41.737+0545] {processor.py:161} INFO - Started process (PID=30696) to work on /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T13:59:41.739+0545] {processor.py:830} INFO - Processing file /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py for tasks to queue
+[2026-08-04T13:59:41.741+0545] {logging_mixin.py:188} INFO - [2026-08-04T13:59:41.741+0545] {dagbag.py:545} INFO - Filling up the DagBag from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T13:59:41.751+0545] {processor.py:840} INFO - DAG(s) 'example_xcom' retrieved from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T13:59:41.774+0545] {logging_mixin.py:188} INFO - [2026-08-04T13:59:41.774+0545] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-04T13:59:41.796+0545] {logging_mixin.py:188} INFO - [2026-08-04T13:59:41.796+0545] {dag.py:3947} INFO - Setting next_dagrun for example_xcom to 2021-01-01 00:00:00+00:00, run_after=2021-01-01 00:00:00+00:00
+[2026-08-04T13:59:41.819+0545] {processor.py:183} INFO - Processing /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py took 0.089 seconds
+[2026-08-04T14:00:22.923+0545] {processor.py:161} INFO - Started process (PID=30971) to work on /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T14:00:22.927+0545] {processor.py:830} INFO - Processing file /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py for tasks to queue
+[2026-08-04T14:00:22.929+0545] {logging_mixin.py:188} INFO - [2026-08-04T14:00:22.928+0545] {dagbag.py:545} INFO - Filling up the DagBag from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T14:00:22.939+0545] {processor.py:840} INFO - DAG(s) 'example_xcom' retrieved from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T14:00:22.964+0545] {logging_mixin.py:188} INFO - [2026-08-04T14:00:22.964+0545] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-04T14:00:22.984+0545] {logging_mixin.py:188} INFO - [2026-08-04T14:00:22.984+0545] {dag.py:3947} INFO - Setting next_dagrun for example_xcom to 2021-01-01 00:00:00+00:00, run_after=2021-01-01 00:00:00+00:00
+[2026-08-04T14:00:23.009+0545] {processor.py:183} INFO - Processing /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py took 0.093 seconds
+[2026-08-04T14:01:06.878+0545] {processor.py:161} INFO - Started process (PID=31266) to work on /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T14:01:06.879+0545] {processor.py:830} INFO - Processing file /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py for tasks to queue
+[2026-08-04T14:01:06.881+0545] {logging_mixin.py:188} INFO - [2026-08-04T14:01:06.880+0545] {dagbag.py:545} INFO - Filling up the DagBag from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T14:01:06.889+0545] {processor.py:840} INFO - DAG(s) 'example_xcom' retrieved from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T14:01:06.906+0545] {logging_mixin.py:188} INFO - [2026-08-04T14:01:06.906+0545] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-04T14:01:06.925+0545] {logging_mixin.py:188} INFO - [2026-08-04T14:01:06.925+0545] {dag.py:3947} INFO - Setting next_dagrun for example_xcom to 2021-01-01 00:00:00+00:00, run_after=2021-01-01 00:00:00+00:00
+[2026-08-04T14:01:06.951+0545] {processor.py:183} INFO - Processing /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py took 0.079 seconds
+[2026-08-04T14:01:48.511+0545] {processor.py:161} INFO - Started process (PID=31542) to work on /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T14:01:48.515+0545] {processor.py:830} INFO - Processing file /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py for tasks to queue
+[2026-08-04T14:01:48.517+0545] {logging_mixin.py:188} INFO - [2026-08-04T14:01:48.517+0545] {dagbag.py:545} INFO - Filling up the DagBag from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T14:01:48.528+0545] {processor.py:840} INFO - DAG(s) 'example_xcom' retrieved from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T14:01:48.550+0545] {logging_mixin.py:188} INFO - [2026-08-04T14:01:48.550+0545] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-04T14:01:48.572+0545] {logging_mixin.py:188} INFO - [2026-08-04T14:01:48.572+0545] {dag.py:3947} INFO - Setting next_dagrun for example_xcom to 2021-01-01 00:00:00+00:00, run_after=2021-01-01 00:00:00+00:00
+[2026-08-04T14:01:48.598+0545] {processor.py:183} INFO - Processing /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py took 0.094 seconds
+[2026-08-04T14:02:34.804+0545] {processor.py:161} INFO - Started process (PID=31830) to work on /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T14:02:34.808+0545] {processor.py:830} INFO - Processing file /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py for tasks to queue
+[2026-08-04T14:02:34.811+0545] {logging_mixin.py:188} INFO - [2026-08-04T14:02:34.810+0545] {dagbag.py:545} INFO - Filling up the DagBag from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T14:02:34.822+0545] {processor.py:840} INFO - DAG(s) 'example_xcom' retrieved from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T14:02:34.844+0545] {logging_mixin.py:188} INFO - [2026-08-04T14:02:34.844+0545] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-04T14:02:34.864+0545] {logging_mixin.py:188} INFO - [2026-08-04T14:02:34.864+0545] {dag.py:3947} INFO - Setting next_dagrun for example_xcom to 2021-01-01 00:00:00+00:00, run_after=2021-01-01 00:00:00+00:00
+[2026-08-04T14:02:34.887+0545] {processor.py:183} INFO - Processing /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py took 0.091 seconds
+[2026-08-04T14:03:22.389+0545] {processor.py:161} INFO - Started process (PID=32118) to work on /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T14:03:22.393+0545] {processor.py:830} INFO - Processing file /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py for tasks to queue
+[2026-08-04T14:03:22.396+0545] {logging_mixin.py:188} INFO - [2026-08-04T14:03:22.396+0545] {dagbag.py:545} INFO - Filling up the DagBag from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T14:03:22.407+0545] {processor.py:840} INFO - DAG(s) 'example_xcom' retrieved from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T14:03:22.430+0545] {logging_mixin.py:188} INFO - [2026-08-04T14:03:22.429+0545] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-04T14:03:22.448+0545] {logging_mixin.py:188} INFO - [2026-08-04T14:03:22.447+0545] {dag.py:3947} INFO - Setting next_dagrun for example_xcom to 2021-01-01 00:00:00+00:00, run_after=2021-01-01 00:00:00+00:00
+[2026-08-04T14:03:22.472+0545] {processor.py:183} INFO - Processing /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py took 0.090 seconds
+[2026-08-04T14:04:06.663+0545] {processor.py:161} INFO - Started process (PID=32402) to work on /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T14:04:06.668+0545] {processor.py:830} INFO - Processing file /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py for tasks to queue
+[2026-08-04T14:04:06.671+0545] {logging_mixin.py:188} INFO - [2026-08-04T14:04:06.670+0545] {dagbag.py:545} INFO - Filling up the DagBag from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T14:04:06.681+0545] {processor.py:840} INFO - DAG(s) 'example_xcom' retrieved from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T14:04:06.704+0545] {logging_mixin.py:188} INFO - [2026-08-04T14:04:06.704+0545] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-04T14:04:06.728+0545] {logging_mixin.py:188} INFO - [2026-08-04T14:04:06.727+0545] {dag.py:3947} INFO - Setting next_dagrun for example_xcom to 2021-01-01 00:00:00+00:00, run_after=2021-01-01 00:00:00+00:00
+[2026-08-04T14:04:06.752+0545] {processor.py:183} INFO - Processing /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py took 0.096 seconds
+[2026-08-04T14:04:53.020+0545] {processor.py:161} INFO - Started process (PID=32697) to work on /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T14:04:53.024+0545] {processor.py:830} INFO - Processing file /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py for tasks to queue
+[2026-08-04T14:04:53.026+0545] {logging_mixin.py:188} INFO - [2026-08-04T14:04:53.026+0545] {dagbag.py:545} INFO - Filling up the DagBag from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T14:04:53.036+0545] {processor.py:840} INFO - DAG(s) 'example_xcom' retrieved from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T14:04:53.060+0545] {logging_mixin.py:188} INFO - [2026-08-04T14:04:53.060+0545] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-04T14:04:53.082+0545] {logging_mixin.py:188} INFO - [2026-08-04T14:04:53.082+0545] {dag.py:3947} INFO - Setting next_dagrun for example_xcom to 2021-01-01 00:00:00+00:00, run_after=2021-01-01 00:00:00+00:00
+[2026-08-04T14:04:53.108+0545] {processor.py:183} INFO - Processing /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py took 0.096 seconds
+[2026-08-04T14:05:39.651+0545] {processor.py:161} INFO - Started process (PID=33013) to work on /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T14:05:39.655+0545] {processor.py:830} INFO - Processing file /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py for tasks to queue
+[2026-08-04T14:05:39.658+0545] {logging_mixin.py:188} INFO - [2026-08-04T14:05:39.657+0545] {dagbag.py:545} INFO - Filling up the DagBag from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T14:05:39.668+0545] {processor.py:840} INFO - DAG(s) 'example_xcom' retrieved from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T14:05:39.691+0545] {logging_mixin.py:188} INFO - [2026-08-04T14:05:39.691+0545] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-04T14:05:39.714+0545] {logging_mixin.py:188} INFO - [2026-08-04T14:05:39.714+0545] {dag.py:3947} INFO - Setting next_dagrun for example_xcom to 2021-01-01 00:00:00+00:00, run_after=2021-01-01 00:00:00+00:00
+[2026-08-04T14:05:39.739+0545] {processor.py:183} INFO - Processing /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py took 0.095 seconds
+[2026-08-04T14:06:27.877+0545] {processor.py:161} INFO - Started process (PID=33329) to work on /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T14:06:27.878+0545] {processor.py:830} INFO - Processing file /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py for tasks to queue
+[2026-08-04T14:06:27.881+0545] {logging_mixin.py:188} INFO - [2026-08-04T14:06:27.880+0545] {dagbag.py:545} INFO - Filling up the DagBag from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T14:06:27.892+0545] {processor.py:840} INFO - DAG(s) 'example_xcom' retrieved from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T14:06:27.915+0545] {logging_mixin.py:188} INFO - [2026-08-04T14:06:27.915+0545] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-04T14:06:27.935+0545] {logging_mixin.py:188} INFO - [2026-08-04T14:06:27.935+0545] {dag.py:3947} INFO - Setting next_dagrun for example_xcom to 2021-01-01 00:00:00+00:00, run_after=2021-01-01 00:00:00+00:00
+[2026-08-04T14:06:27.961+0545] {processor.py:183} INFO - Processing /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py took 0.092 seconds
+[2026-08-04T14:07:13.702+0545] {processor.py:161} INFO - Started process (PID=33626) to work on /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T14:07:13.706+0545] {processor.py:830} INFO - Processing file /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py for tasks to queue
+[2026-08-04T14:07:13.709+0545] {logging_mixin.py:188} INFO - [2026-08-04T14:07:13.708+0545] {dagbag.py:545} INFO - Filling up the DagBag from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T14:07:13.719+0545] {processor.py:840} INFO - DAG(s) 'example_xcom' retrieved from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T14:07:13.742+0545] {logging_mixin.py:188} INFO - [2026-08-04T14:07:13.742+0545] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-04T14:07:13.763+0545] {logging_mixin.py:188} INFO - [2026-08-04T14:07:13.763+0545] {dag.py:3947} INFO - Setting next_dagrun for example_xcom to 2021-01-01 00:00:00+00:00, run_after=2021-01-01 00:00:00+00:00
+[2026-08-04T14:07:13.786+0545] {processor.py:183} INFO - Processing /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py took 0.092 seconds
+[2026-08-04T14:07:56.360+0545] {processor.py:161} INFO - Started process (PID=33901) to work on /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T14:07:56.364+0545] {processor.py:830} INFO - Processing file /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py for tasks to queue
+[2026-08-04T14:07:56.367+0545] {logging_mixin.py:188} INFO - [2026-08-04T14:07:56.366+0545] {dagbag.py:545} INFO - Filling up the DagBag from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T14:07:56.377+0545] {processor.py:840} INFO - DAG(s) 'example_xcom' retrieved from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T14:07:56.399+0545] {logging_mixin.py:188} INFO - [2026-08-04T14:07:56.399+0545] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-04T14:07:56.421+0545] {logging_mixin.py:188} INFO - [2026-08-04T14:07:56.420+0545] {dag.py:3947} INFO - Setting next_dagrun for example_xcom to 2021-01-01 00:00:00+00:00, run_after=2021-01-01 00:00:00+00:00
+[2026-08-04T14:07:56.446+0545] {processor.py:183} INFO - Processing /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py took 0.092 seconds
+[2026-08-04T14:08:43.211+0545] {processor.py:161} INFO - Started process (PID=34197) to work on /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T14:08:43.215+0545] {processor.py:830} INFO - Processing file /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py for tasks to queue
+[2026-08-04T14:08:43.218+0545] {logging_mixin.py:188} INFO - [2026-08-04T14:08:43.217+0545] {dagbag.py:545} INFO - Filling up the DagBag from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T14:08:43.230+0545] {processor.py:840} INFO - DAG(s) 'example_xcom' retrieved from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T14:08:43.254+0545] {logging_mixin.py:188} INFO - [2026-08-04T14:08:43.254+0545] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-04T14:08:43.277+0545] {logging_mixin.py:188} INFO - [2026-08-04T14:08:43.276+0545] {dag.py:3947} INFO - Setting next_dagrun for example_xcom to 2021-01-01 00:00:00+00:00, run_after=2021-01-01 00:00:00+00:00
+[2026-08-04T14:08:43.303+0545] {processor.py:183} INFO - Processing /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py took 0.100 seconds
+[2026-08-04T14:09:28.824+0545] {processor.py:161} INFO - Started process (PID=34497) to work on /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T14:09:28.828+0545] {processor.py:830} INFO - Processing file /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py for tasks to queue
+[2026-08-04T14:09:28.831+0545] {logging_mixin.py:188} INFO - [2026-08-04T14:09:28.830+0545] {dagbag.py:545} INFO - Filling up the DagBag from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T14:09:28.841+0545] {processor.py:840} INFO - DAG(s) 'example_xcom' retrieved from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T14:09:28.863+0545] {logging_mixin.py:188} INFO - [2026-08-04T14:09:28.863+0545] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-04T14:09:28.883+0545] {logging_mixin.py:188} INFO - [2026-08-04T14:09:28.882+0545] {dag.py:3947} INFO - Setting next_dagrun for example_xcom to 2021-01-01 00:00:00+00:00, run_after=2021-01-01 00:00:00+00:00
+[2026-08-04T14:09:28.907+0545] {processor.py:183} INFO - Processing /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py took 0.090 seconds
+[2026-08-04T14:10:13.068+0545] {processor.py:161} INFO - Started process (PID=34772) to work on /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T14:10:13.071+0545] {processor.py:830} INFO - Processing file /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py for tasks to queue
+[2026-08-04T14:10:13.074+0545] {logging_mixin.py:188} INFO - [2026-08-04T14:10:13.073+0545] {dagbag.py:545} INFO - Filling up the DagBag from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T14:10:13.085+0545] {processor.py:840} INFO - DAG(s) 'example_xcom' retrieved from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T14:10:13.108+0545] {logging_mixin.py:188} INFO - [2026-08-04T14:10:13.108+0545] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-04T14:10:13.129+0545] {logging_mixin.py:188} INFO - [2026-08-04T14:10:13.129+0545] {dag.py:3947} INFO - Setting next_dagrun for example_xcom to 2021-01-01 00:00:00+00:00, run_after=2021-01-01 00:00:00+00:00
+[2026-08-04T14:10:13.154+0545] {processor.py:183} INFO - Processing /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py took 0.093 seconds
+[2026-08-04T14:10:56.872+0545] {processor.py:161} INFO - Started process (PID=35059) to work on /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T14:10:56.876+0545] {processor.py:830} INFO - Processing file /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py for tasks to queue
+[2026-08-04T14:10:56.878+0545] {logging_mixin.py:188} INFO - [2026-08-04T14:10:56.878+0545] {dagbag.py:545} INFO - Filling up the DagBag from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T14:10:56.889+0545] {processor.py:840} INFO - DAG(s) 'example_xcom' retrieved from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T14:10:56.911+0545] {logging_mixin.py:188} INFO - [2026-08-04T14:10:56.911+0545] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-04T14:10:56.932+0545] {logging_mixin.py:188} INFO - [2026-08-04T14:10:56.932+0545] {dag.py:3947} INFO - Setting next_dagrun for example_xcom to 2021-01-01 00:00:00+00:00, run_after=2021-01-01 00:00:00+00:00
+[2026-08-04T14:10:56.955+0545] {processor.py:183} INFO - Processing /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py took 0.090 seconds
+[2026-08-04T14:11:43.843+0545] {processor.py:161} INFO - Started process (PID=35363) to work on /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T14:11:43.845+0545] {processor.py:830} INFO - Processing file /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py for tasks to queue
+[2026-08-04T14:11:43.847+0545] {logging_mixin.py:188} INFO - [2026-08-04T14:11:43.847+0545] {dagbag.py:545} INFO - Filling up the DagBag from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T14:11:43.858+0545] {processor.py:840} INFO - DAG(s) 'example_xcom' retrieved from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T14:11:43.880+0545] {logging_mixin.py:188} INFO - [2026-08-04T14:11:43.880+0545] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-04T14:11:43.901+0545] {logging_mixin.py:188} INFO - [2026-08-04T14:11:43.900+0545] {dag.py:3947} INFO - Setting next_dagrun for example_xcom to 2021-01-01 00:00:00+00:00, run_after=2021-01-01 00:00:00+00:00
+[2026-08-04T14:11:43.925+0545] {processor.py:183} INFO - Processing /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py took 0.089 seconds
+[2026-08-04T14:12:29.589+0545] {processor.py:161} INFO - Started process (PID=35649) to work on /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T14:12:29.593+0545] {processor.py:830} INFO - Processing file /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py for tasks to queue
+[2026-08-04T14:12:29.596+0545] {logging_mixin.py:188} INFO - [2026-08-04T14:12:29.595+0545] {dagbag.py:545} INFO - Filling up the DagBag from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T14:12:29.606+0545] {processor.py:840} INFO - DAG(s) 'example_xcom' retrieved from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T14:12:29.628+0545] {logging_mixin.py:188} INFO - [2026-08-04T14:12:29.628+0545] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-04T14:12:29.651+0545] {logging_mixin.py:188} INFO - [2026-08-04T14:12:29.651+0545] {dag.py:3947} INFO - Setting next_dagrun for example_xcom to 2021-01-01 00:00:00+00:00, run_after=2021-01-01 00:00:00+00:00
+[2026-08-04T14:12:29.675+0545] {processor.py:183} INFO - Processing /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py took 0.094 seconds
+[2026-08-04T14:13:16.753+0545] {processor.py:161} INFO - Started process (PID=35968) to work on /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T14:13:16.757+0545] {processor.py:830} INFO - Processing file /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py for tasks to queue
+[2026-08-04T14:13:16.760+0545] {logging_mixin.py:188} INFO - [2026-08-04T14:13:16.759+0545] {dagbag.py:545} INFO - Filling up the DagBag from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T14:13:16.769+0545] {processor.py:840} INFO - DAG(s) 'example_xcom' retrieved from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T14:13:16.786+0545] {logging_mixin.py:188} INFO - [2026-08-04T14:13:16.786+0545] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-04T14:13:16.804+0545] {logging_mixin.py:188} INFO - [2026-08-04T14:13:16.804+0545] {dag.py:3947} INFO - Setting next_dagrun for example_xcom to 2021-01-01 00:00:00+00:00, run_after=2021-01-01 00:00:00+00:00
+[2026-08-04T14:13:16.826+0545] {processor.py:183} INFO - Processing /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py took 0.080 seconds
+[2026-08-04T14:14:01.643+0545] {processor.py:161} INFO - Started process (PID=36270) to work on /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T14:14:01.647+0545] {processor.py:830} INFO - Processing file /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py for tasks to queue
+[2026-08-04T14:14:01.649+0545] {logging_mixin.py:188} INFO - [2026-08-04T14:14:01.648+0545] {dagbag.py:545} INFO - Filling up the DagBag from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T14:14:01.659+0545] {processor.py:840} INFO - DAG(s) 'example_xcom' retrieved from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T14:14:01.680+0545] {logging_mixin.py:188} INFO - [2026-08-04T14:14:01.680+0545] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-04T14:14:01.704+0545] {logging_mixin.py:188} INFO - [2026-08-04T14:14:01.703+0545] {dag.py:3947} INFO - Setting next_dagrun for example_xcom to 2021-01-01 00:00:00+00:00, run_after=2021-01-01 00:00:00+00:00
+[2026-08-04T14:14:01.729+0545] {processor.py:183} INFO - Processing /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py took 0.093 seconds
+[2026-08-04T14:14:48.134+0545] {processor.py:161} INFO - Started process (PID=36578) to work on /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T14:14:48.138+0545] {processor.py:830} INFO - Processing file /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py for tasks to queue
+[2026-08-04T14:14:48.140+0545] {logging_mixin.py:188} INFO - [2026-08-04T14:14:48.140+0545] {dagbag.py:545} INFO - Filling up the DagBag from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T14:14:48.151+0545] {processor.py:840} INFO - DAG(s) 'example_xcom' retrieved from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T14:14:48.174+0545] {logging_mixin.py:188} INFO - [2026-08-04T14:14:48.174+0545] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-04T14:14:48.194+0545] {logging_mixin.py:188} INFO - [2026-08-04T14:14:48.194+0545] {dag.py:3947} INFO - Setting next_dagrun for example_xcom to 2021-01-01 00:00:00+00:00, run_after=2021-01-01 00:00:00+00:00
+[2026-08-04T14:14:48.218+0545] {processor.py:183} INFO - Processing /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py took 0.092 seconds
+[2026-08-04T14:15:34.474+0545] {processor.py:161} INFO - Started process (PID=36895) to work on /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T14:15:34.478+0545] {processor.py:830} INFO - Processing file /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py for tasks to queue
+[2026-08-04T14:15:34.481+0545] {logging_mixin.py:188} INFO - [2026-08-04T14:15:34.480+0545] {dagbag.py:545} INFO - Filling up the DagBag from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T14:15:34.492+0545] {processor.py:840} INFO - DAG(s) 'example_xcom' retrieved from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T14:15:34.512+0545] {logging_mixin.py:188} INFO - [2026-08-04T14:15:34.512+0545] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-04T14:15:34.532+0545] {logging_mixin.py:188} INFO - [2026-08-04T14:15:34.532+0545] {dag.py:3947} INFO - Setting next_dagrun for example_xcom to 2021-01-01 00:00:00+00:00, run_after=2021-01-01 00:00:00+00:00
+[2026-08-04T14:15:34.555+0545] {processor.py:183} INFO - Processing /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py took 0.089 seconds
+[2026-08-04T14:16:26.028+0545] {processor.py:161} INFO - Started process (PID=37221) to work on /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T14:16:26.033+0545] {processor.py:830} INFO - Processing file /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py for tasks to queue
+[2026-08-04T14:16:26.035+0545] {logging_mixin.py:188} INFO - [2026-08-04T14:16:26.034+0545] {dagbag.py:545} INFO - Filling up the DagBag from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T14:16:26.046+0545] {processor.py:840} INFO - DAG(s) 'example_xcom' retrieved from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-08-04T14:16:26.068+0545] {logging_mixin.py:188} INFO - [2026-08-04T14:16:26.068+0545] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-04T14:16:26.090+0545] {logging_mixin.py:188} INFO - [2026-08-04T14:16:26.089+0545] {dag.py:3947} INFO - Setting next_dagrun for example_xcom to 2021-01-01 00:00:00+00:00, run_after=2021-01-01 00:00:00+00:00
+[2026-08-04T14:16:26.114+0545] {processor.py:183} INFO - Processing /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py took 0.093 seconds

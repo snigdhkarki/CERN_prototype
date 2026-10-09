@@ -1,0 +1,712 @@
+[2026-10-09T18:30:23.977+0545] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-10-09T18:30:24.006+0545] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: network_traffic_pipeline.run_etl manual__2026-10-09T12:44:44.888343+00:00 [queued]>
+[2026-10-09T18:30:24.015+0545] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: network_traffic_pipeline.run_etl manual__2026-10-09T12:44:44.888343+00:00 [queued]>
+[2026-10-09T18:30:24.016+0545] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2026-10-09T18:30:24.036+0545] {taskinstance.py:2330} INFO - Executing <Task(BashOperator): run_etl> on 2026-10-09 12:44:44.888343+00:00
+[2026-10-09T18:30:24.041+0545] {standard_task_runner.py:64} INFO - Started process 186271 to run task
+[2026-10-09T18:30:24.045+0545] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'network_traffic_pipeline', 'run_etl', 'manual__2026-10-09T12:44:44.888343+00:00', '--job-id', '197', '--raw', '--subdir', 'DAGS_FOLDER/network_traffic_pipeline_dag.py', '--cfg-path', '/tmp/tmppvz3pkhy']
+[2026-10-09T18:30:24.048+0545] {standard_task_runner.py:91} INFO - Job 197: Subtask run_etl
+[2026-10-09T18:30:24.098+0545] {task_command.py:426} INFO - Running <TaskInstance: network_traffic_pipeline.run_etl manual__2026-10-09T12:44:44.888343+00:00 [running]> on host snigdh-IdeaPad-Slim-3-15IAH8
+[2026-10-09T18:30:24.186+0545] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='you' AIRFLOW_CTX_DAG_ID='network_traffic_pipeline' AIRFLOW_CTX_TASK_ID='run_etl' AIRFLOW_CTX_EXECUTION_DATE='2026-10-09T12:44:44.888343+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-10-09T12:44:44.888343+00:00'
+[2026-10-09T18:30:24.188+0545] {taskinstance.py:430} INFO - ::endgroup::
+[2026-10-09T18:30:24.189+0545] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2026-10-09T18:30:24.190+0545] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'cd /home/snigdh/repos/bigData && docker-compose exec spark-master /opt/spark/bin/spark-submit --master spark://localhost:7077 --jars /app/ojdbc8.jar --conf spark.ui.port=4040 --conf spark.sql.extensions=io.delta.sql.DeltaSparkSessionExtension --conf spark.sql.catalog.spark_catalog=org.apache.spark.sql.delta.catalog.DeltaCatalog /app/etl_job.py']
+[2026-10-09T18:30:24.202+0545] {subprocess.py:86} INFO - Output:
+[2026-10-09T18:30:39.974+0545] {subprocess.py:93} INFO - 26/10/09 12:45:39 INFO SparkContext: Running Spark version 3.5.0
+[2026-10-09T18:30:39.976+0545] {subprocess.py:93} INFO - 26/10/09 12:45:39 INFO SparkContext: OS info Linux, 6.8.0-136-generic, amd64
+[2026-10-09T18:30:39.976+0545] {subprocess.py:93} INFO - 26/10/09 12:45:39 INFO SparkContext: Java version 11.0.20.1
+[2026-10-09T18:30:40.167+0545] {subprocess.py:93} INFO - 26/10/09 12:45:40 INFO ResourceUtils: ==============================================================
+[2026-10-09T18:30:40.168+0545] {subprocess.py:93} INFO - 26/10/09 12:45:40 INFO ResourceUtils: No custom resources configured for spark.driver.
+[2026-10-09T18:30:40.168+0545] {subprocess.py:93} INFO - 26/10/09 12:45:40 INFO ResourceUtils: ==============================================================
+[2026-10-09T18:30:40.169+0545] {subprocess.py:93} INFO - 26/10/09 12:45:40 INFO SparkContext: Submitted application: OracleToHDFS_ETL
+[2026-10-09T18:30:40.195+0545] {subprocess.py:93} INFO - 26/10/09 12:45:40 INFO ResourceProfile: Default ResourceProfile created, executor resources: Map(memory -> name: memory, amount: 1024, script: , vendor: , offHeap -> name: offHeap, amount: 0, script: , vendor: ), task resources: Map(cpus -> name: cpus, amount: 1.0)
+[2026-10-09T18:30:40.272+0545] {subprocess.py:93} INFO - 26/10/09 12:45:40 INFO ResourceProfile: Limiting resource is cpu
+[2026-10-09T18:30:40.272+0545] {subprocess.py:93} INFO - 26/10/09 12:45:40 INFO ResourceProfileManager: Added ResourceProfile id: 0
+[2026-10-09T18:30:40.383+0545] {subprocess.py:93} INFO - 26/10/09 12:45:40 INFO SecurityManager: Changing view acls to: spark
+[2026-10-09T18:30:40.384+0545] {subprocess.py:93} INFO - 26/10/09 12:45:40 INFO SecurityManager: Changing modify acls to: spark
+[2026-10-09T18:30:40.384+0545] {subprocess.py:93} INFO - 26/10/09 12:45:40 INFO SecurityManager: Changing view acls groups to:
+[2026-10-09T18:30:40.385+0545] {subprocess.py:93} INFO - 26/10/09 12:45:40 INFO SecurityManager: Changing modify acls groups to:
+[2026-10-09T18:30:40.385+0545] {subprocess.py:93} INFO - 26/10/09 12:45:40 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: spark; groups with view permissions: EMPTY; users with modify permissions: spark; groups with modify permissions: EMPTY
+[2026-10-09T18:30:41.173+0545] {subprocess.py:93} INFO - 26/10/09 12:45:41 INFO Utils: Successfully started service 'sparkDriver' on port 35615.
+[2026-10-09T18:30:41.291+0545] {subprocess.py:93} INFO - 26/10/09 12:45:41 INFO SparkEnv: Registering MapOutputTracker
+[2026-10-09T18:30:41.485+0545] {subprocess.py:93} INFO - 26/10/09 12:45:41 INFO SparkEnv: Registering BlockManagerMaster
+[2026-10-09T18:30:41.505+0545] {subprocess.py:93} INFO - 26/10/09 12:45:41 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+[2026-10-09T18:30:41.506+0545] {subprocess.py:93} INFO - 26/10/09 12:45:41 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+[2026-10-09T18:30:41.510+0545] {subprocess.py:93} INFO - 26/10/09 12:45:41 INFO SparkEnv: Registering BlockManagerMasterHeartbeat
+[2026-10-09T18:30:41.590+0545] {subprocess.py:93} INFO - 26/10/09 12:45:41 INFO DiskBlockManager: Created local directory at /tmp/blockmgr-4604c70e-e497-4c66-87b8-428d408eed4a
+[2026-10-09T18:30:41.671+0545] {subprocess.py:93} INFO - 26/10/09 12:45:41 INFO MemoryStore: MemoryStore started with capacity 413.9 MiB
+[2026-10-09T18:30:41.767+0545] {subprocess.py:93} INFO - 26/10/09 12:45:41 INFO SparkEnv: Registering OutputCommitCoordinator
+[2026-10-09T18:30:42.191+0545] {subprocess.py:93} INFO - 26/10/09 12:45:42 INFO JettyUtils: Start Jetty 0.0.0.0:4040 for SparkUI
+[2026-10-09T18:30:42.373+0545] {subprocess.py:93} INFO - 26/10/09 12:45:42 INFO Utils: Successfully started service 'SparkUI' on port 4040.
+[2026-10-09T18:30:42.481+0545] {subprocess.py:93} INFO - 26/10/09 12:45:42 INFO SparkContext: Added JAR file:///app/ojdbc8.jar at spark://8564da8b8b58:35615/jars/ojdbc8.jar with timestamp 1791549939894
+[2026-10-09T18:30:42.977+0545] {subprocess.py:93} INFO - 26/10/09 12:45:42 INFO StandaloneAppClient$ClientEndpoint: Connecting to master spark://localhost:7077...
+[2026-10-09T18:30:43.371+0545] {subprocess.py:93} INFO - 26/10/09 12:45:43 INFO TransportClientFactory: Successfully created connection to localhost/127.0.0.1:7077 after 201 ms (0 ms spent in bootstraps)
+[2026-10-09T18:30:44.276+0545] {subprocess.py:93} INFO - 26/10/09 12:45:44 INFO StandaloneSchedulerBackend: Connected to Spark cluster with app ID app-20261009124544-0000
+[2026-10-09T18:30:44.372+0545] {subprocess.py:93} INFO - 26/10/09 12:45:44 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 36445.
+[2026-10-09T18:30:44.372+0545] {subprocess.py:93} INFO - 26/10/09 12:45:44 INFO NettyBlockTransferService: Server created on 8564da8b8b58:36445
+[2026-10-09T18:30:44.375+0545] {subprocess.py:93} INFO - 26/10/09 12:45:44 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+[2026-10-09T18:30:44.472+0545] {subprocess.py:93} INFO - 26/10/09 12:45:44 INFO StandaloneAppClient$ClientEndpoint: Executor added: app-20261009124544-0000/0 on worker-20261009124523-spark-worker2-8083 (spark-worker2:8083) with 1 core(s)
+[2026-10-09T18:30:44.564+0545] {subprocess.py:93} INFO - 26/10/09 12:45:44 INFO StandaloneSchedulerBackend: Granted executor ID app-20261009124544-0000/0 on hostPort spark-worker2:8083 with 1 core(s), 1024.0 MiB RAM
+[2026-10-09T18:30:44.565+0545] {subprocess.py:93} INFO - 26/10/09 12:45:44 INFO StandaloneAppClient$ClientEndpoint: Executor added: app-20261009124544-0000/1 on worker-20261009124522-spark-worker1-8081 (spark-worker1:8081) with 1 core(s)
+[2026-10-09T18:30:44.565+0545] {subprocess.py:93} INFO - 26/10/09 12:45:44 INFO StandaloneSchedulerBackend: Granted executor ID app-20261009124544-0000/1 on hostPort spark-worker1:8081 with 1 core(s), 1024.0 MiB RAM
+[2026-10-09T18:30:44.568+0545] {subprocess.py:93} INFO - 26/10/09 12:45:44 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 8564da8b8b58, 36445, None)
+[2026-10-09T18:30:44.573+0545] {subprocess.py:93} INFO - 26/10/09 12:45:44 INFO BlockManagerMasterEndpoint: Registering block manager 8564da8b8b58:36445 with 413.9 MiB RAM, BlockManagerId(driver, 8564da8b8b58, 36445, None)
+[2026-10-09T18:30:44.576+0545] {subprocess.py:93} INFO - 26/10/09 12:45:44 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 8564da8b8b58, 36445, None)
+[2026-10-09T18:30:44.578+0545] {subprocess.py:93} INFO - 26/10/09 12:45:44 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, 8564da8b8b58, 36445, None)
+[2026-10-09T18:30:45.663+0545] {subprocess.py:93} INFO - 26/10/09 12:45:45 INFO StandaloneAppClient$ClientEndpoint: Executor updated: app-20261009124544-0000/1 is now RUNNING
+[2026-10-09T18:30:45.667+0545] {subprocess.py:93} INFO - 26/10/09 12:45:45 INFO StandaloneAppClient$ClientEndpoint: Executor updated: app-20261009124544-0000/0 is now RUNNING
+[2026-10-09T18:30:45.773+0545] {subprocess.py:93} INFO - 26/10/09 12:45:45 INFO StandaloneSchedulerBackend: SchedulerBackend is ready for scheduling beginning after reached minRegisteredResourcesRatio: 0.0
+[2026-10-09T18:30:47.897+0545] {subprocess.py:93} INFO - 26/10/09 12:45:47 INFO SharedState: Setting hive.metastore.warehouse.dir ('null') to the value of spark.sql.warehouse.dir.
+[2026-10-09T18:30:47.964+0545] {subprocess.py:93} INFO - 26/10/09 12:45:47 INFO SharedState: Warehouse path is 'file:/opt/spark/work-dir/spark-warehouse'.
+[2026-10-09T18:30:58.271+0545] {subprocess.py:93} INFO - 26/10/09 12:45:58 INFO StandaloneSchedulerBackend$StandaloneDriverEndpoint: Registered executor NettyRpcEndpointRef(spark-client://Executor) (172.19.0.5:59088) with ID 0,  ResourceProfileId 0
+[2026-10-09T18:30:58.869+0545] {subprocess.py:93} INFO - 26/10/09 12:45:58 INFO BlockManagerMasterEndpoint: Registering block manager spark-worker2:33221 with 413.9 MiB RAM, BlockManagerId(0, spark-worker2, 33221, None)
+[2026-10-09T18:30:59.365+0545] {subprocess.py:93} INFO - 26/10/09 12:45:59 INFO StandaloneSchedulerBackend$StandaloneDriverEndpoint: Registered executor NettyRpcEndpointRef(spark-client://Executor) (172.19.0.6:39346) with ID 1,  ResourceProfileId 0
+[2026-10-09T18:30:59.764+0545] {subprocess.py:93} INFO - 26/10/09 12:45:59 INFO BlockManagerMasterEndpoint: Registering block manager spark-worker1:40225 with 413.9 MiB RAM, BlockManagerId(1, spark-worker1, 40225, None)
+[2026-10-09T18:31:05.481+0545] {subprocess.py:93} INFO - Data extracted from Oracle (first 5 rows):
+[2026-10-09T18:31:08.365+0545] {subprocess.py:93} INFO - 26/10/09 12:46:08 INFO CodeGenerator: Code generated in 870.406209 ms
+[2026-10-09T18:31:08.764+0545] {subprocess.py:93} INFO - 26/10/09 12:46:08 INFO CodeGenerator: Code generated in 173.842603 ms
+[2026-10-09T18:31:09.272+0545] {subprocess.py:93} INFO - 26/10/09 12:46:09 INFO SparkContext: Starting job: showString at <unknown>:0
+[2026-10-09T18:31:09.375+0545] {subprocess.py:93} INFO - 26/10/09 12:46:09 INFO DAGScheduler: Got job 0 (showString at <unknown>:0) with 1 output partitions
+[2026-10-09T18:31:09.375+0545] {subprocess.py:93} INFO - 26/10/09 12:46:09 INFO DAGScheduler: Final stage: ResultStage 0 (showString at <unknown>:0)
+[2026-10-09T18:31:09.375+0545] {subprocess.py:93} INFO - 26/10/09 12:46:09 INFO DAGScheduler: Parents of final stage: List()
+[2026-10-09T18:31:09.376+0545] {subprocess.py:93} INFO - 26/10/09 12:46:09 INFO DAGScheduler: Missing parents: List()
+[2026-10-09T18:31:09.379+0545] {subprocess.py:93} INFO - 26/10/09 12:46:09 INFO DAGScheduler: Submitting ResultStage 0 (MapPartitionsRDD[3] at showString at <unknown>:0), which has no missing parents
+[2026-10-09T18:31:09.868+0545] {subprocess.py:93} INFO - 26/10/09 12:46:09 INFO MemoryStore: Block broadcast_0 stored as values in memory (estimated size 15.6 KiB, free 413.9 MiB)
+[2026-10-09T18:31:09.977+0545] {subprocess.py:93} INFO - 26/10/09 12:46:09 INFO MemoryStore: Block broadcast_0_piece0 stored as bytes in memory (estimated size 7.2 KiB, free 413.9 MiB)
+[2026-10-09T18:31:09.980+0545] {subprocess.py:93} INFO - 26/10/09 12:46:09 INFO BlockManagerInfo: Added broadcast_0_piece0 in memory on 8564da8b8b58:36445 (size: 7.2 KiB, free: 413.9 MiB)
+[2026-10-09T18:31:09.983+0545] {subprocess.py:93} INFO - 26/10/09 12:46:09 INFO SparkContext: Created broadcast 0 from broadcast at DAGScheduler.scala:1580
+[2026-10-09T18:31:10.073+0545] {subprocess.py:93} INFO - 26/10/09 12:46:10 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 0 (MapPartitionsRDD[3] at showString at <unknown>:0) (first 15 tasks are for partitions Vector(0))
+[2026-10-09T18:31:10.074+0545] {subprocess.py:93} INFO - 26/10/09 12:46:10 INFO TaskSchedulerImpl: Adding task set 0.0 with 1 tasks resource profile 0
+[2026-10-09T18:31:10.186+0545] {subprocess.py:93} INFO - 26/10/09 12:46:10 INFO TaskSetManager: Starting task 0.0 in stage 0.0 (TID 0) (spark-worker2, executor 0, partition 0, PROCESS_LOCAL, 7634 bytes)
+[2026-10-09T18:31:10.764+0545] {subprocess.py:93} INFO - 26/10/09 12:46:10 INFO BlockManagerInfo: Added broadcast_0_piece0 in memory on spark-worker2:33221 (size: 7.2 KiB, free: 413.9 MiB)
+[2026-10-09T18:31:19.518+0545] {subprocess.py:93} INFO - 26/10/09 12:46:19 INFO TaskSetManager: Finished task 0.0 in stage 0.0 (TID 0) in 9340 ms on spark-worker2 (executor 0) (1/1)
+[2026-10-09T18:31:19.521+0545] {subprocess.py:93} INFO - 26/10/09 12:46:19 INFO TaskSchedulerImpl: Removed TaskSet 0.0, whose tasks have all completed, from pool
+[2026-10-09T18:31:19.580+0545] {subprocess.py:93} INFO - 26/10/09 12:46:19 INFO DAGScheduler: ResultStage 0 (showString at <unknown>:0) finished in 10.099 s
+[2026-10-09T18:31:19.585+0545] {subprocess.py:93} INFO - 26/10/09 12:46:19 INFO DAGScheduler: Job 0 is finished. Cancelling potential speculative or zombie tasks for this job
+[2026-10-09T18:31:19.586+0545] {subprocess.py:93} INFO - 26/10/09 12:46:19 INFO TaskSchedulerImpl: Killing all running tasks in stage 0: Stage finished
+[2026-10-09T18:31:19.665+0545] {subprocess.py:93} INFO - 26/10/09 12:46:19 INFO DAGScheduler: Job 0 finished: showString at <unknown>:0, took 10.392323 s
+[2026-10-09T18:31:19.877+0545] {subprocess.py:93} INFO - 26/10/09 12:46:19 INFO CodeGenerator: Code generated in 102.37818 ms
+[2026-10-09T18:31:21.070+0545] {subprocess.py:93} INFO - 26/10/09 12:46:21 INFO BlockManagerInfo: Removed broadcast_0_piece0 on spark-worker2:33221 in memory (size: 7.2 KiB, free: 413.9 MiB)
+[2026-10-09T18:31:21.074+0545] {subprocess.py:93} INFO - 26/10/09 12:46:21 INFO BlockManagerInfo: Removed broadcast_0_piece0 on 8564da8b8b58:36445 in memory (size: 7.2 KiB, free: 413.9 MiB)
+[2026-10-09T18:31:23.767+0545] {subprocess.py:93} INFO - 26/10/09 12:46:23 INFO CodeGenerator: Code generated in 92.474903 ms
+[2026-10-09T18:31:23.776+0545] {subprocess.py:93} INFO - +------------+-------------+----------------+------------+-------------+----------------+
+[2026-10-09T18:31:23.777+0545] {subprocess.py:93} INFO - |          ID| PIXEL_TEMP_C|LAR_PRESSURE_BAR|LV_VOLTAGE_V|HV_CURRENT_UA|COOLING_FLOW_LPM|
+[2026-10-09T18:31:23.777+0545] {subprocess.py:93} INFO - +------------+-------------+----------------+------------+-------------+----------------+
+[2026-10-09T18:31:23.777+0545] {subprocess.py:93} INFO - |1.0000000000|-9.7597325893|    1.3214034201|3.2927583253|40.7438324717|   11.8524055483|
+[2026-10-09T18:31:23.777+0545] {subprocess.py:93} INFO - |2.0000000000|-9.9104251739|    1.3191925962|3.3026283382|40.4408897284|   11.8332562583|
+[2026-10-09T18:31:23.777+0545] {subprocess.py:93} INFO - |3.0000000000|-9.8567808184|    1.3228460688|3.3012977197|40.4584988574|   11.9115686003|
+[2026-10-09T18:31:23.777+0545] {subprocess.py:93} INFO - |4.0000000000|-9.9062016427|    1.3177462579|3.2974716507|40.8641386345|   11.9013798527|
+[2026-10-09T18:31:23.777+0545] {subprocess.py:93} INFO - |5.0000000000|-9.6123437887|    1.3163756582|3.2953771365|40.6205192286|   11.7812616752|
+[2026-10-09T18:31:23.777+0545] {subprocess.py:93} INFO - +------------+-------------+----------------+------------+-------------+----------------+
+[2026-10-09T18:31:23.777+0545] {subprocess.py:93} INFO - only showing top 5 rows
+[2026-10-09T18:31:23.777+0545] {subprocess.py:93} INFO - 
+[2026-10-09T18:31:24.486+0545] {subprocess.py:93} INFO - 26/10/09 12:46:24 INFO SparkContext: Starting job: toPandas at /app/etl_job.py:36
+[2026-10-09T18:31:24.563+0545] {subprocess.py:93} INFO - 26/10/09 12:46:24 INFO DAGScheduler: Got job 1 (toPandas at /app/etl_job.py:36) with 1 output partitions
+[2026-10-09T18:31:24.563+0545] {subprocess.py:93} INFO - 26/10/09 12:46:24 INFO DAGScheduler: Final stage: ResultStage 1 (toPandas at /app/etl_job.py:36)
+[2026-10-09T18:31:24.563+0545] {subprocess.py:93} INFO - 26/10/09 12:46:24 INFO DAGScheduler: Parents of final stage: List()
+[2026-10-09T18:31:24.564+0545] {subprocess.py:93} INFO - 26/10/09 12:46:24 INFO DAGScheduler: Missing parents: List()
+[2026-10-09T18:31:24.567+0545] {subprocess.py:93} INFO - 26/10/09 12:46:24 INFO DAGScheduler: Submitting ResultStage 1 (MapPartitionsRDD[8] at toPandas at /app/etl_job.py:36), which has no missing parents
+[2026-10-09T18:31:24.572+0545] {subprocess.py:93} INFO - 26/10/09 12:46:24 INFO MemoryStore: Block broadcast_1 stored as values in memory (estimated size 15.8 KiB, free 413.9 MiB)
+[2026-10-09T18:31:24.573+0545] {subprocess.py:93} INFO - 26/10/09 12:46:24 INFO MemoryStore: Block broadcast_1_piece0 stored as bytes in memory (estimated size 7.6 KiB, free 413.9 MiB)
+[2026-10-09T18:31:24.574+0545] {subprocess.py:93} INFO - 26/10/09 12:46:24 INFO BlockManagerInfo: Added broadcast_1_piece0 in memory on 8564da8b8b58:36445 (size: 7.6 KiB, free: 413.9 MiB)
+[2026-10-09T18:31:24.574+0545] {subprocess.py:93} INFO - 26/10/09 12:46:24 INFO SparkContext: Created broadcast 1 from broadcast at DAGScheduler.scala:1580
+[2026-10-09T18:31:24.575+0545] {subprocess.py:93} INFO - 26/10/09 12:46:24 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 1 (MapPartitionsRDD[8] at toPandas at /app/etl_job.py:36) (first 15 tasks are for partitions Vector(0))
+[2026-10-09T18:31:24.575+0545] {subprocess.py:93} INFO - 26/10/09 12:46:24 INFO TaskSchedulerImpl: Adding task set 1.0 with 1 tasks resource profile 0
+[2026-10-09T18:31:24.577+0545] {subprocess.py:93} INFO - 26/10/09 12:46:24 INFO TaskSetManager: Starting task 0.0 in stage 1.0 (TID 1) (spark-worker1, executor 1, partition 0, PROCESS_LOCAL, 7634 bytes)
+[2026-10-09T18:31:25.302+0545] {subprocess.py:93} INFO - 26/10/09 12:46:25 INFO BlockManagerInfo: Added broadcast_1_piece0 in memory on spark-worker1:40225 (size: 7.6 KiB, free: 413.9 MiB)
+[2026-10-09T18:31:33.864+0545] {subprocess.py:93} INFO - 26/10/09 12:46:33 INFO TaskSetManager: Finished task 0.0 in stage 1.0 (TID 1) in 9287 ms on spark-worker1 (executor 1) (1/1)
+[2026-10-09T18:31:33.864+0545] {subprocess.py:93} INFO - 26/10/09 12:46:33 INFO TaskSchedulerImpl: Removed TaskSet 1.0, whose tasks have all completed, from pool
+[2026-10-09T18:31:33.865+0545] {subprocess.py:93} INFO - 26/10/09 12:46:33 INFO DAGScheduler: ResultStage 1 (toPandas at /app/etl_job.py:36) finished in 9.296 s
+[2026-10-09T18:31:33.866+0545] {subprocess.py:93} INFO - 26/10/09 12:46:33 INFO DAGScheduler: Job 1 is finished. Cancelling potential speculative or zombie tasks for this job
+[2026-10-09T18:31:33.866+0545] {subprocess.py:93} INFO - 26/10/09 12:46:33 INFO TaskSchedulerImpl: Killing all running tasks in stage 1: Stage finished
+[2026-10-09T18:31:33.866+0545] {subprocess.py:93} INFO - 26/10/09 12:46:33 INFO DAGScheduler: Job 1 finished: toPandas at /app/etl_job.py:36, took 9.380301 s
+[2026-10-09T18:31:34.177+0545] {subprocess.py:93} INFO - 26/10/09 12:46:34 INFO DAGScheduler: Registering RDD 9 (toPandas at /app/etl_job.py:36) as input to shuffle 0
+[2026-10-09T18:31:34.181+0545] {subprocess.py:93} INFO - 26/10/09 12:46:34 INFO DAGScheduler: Got map stage job 2 (toPandas at /app/etl_job.py:36) with 1 output partitions
+[2026-10-09T18:31:34.181+0545] {subprocess.py:93} INFO - 26/10/09 12:46:34 INFO DAGScheduler: Final stage: ShuffleMapStage 2 (toPandas at /app/etl_job.py:36)
+[2026-10-09T18:31:34.182+0545] {subprocess.py:93} INFO - 26/10/09 12:46:34 INFO DAGScheduler: Parents of final stage: List()
+[2026-10-09T18:31:34.182+0545] {subprocess.py:93} INFO - 26/10/09 12:46:34 INFO DAGScheduler: Missing parents: List()
+[2026-10-09T18:31:34.184+0545] {subprocess.py:93} INFO - 26/10/09 12:46:34 INFO DAGScheduler: Submitting ShuffleMapStage 2 (MapPartitionsRDD[9] at toPandas at /app/etl_job.py:36), which has no missing parents
+[2026-10-09T18:31:34.194+0545] {subprocess.py:93} INFO - 26/10/09 12:46:34 INFO MemoryStore: Block broadcast_2 stored as values in memory (estimated size 27.7 KiB, free 413.9 MiB)
+[2026-10-09T18:31:34.196+0545] {subprocess.py:93} INFO - 26/10/09 12:46:34 INFO MemoryStore: Block broadcast_2_piece0 stored as bytes in memory (estimated size 10.5 KiB, free 413.9 MiB)
+[2026-10-09T18:31:34.196+0545] {subprocess.py:93} INFO - 26/10/09 12:46:34 INFO BlockManagerInfo: Added broadcast_2_piece0 in memory on 8564da8b8b58:36445 (size: 10.5 KiB, free: 413.9 MiB)
+[2026-10-09T18:31:34.264+0545] {subprocess.py:93} INFO - 26/10/09 12:46:34 INFO SparkContext: Created broadcast 2 from broadcast at DAGScheduler.scala:1580
+[2026-10-09T18:31:34.267+0545] {subprocess.py:93} INFO - 26/10/09 12:46:34 INFO DAGScheduler: Submitting 1 missing tasks from ShuffleMapStage 2 (MapPartitionsRDD[9] at toPandas at /app/etl_job.py:36) (first 15 tasks are for partitions Vector(0))
+[2026-10-09T18:31:34.267+0545] {subprocess.py:93} INFO - 26/10/09 12:46:34 INFO TaskSchedulerImpl: Adding task set 2.0 with 1 tasks resource profile 0
+[2026-10-09T18:31:34.270+0545] {subprocess.py:93} INFO - 26/10/09 12:46:34 INFO TaskSetManager: Starting task 0.0 in stage 2.0 (TID 2) (spark-worker1, executor 1, partition 0, PROCESS_LOCAL, 7623 bytes)
+[2026-10-09T18:31:34.290+0545] {subprocess.py:93} INFO - 26/10/09 12:46:34 INFO BlockManagerInfo: Added broadcast_2_piece0 in memory on spark-worker1:40225 (size: 10.5 KiB, free: 413.9 MiB)
+[2026-10-09T18:31:36.193+0545] {subprocess.py:93} INFO - 26/10/09 12:46:36 INFO TaskSetManager: Finished task 0.0 in stage 2.0 (TID 2) in 1924 ms on spark-worker1 (executor 1) (1/1)
+[2026-10-09T18:31:36.193+0545] {subprocess.py:93} INFO - 26/10/09 12:46:36 INFO TaskSchedulerImpl: Removed TaskSet 2.0, whose tasks have all completed, from pool
+[2026-10-09T18:31:36.195+0545] {subprocess.py:93} INFO - 26/10/09 12:46:36 INFO DAGScheduler: ShuffleMapStage 2 (toPandas at /app/etl_job.py:36) finished in 2.009 s
+[2026-10-09T18:31:36.196+0545] {subprocess.py:93} INFO - 26/10/09 12:46:36 INFO DAGScheduler: looking for newly runnable stages
+[2026-10-09T18:31:36.197+0545] {subprocess.py:93} INFO - 26/10/09 12:46:36 INFO DAGScheduler: running: Set()
+[2026-10-09T18:31:36.197+0545] {subprocess.py:93} INFO - 26/10/09 12:46:36 INFO DAGScheduler: waiting: Set()
+[2026-10-09T18:31:36.197+0545] {subprocess.py:93} INFO - 26/10/09 12:46:36 INFO DAGScheduler: failed: Set()
+[2026-10-09T18:31:36.292+0545] {subprocess.py:93} INFO - 26/10/09 12:46:36 INFO BlockManagerInfo: Removed broadcast_1_piece0 on 8564da8b8b58:36445 in memory (size: 7.6 KiB, free: 413.9 MiB)
+[2026-10-09T18:31:36.365+0545] {subprocess.py:93} INFO - 26/10/09 12:46:36 INFO BlockManagerInfo: Removed broadcast_1_piece0 on spark-worker1:40225 in memory (size: 7.6 KiB, free: 413.9 MiB)
+[2026-10-09T18:31:36.465+0545] {subprocess.py:93} INFO - 26/10/09 12:46:36 INFO BlockManagerInfo: Removed broadcast_2_piece0 on 8564da8b8b58:36445 in memory (size: 10.5 KiB, free: 413.9 MiB)
+[2026-10-09T18:31:36.466+0545] {subprocess.py:93} INFO - 26/10/09 12:46:36 INFO BlockManagerInfo: Removed broadcast_2_piece0 on spark-worker1:40225 in memory (size: 10.5 KiB, free: 413.9 MiB)
+[2026-10-09T18:31:36.470+0545] {subprocess.py:93} INFO - 26/10/09 12:46:36 INFO ShufflePartitionsUtil: For shuffle(0), advisory target size: 67108864, actual target size 1048576, minimum partition size: 1048576
+[2026-10-09T18:31:36.763+0545] {subprocess.py:93} INFO - 26/10/09 12:46:36 INFO CodeGenerator: Code generated in 91.777823 ms
+[2026-10-09T18:31:36.879+0545] {subprocess.py:93} INFO - 26/10/09 12:46:36 INFO SparkContext: Starting job: toPandas at /app/etl_job.py:36
+[2026-10-09T18:31:36.882+0545] {subprocess.py:93} INFO - 26/10/09 12:46:36 INFO DAGScheduler: Got job 3 (toPandas at /app/etl_job.py:36) with 1 output partitions
+[2026-10-09T18:31:36.882+0545] {subprocess.py:93} INFO - 26/10/09 12:46:36 INFO DAGScheduler: Final stage: ResultStage 4 (toPandas at /app/etl_job.py:36)
+[2026-10-09T18:31:36.882+0545] {subprocess.py:93} INFO - 26/10/09 12:46:36 INFO DAGScheduler: Parents of final stage: List(ShuffleMapStage 3)
+[2026-10-09T18:31:36.963+0545] {subprocess.py:93} INFO - 26/10/09 12:46:36 INFO DAGScheduler: Missing parents: List()
+[2026-10-09T18:31:36.964+0545] {subprocess.py:93} INFO - 26/10/09 12:46:36 INFO DAGScheduler: Submitting ResultStage 4 (MapPartitionsRDD[12] at toPandas at /app/etl_job.py:36), which has no missing parents
+[2026-10-09T18:31:37.063+0545] {subprocess.py:93} INFO - 26/10/09 12:46:36 INFO MemoryStore: Block broadcast_3 stored as values in memory (estimated size 29.0 KiB, free 413.9 MiB)
+[2026-10-09T18:31:37.066+0545] {subprocess.py:93} INFO - 26/10/09 12:46:37 INFO MemoryStore: Block broadcast_3_piece0 stored as bytes in memory (estimated size 14.0 KiB, free 413.9 MiB)
+[2026-10-09T18:31:37.067+0545] {subprocess.py:93} INFO - 26/10/09 12:46:37 INFO BlockManagerInfo: Added broadcast_3_piece0 in memory on 8564da8b8b58:36445 (size: 14.0 KiB, free: 413.9 MiB)
+[2026-10-09T18:31:37.068+0545] {subprocess.py:93} INFO - 26/10/09 12:46:37 INFO SparkContext: Created broadcast 3 from broadcast at DAGScheduler.scala:1580
+[2026-10-09T18:31:37.069+0545] {subprocess.py:93} INFO - 26/10/09 12:46:37 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 4 (MapPartitionsRDD[12] at toPandas at /app/etl_job.py:36) (first 15 tasks are for partitions Vector(0))
+[2026-10-09T18:31:37.070+0545] {subprocess.py:93} INFO - 26/10/09 12:46:37 INFO TaskSchedulerImpl: Adding task set 4.0 with 1 tasks resource profile 0
+[2026-10-09T18:31:37.078+0545] {subprocess.py:93} INFO - 26/10/09 12:46:37 INFO TaskSetManager: Starting task 0.0 in stage 4.0 (TID 3) (spark-worker1, executor 1, partition 0, NODE_LOCAL, 7788 bytes)
+[2026-10-09T18:31:37.177+0545] {subprocess.py:93} INFO - 26/10/09 12:46:37 INFO BlockManagerInfo: Added broadcast_3_piece0 in memory on spark-worker1:40225 (size: 14.0 KiB, free: 413.9 MiB)
+[2026-10-09T18:31:37.398+0545] {subprocess.py:93} INFO - 26/10/09 12:46:37 INFO MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 0 to 172.19.0.6:39346
+[2026-10-09T18:31:38.394+0545] {subprocess.py:93} INFO - 26/10/09 12:46:38 INFO TaskSetManager: Finished task 0.0 in stage 4.0 (TID 3) in 1317 ms on spark-worker1 (executor 1) (1/1)
+[2026-10-09T18:31:38.394+0545] {subprocess.py:93} INFO - 26/10/09 12:46:38 INFO TaskSchedulerImpl: Removed TaskSet 4.0, whose tasks have all completed, from pool
+[2026-10-09T18:31:38.397+0545] {subprocess.py:93} INFO - 26/10/09 12:46:38 INFO DAGScheduler: ResultStage 4 (toPandas at /app/etl_job.py:36) finished in 1.418 s
+[2026-10-09T18:31:38.397+0545] {subprocess.py:93} INFO - 26/10/09 12:46:38 INFO DAGScheduler: Job 3 is finished. Cancelling potential speculative or zombie tasks for this job
+[2026-10-09T18:31:38.397+0545] {subprocess.py:93} INFO - 26/10/09 12:46:38 INFO TaskSchedulerImpl: Killing all running tasks in stage 4: Stage finished
+[2026-10-09T18:31:38.398+0545] {subprocess.py:93} INFO - 26/10/09 12:46:38 INFO DAGScheduler: Job 3 finished: toPandas at /app/etl_job.py:36, took 1.518073 s
+[2026-10-09T18:31:38.665+0545] {subprocess.py:93} INFO - 26/10/09 12:46:38 INFO BlockManagerInfo: Removed broadcast_3_piece0 on spark-worker1:40225 in memory (size: 14.0 KiB, free: 413.9 MiB)
+[2026-10-09T18:31:38.666+0545] {subprocess.py:93} INFO - 26/10/09 12:46:38 INFO BlockManagerInfo: Removed broadcast_3_piece0 on 8564da8b8b58:36445 in memory (size: 14.0 KiB, free: 413.9 MiB)
+[2026-10-09T18:31:39.678+0545] {subprocess.py:93} INFO - Found 300 missing values across ['PIXEL_TEMP_C', 'LAR_PRESSURE_BAR', 'LV_VOLTAGE_V', 'HV_CURRENT_UA', 'COOLING_FLOW_LPM'] -- interpolating
+[2026-10-09T18:31:41.904+0545] {subprocess.py:93} INFO - 26/10/09 12:46:41 INFO DelegatingLogStore: LogStore `LogStoreAdapter(io.delta.storage.HDFSLogStore)` is used for scheme `hdfs`
+[2026-10-09T18:31:42.363+0545] {subprocess.py:93} INFO - 26/10/09 12:46:42 INFO DeltaLog: Loading version 0.
+[2026-10-09T18:31:45.608+0545] {subprocess.py:93} INFO - 26/10/09 12:46:45 INFO DeltaLogFileIndex: Created DeltaLogFileIndex(JSON, numFilesInSegment: 1, totalFileSize: 3977)
+[2026-10-09T18:31:47.071+0545] {subprocess.py:93} INFO - 26/10/09 12:46:47 INFO DataSourceStrategy: Pruning directories with:
+[2026-10-09T18:31:47.075+0545] {subprocess.py:93} INFO - 26/10/09 12:46:47 INFO FileSourceStrategy: Pushed Filters:
+[2026-10-09T18:31:47.075+0545] {subprocess.py:93} INFO - 26/10/09 12:46:47 INFO FileSourceStrategy: Post-Scan Filters: ((isnotnull(protocol#78.minReaderVersion) OR isnotnull(metaData#77.id)) OR (isnotnull(commitInfo#79.inCommitTimestamp) AND (version#80L = 0)))
+[2026-10-09T18:31:47.767+0545] {subprocess.py:93} INFO - 26/10/09 12:46:47 INFO CodeGenerator: Code generated in 486.33492 ms
+[2026-10-09T18:31:47.779+0545] {subprocess.py:93} INFO - 26/10/09 12:46:47 INFO MemoryStore: Block broadcast_4 stored as values in memory (estimated size 200.8 KiB, free 413.7 MiB)
+[2026-10-09T18:31:47.885+0545] {subprocess.py:93} INFO - 26/10/09 12:46:47 INFO MemoryStore: Block broadcast_4_piece0 stored as bytes in memory (estimated size 34.7 KiB, free 413.7 MiB)
+[2026-10-09T18:31:47.886+0545] {subprocess.py:93} INFO - 26/10/09 12:46:47 INFO BlockManagerInfo: Added broadcast_4_piece0 in memory on 8564da8b8b58:36445 (size: 34.7 KiB, free: 413.9 MiB)
+[2026-10-09T18:31:47.964+0545] {subprocess.py:93} INFO - 26/10/09 12:46:47 INFO SparkContext: Created broadcast 4 from $anonfun$recordDeltaOperationInternal$1 at DatabricksLogging.scala:128
+[2026-10-09T18:31:47.987+0545] {subprocess.py:93} INFO - 26/10/09 12:46:47 INFO FileSourceScanExec: Planning scan with bin packing, max size: 4194304 bytes, open cost is considered as scanning 4194304 bytes.
+[2026-10-09T18:31:48.176+0545] {subprocess.py:93} INFO - 26/10/09 12:46:48 INFO SparkContext: Starting job: $anonfun$recordDeltaOperationInternal$1 at DatabricksLogging.scala:128
+[2026-10-09T18:31:48.177+0545] {subprocess.py:93} INFO - 26/10/09 12:46:48 INFO DAGScheduler: Got job 4 ($anonfun$recordDeltaOperationInternal$1 at DatabricksLogging.scala:128) with 1 output partitions
+[2026-10-09T18:31:48.177+0545] {subprocess.py:93} INFO - 26/10/09 12:46:48 INFO DAGScheduler: Final stage: ResultStage 5 ($anonfun$recordDeltaOperationInternal$1 at DatabricksLogging.scala:128)
+[2026-10-09T18:31:48.177+0545] {subprocess.py:93} INFO - 26/10/09 12:46:48 INFO DAGScheduler: Parents of final stage: List()
+[2026-10-09T18:31:48.177+0545] {subprocess.py:93} INFO - 26/10/09 12:46:48 INFO DAGScheduler: Missing parents: List()
+[2026-10-09T18:31:48.178+0545] {subprocess.py:93} INFO - 26/10/09 12:46:48 INFO DAGScheduler: Submitting ResultStage 5 (MapPartitionsRDD[21] at $anonfun$recordDeltaOperationInternal$1 at DatabricksLogging.scala:128), which has no missing parents
+[2026-10-09T18:31:48.265+0545] {subprocess.py:93} INFO - 26/10/09 12:46:48 INFO MemoryStore: Block broadcast_5 stored as values in memory (estimated size 55.2 KiB, free 413.6 MiB)
+[2026-10-09T18:31:48.268+0545] {subprocess.py:93} INFO - 26/10/09 12:46:48 INFO MemoryStore: Block broadcast_5_piece0 stored as bytes in memory (estimated size 17.1 KiB, free 413.6 MiB)
+[2026-10-09T18:31:48.269+0545] {subprocess.py:93} INFO - 26/10/09 12:46:48 INFO BlockManagerInfo: Added broadcast_5_piece0 in memory on 8564da8b8b58:36445 (size: 17.1 KiB, free: 413.9 MiB)
+[2026-10-09T18:31:48.269+0545] {subprocess.py:93} INFO - 26/10/09 12:46:48 INFO SparkContext: Created broadcast 5 from broadcast at DAGScheduler.scala:1580
+[2026-10-09T18:31:48.269+0545] {subprocess.py:93} INFO - 26/10/09 12:46:48 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 5 (MapPartitionsRDD[21] at $anonfun$recordDeltaOperationInternal$1 at DatabricksLogging.scala:128) (first 15 tasks are for partitions Vector(0))
+[2026-10-09T18:31:48.270+0545] {subprocess.py:93} INFO - 26/10/09 12:46:48 INFO TaskSchedulerImpl: Adding task set 5.0 with 1 tasks resource profile 0
+[2026-10-09T18:31:48.275+0545] {subprocess.py:93} INFO - 26/10/09 12:46:48 INFO TaskSetManager: Starting task 0.0 in stage 5.0 (TID 4) (spark-worker1, executor 1, partition 0, PROCESS_LOCAL, 8445 bytes)
+[2026-10-09T18:31:48.295+0545] {subprocess.py:93} INFO - 26/10/09 12:46:48 INFO BlockManagerInfo: Added broadcast_5_piece0 in memory on spark-worker1:40225 (size: 17.1 KiB, free: 413.9 MiB)
+[2026-10-09T18:31:49.692+0545] {subprocess.py:93} INFO - 26/10/09 12:46:49 INFO BlockManagerInfo: Added broadcast_4_piece0 in memory on spark-worker1:40225 (size: 34.7 KiB, free: 413.9 MiB)
+[2026-10-09T18:31:52.600+0545] {subprocess.py:93} INFO - 26/10/09 12:46:52 INFO TaskSetManager: Finished task 0.0 in stage 5.0 (TID 4) in 4330 ms on spark-worker1 (executor 1) (1/1)
+[2026-10-09T18:31:52.601+0545] {subprocess.py:93} INFO - 26/10/09 12:46:52 INFO TaskSchedulerImpl: Removed TaskSet 5.0, whose tasks have all completed, from pool
+[2026-10-09T18:31:52.601+0545] {subprocess.py:93} INFO - 26/10/09 12:46:52 INFO DAGScheduler: ResultStage 5 ($anonfun$recordDeltaOperationInternal$1 at DatabricksLogging.scala:128) finished in 4.421 s
+[2026-10-09T18:31:52.601+0545] {subprocess.py:93} INFO - 26/10/09 12:46:52 INFO DAGScheduler: Job 4 is finished. Cancelling potential speculative or zombie tasks for this job
+[2026-10-09T18:31:52.602+0545] {subprocess.py:93} INFO - 26/10/09 12:46:52 INFO TaskSchedulerImpl: Killing all running tasks in stage 5: Stage finished
+[2026-10-09T18:31:52.602+0545] {subprocess.py:93} INFO - 26/10/09 12:46:52 INFO DAGScheduler: Job 4 finished: $anonfun$recordDeltaOperationInternal$1 at DatabricksLogging.scala:128, took 4.426081 s
+[2026-10-09T18:31:52.867+0545] {subprocess.py:93} INFO - 26/10/09 12:46:52 INFO CodeGenerator: Code generated in 252.375345 ms
+[2026-10-09T18:31:53.165+0545] {subprocess.py:93} INFO - 26/10/09 12:46:53 INFO BlockManagerInfo: Removed broadcast_5_piece0 on 8564da8b8b58:36445 in memory (size: 17.1 KiB, free: 413.9 MiB)
+[2026-10-09T18:31:53.165+0545] {subprocess.py:93} INFO - 26/10/09 12:46:53 INFO BlockManagerInfo: Removed broadcast_5_piece0 on spark-worker1:40225 in memory (size: 17.1 KiB, free: 413.9 MiB)
+[2026-10-09T18:31:53.375+0545] {subprocess.py:93} INFO - 26/10/09 12:46:53 INFO Snapshot: [tableId=342960c9-1f15-4baa-a271-f1e292ee72fd] Created snapshot Snapshot(path=hdfs://namenode:9000/user/demo/network_data/_delta_log, version=0, metadata=Metadata(b59afd4b-2c44-46ec-8670-2602bf465064,null,null,Format(parquet,Map()),{"type":"struct","fields":[{"name":"ID","type":"long","nullable":true,"metadata":{}},{"name":"PIXEL_TEMP_C","type":"double","nullable":true,"metadata":{}},{"name":"LAR_PRESSURE_BAR","type":"double","nullable":true,"metadata":{}},{"name":"LV_VOLTAGE_V","type":"double","nullable":true,"metadata":{}},{"name":"HV_CURRENT_UA","type":"double","nullable":true,"metadata":{}},{"name":"COOLING_FLOW_LPM","type":"double","nullable":true,"metadata":{}}]},List(),Map(),Some(1785832476623)), logSegment=LogSegment(hdfs://namenode:9000/user/demo/network_data/_delta_log,0,WrappedArray(HdfsNamedFileStatus{path=hdfs://namenode:9000/user/demo/network_data/_delta_log/00000000000000000000.json; isDirectory=false; length=3977; replication=2; blocksize=134217728; modification_time=1785832518300; access_time=1785832517282; owner=spark; group=supergroup; permission=rw-r--r--; isSymlink=false; hasAcl=false; isEncrypted=false; isErasureCoded=false}),org.apache.spark.sql.delta.EmptyCheckpointProvider$@4440dc59,1785832518300), checksumOpt=None)
+[2026-10-09T18:31:53.386+0545] {subprocess.py:93} INFO - 26/10/09 12:46:53 INFO DeltaLog: Updated snapshot to Snapshot(path=hdfs://namenode:9000/user/demo/network_data/_delta_log, version=0, metadata=Metadata(b59afd4b-2c44-46ec-8670-2602bf465064,null,null,Format(parquet,Map()),{"type":"struct","fields":[{"name":"ID","type":"long","nullable":true,"metadata":{}},{"name":"PIXEL_TEMP_C","type":"double","nullable":true,"metadata":{}},{"name":"LAR_PRESSURE_BAR","type":"double","nullable":true,"metadata":{}},{"name":"LV_VOLTAGE_V","type":"double","nullable":true,"metadata":{}},{"name":"HV_CURRENT_UA","type":"double","nullable":true,"metadata":{}},{"name":"COOLING_FLOW_LPM","type":"double","nullable":true,"metadata":{}}]},List(),Map(),Some(1785832476623)), logSegment=LogSegment(hdfs://namenode:9000/user/demo/network_data/_delta_log,0,WrappedArray(HdfsNamedFileStatus{path=hdfs://namenode:9000/user/demo/network_data/_delta_log/00000000000000000000.json; isDirectory=false; length=3977; replication=2; blocksize=134217728; modification_time=1785832518300; access_time=1785832517282; owner=spark; group=supergroup; permission=rw-r--r--; isSymlink=false; hasAcl=false; isEncrypted=false; isErasureCoded=false}),org.apache.spark.sql.delta.EmptyCheckpointProvider$@4440dc59,1785832518300), checksumOpt=None)
+[2026-10-09T18:31:53.795+0545] {subprocess.py:93} INFO - 26/10/09 12:46:53 INFO Snapshot: [tableId=b59afd4b-2c44-46ec-8670-2602bf465064] DELTA: Compute snapshot for version: 0
+[2026-10-09T18:31:53.881+0545] {subprocess.py:93} INFO - 26/10/09 12:46:53 INFO MemoryStore: Block broadcast_6 stored as values in memory (estimated size 200.5 KiB, free 413.5 MiB)
+[2026-10-09T18:31:53.888+0545] {subprocess.py:93} INFO - 26/10/09 12:46:53 INFO MemoryStore: Block broadcast_6_piece0 stored as bytes in memory (estimated size 34.7 KiB, free 413.5 MiB)
+[2026-10-09T18:31:53.888+0545] {subprocess.py:93} INFO - 26/10/09 12:46:53 INFO BlockManagerInfo: Added broadcast_6_piece0 in memory on 8564da8b8b58:36445 (size: 34.7 KiB, free: 413.9 MiB)
+[2026-10-09T18:31:53.889+0545] {subprocess.py:93} INFO - 26/10/09 12:46:53 INFO SparkContext: Created broadcast 6 from save at <unknown>:0
+[2026-10-09T18:31:54.687+0545] {subprocess.py:93} INFO - 26/10/09 12:46:54 INFO BlockManagerInfo: Removed broadcast_4_piece0 on 8564da8b8b58:36445 in memory (size: 34.7 KiB, free: 413.9 MiB)
+[2026-10-09T18:31:54.690+0545] {subprocess.py:93} INFO - 26/10/09 12:46:54 INFO BlockManagerInfo: Removed broadcast_4_piece0 on spark-worker1:40225 in memory (size: 34.7 KiB, free: 413.9 MiB)
+[2026-10-09T18:31:56.971+0545] {subprocess.py:93} INFO - 26/10/09 12:46:56 INFO DataSourceStrategy: Pruning directories with:
+[2026-10-09T18:31:56.972+0545] {subprocess.py:93} INFO - 26/10/09 12:46:56 INFO FileSourceStrategy: Pushed Filters:
+[2026-10-09T18:31:56.972+0545] {subprocess.py:93} INFO - 26/10/09 12:46:56 INFO FileSourceStrategy: Post-Scan Filters:
+[2026-10-09T18:31:57.077+0545] {subprocess.py:93} INFO - 26/10/09 12:46:57 WARN SparkStringUtils: Truncated the string representation of a plan since it was too large. This behavior can be adjusted by setting 'spark.sql.debug.maxToStringFields'.
+[2026-10-09T18:31:57.968+0545] {subprocess.py:93} INFO - 26/10/09 12:46:57 INFO CodeGenerator: Code generated in 496.218372 ms
+[2026-10-09T18:31:57.973+0545] {subprocess.py:93} INFO - 26/10/09 12:46:57 INFO MemoryStore: Block broadcast_7 stored as values in memory (estimated size 200.8 KiB, free 413.5 MiB)
+[2026-10-09T18:31:57.979+0545] {subprocess.py:93} INFO - 26/10/09 12:46:57 INFO MemoryStore: Block broadcast_7_piece0 stored as bytes in memory (estimated size 34.7 KiB, free 413.5 MiB)
+[2026-10-09T18:31:57.980+0545] {subprocess.py:93} INFO - 26/10/09 12:46:57 INFO BlockManagerInfo: Added broadcast_7_piece0 in memory on 8564da8b8b58:36445 (size: 34.7 KiB, free: 413.9 MiB)
+[2026-10-09T18:31:58.065+0545] {subprocess.py:93} INFO - 26/10/09 12:46:58 INFO SparkContext: Created broadcast 7 from save at <unknown>:0
+[2026-10-09T18:31:58.067+0545] {subprocess.py:93} INFO - 26/10/09 12:46:58 INFO FileSourceScanExec: Planning scan with bin packing, max size: 4194304 bytes, open cost is considered as scanning 4194304 bytes.
+[2026-10-09T18:31:58.175+0545] {subprocess.py:93} INFO - 26/10/09 12:46:58 INFO DAGScheduler: Registering RDD 25 (save at <unknown>:0) as input to shuffle 1
+[2026-10-09T18:31:58.176+0545] {subprocess.py:93} INFO - 26/10/09 12:46:58 INFO DAGScheduler: Got map stage job 5 (save at <unknown>:0) with 1 output partitions
+[2026-10-09T18:31:58.176+0545] {subprocess.py:93} INFO - 26/10/09 12:46:58 INFO DAGScheduler: Final stage: ShuffleMapStage 6 (save at <unknown>:0)
+[2026-10-09T18:31:58.176+0545] {subprocess.py:93} INFO - 26/10/09 12:46:58 INFO DAGScheduler: Parents of final stage: List()
+[2026-10-09T18:31:58.176+0545] {subprocess.py:93} INFO - 26/10/09 12:46:58 INFO DAGScheduler: Missing parents: List()
+[2026-10-09T18:31:58.177+0545] {subprocess.py:93} INFO - 26/10/09 12:46:58 INFO DAGScheduler: Submitting ShuffleMapStage 6 (MapPartitionsRDD[25] at save at <unknown>:0), which has no missing parents
+[2026-10-09T18:31:58.272+0545] {subprocess.py:93} INFO - 26/10/09 12:46:58 INFO MemoryStore: Block broadcast_8 stored as values in memory (estimated size 105.8 KiB, free 413.4 MiB)
+[2026-10-09T18:31:58.273+0545] {subprocess.py:93} INFO - 26/10/09 12:46:58 INFO MemoryStore: Block broadcast_8_piece0 stored as bytes in memory (estimated size 32.6 KiB, free 413.3 MiB)
+[2026-10-09T18:31:58.274+0545] {subprocess.py:93} INFO - 26/10/09 12:46:58 INFO BlockManagerInfo: Added broadcast_8_piece0 in memory on 8564da8b8b58:36445 (size: 32.6 KiB, free: 413.8 MiB)
+[2026-10-09T18:31:58.274+0545] {subprocess.py:93} INFO - 26/10/09 12:46:58 INFO SparkContext: Created broadcast 8 from broadcast at DAGScheduler.scala:1580
+[2026-10-09T18:31:58.275+0545] {subprocess.py:93} INFO - 26/10/09 12:46:58 INFO DAGScheduler: Submitting 1 missing tasks from ShuffleMapStage 6 (MapPartitionsRDD[25] at save at <unknown>:0) (first 15 tasks are for partitions Vector(0))
+[2026-10-09T18:31:58.275+0545] {subprocess.py:93} INFO - 26/10/09 12:46:58 INFO TaskSchedulerImpl: Adding task set 6.0 with 1 tasks resource profile 0
+[2026-10-09T18:31:58.276+0545] {subprocess.py:93} INFO - 26/10/09 12:46:58 INFO TaskSetManager: Starting task 0.0 in stage 6.0 (TID 5) (spark-worker1, executor 1, partition 0, PROCESS_LOCAL, 8434 bytes)
+[2026-10-09T18:31:58.382+0545] {subprocess.py:93} INFO - 26/10/09 12:46:58 INFO BlockManagerInfo: Added broadcast_8_piece0 in memory on spark-worker1:40225 (size: 32.6 KiB, free: 413.9 MiB)
+[2026-10-09T18:32:00.489+0545] {subprocess.py:93} INFO - 26/10/09 12:47:00 INFO BlockManagerInfo: Added broadcast_7_piece0 in memory on spark-worker1:40225 (size: 34.7 KiB, free: 413.9 MiB)
+[2026-10-09T18:32:04.585+0545] {subprocess.py:93} INFO - 26/10/09 12:47:04 INFO TaskSetManager: Finished task 0.0 in stage 6.0 (TID 5) in 6308 ms on spark-worker1 (executor 1) (1/1)
+[2026-10-09T18:32:04.585+0545] {subprocess.py:93} INFO - 26/10/09 12:47:04 INFO TaskSchedulerImpl: Removed TaskSet 6.0, whose tasks have all completed, from pool
+[2026-10-09T18:32:04.587+0545] {subprocess.py:93} INFO - 26/10/09 12:47:04 INFO DAGScheduler: ShuffleMapStage 6 (save at <unknown>:0) finished in 6.324 s
+[2026-10-09T18:32:04.587+0545] {subprocess.py:93} INFO - 26/10/09 12:47:04 INFO DAGScheduler: looking for newly runnable stages
+[2026-10-09T18:32:04.587+0545] {subprocess.py:93} INFO - 26/10/09 12:47:04 INFO DAGScheduler: running: Set()
+[2026-10-09T18:32:04.588+0545] {subprocess.py:93} INFO - 26/10/09 12:47:04 INFO DAGScheduler: waiting: Set()
+[2026-10-09T18:32:04.588+0545] {subprocess.py:93} INFO - 26/10/09 12:47:04 INFO DAGScheduler: failed: Set()
+[2026-10-09T18:32:04.967+0545] {subprocess.py:93} INFO - 26/10/09 12:47:04 INFO BlockManagerInfo: Removed broadcast_8_piece0 on 8564da8b8b58:36445 in memory (size: 32.6 KiB, free: 413.9 MiB)
+[2026-10-09T18:32:04.969+0545] {subprocess.py:93} INFO - 26/10/09 12:47:04 INFO BlockManagerInfo: Removed broadcast_8_piece0 on spark-worker1:40225 in memory (size: 32.6 KiB, free: 413.9 MiB)
+[2026-10-09T18:32:06.791+0545] {subprocess.py:93} INFO - 26/10/09 12:47:06 INFO CodeGenerator: Generated method too long to be JIT compiled: org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage3.serializefromobject_doConsume_0$ is 25072 bytes
+[2026-10-09T18:32:06.792+0545] {subprocess.py:93} INFO - 26/10/09 12:47:06 INFO CodeGenerator: Code generated in 1423.082326 ms
+[2026-10-09T18:32:07.080+0545] {subprocess.py:93} INFO - 26/10/09 12:47:07 INFO CodeGenerator: Code generated in 200.59368 ms
+[2026-10-09T18:32:08.681+0545] {subprocess.py:93} INFO - 26/10/09 12:47:08 INFO CodeGenerator: Code generated in 217.860166 ms
+[2026-10-09T18:32:08.765+0545] {subprocess.py:93} INFO - 26/10/09 12:47:08 INFO DAGScheduler: Registering RDD 35 (save at <unknown>:0) as input to shuffle 2
+[2026-10-09T18:32:08.766+0545] {subprocess.py:93} INFO - 26/10/09 12:47:08 INFO DAGScheduler: Got map stage job 6 (save at <unknown>:0) with 50 output partitions
+[2026-10-09T18:32:08.766+0545] {subprocess.py:93} INFO - 26/10/09 12:47:08 INFO DAGScheduler: Final stage: ShuffleMapStage 8 (save at <unknown>:0)
+[2026-10-09T18:32:08.767+0545] {subprocess.py:93} INFO - 26/10/09 12:47:08 INFO DAGScheduler: Parents of final stage: List(ShuffleMapStage 7)
+[2026-10-09T18:32:08.772+0545] {subprocess.py:93} INFO - 26/10/09 12:47:08 INFO DAGScheduler: Missing parents: List()
+[2026-10-09T18:32:08.773+0545] {subprocess.py:93} INFO - 26/10/09 12:47:08 INFO DAGScheduler: Submitting ShuffleMapStage 8 (MapPartitionsRDD[35] at save at <unknown>:0), which has no missing parents
+[2026-10-09T18:32:09.175+0545] {subprocess.py:93} INFO - 26/10/09 12:47:09 INFO MemoryStore: Block broadcast_9 stored as values in memory (estimated size 602.0 KiB, free 412.9 MiB)
+[2026-10-09T18:32:09.178+0545] {subprocess.py:93} INFO - 26/10/09 12:47:09 INFO MemoryStore: Block broadcast_9_piece0 stored as bytes in memory (estimated size 138.0 KiB, free 412.7 MiB)
+[2026-10-09T18:32:09.178+0545] {subprocess.py:93} INFO - 26/10/09 12:47:09 INFO BlockManagerInfo: Added broadcast_9_piece0 in memory on 8564da8b8b58:36445 (size: 138.0 KiB, free: 413.7 MiB)
+[2026-10-09T18:32:09.179+0545] {subprocess.py:93} INFO - 26/10/09 12:47:09 INFO SparkContext: Created broadcast 9 from broadcast at DAGScheduler.scala:1580
+[2026-10-09T18:32:09.179+0545] {subprocess.py:93} INFO - 26/10/09 12:47:09 INFO DAGScheduler: Submitting 50 missing tasks from ShuffleMapStage 8 (MapPartitionsRDD[35] at save at <unknown>:0) (first 15 tasks are for partitions Vector(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14))
+[2026-10-09T18:32:09.180+0545] {subprocess.py:93} INFO - 26/10/09 12:47:09 INFO TaskSchedulerImpl: Adding task set 8.0 with 50 tasks resource profile 0
+[2026-10-09T18:32:09.182+0545] {subprocess.py:93} INFO - 26/10/09 12:47:09 INFO TaskSetManager: Starting task 0.0 in stage 8.0 (TID 6) (spark-worker1, executor 1, partition 0, NODE_LOCAL, 7777 bytes)
+[2026-10-09T18:32:09.182+0545] {subprocess.py:93} INFO - 26/10/09 12:47:09 INFO TaskSetManager: Starting task 1.0 in stage 8.0 (TID 7) (spark-worker2, executor 0, partition 1, PROCESS_LOCAL, 7777 bytes)
+[2026-10-09T18:32:09.279+0545] {subprocess.py:93} INFO - 26/10/09 12:47:09 INFO BlockManagerInfo: Added broadcast_9_piece0 in memory on spark-worker2:33221 (size: 138.0 KiB, free: 413.8 MiB)
+[2026-10-09T18:32:09.286+0545] {subprocess.py:93} INFO - 26/10/09 12:47:09 INFO BlockManagerInfo: Added broadcast_9_piece0 in memory on spark-worker1:40225 (size: 138.0 KiB, free: 413.8 MiB)
+[2026-10-09T18:32:09.998+0545] {subprocess.py:93} INFO - 26/10/09 12:47:09 INFO MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 1 to 172.19.0.6:39346
+[2026-10-09T18:32:11.106+0545] {subprocess.py:93} INFO - 26/10/09 12:47:11 INFO MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 1 to 172.19.0.5:59088
+[2026-10-09T18:32:13.195+0545] {subprocess.py:93} INFO - 26/10/09 12:47:13 INFO BlockManagerInfo: Added rdd_32_0 in memory on spark-worker1:40225 (size: 636.0 B, free: 413.8 MiB)
+[2026-10-09T18:32:16.383+0545] {subprocess.py:93} INFO - 26/10/09 12:47:16 INFO TaskSetManager: Starting task 8.0 in stage 8.0 (TID 8) (spark-worker1, executor 1, partition 8, NODE_LOCAL, 7777 bytes)
+[2026-10-09T18:32:16.386+0545] {subprocess.py:93} INFO - 26/10/09 12:47:16 INFO TaskSetManager: Finished task 0.0 in stage 8.0 (TID 6) in 7204 ms on spark-worker1 (executor 1) (1/50)
+[2026-10-09T18:32:16.979+0545] {subprocess.py:93} INFO - 26/10/09 12:47:16 INFO BlockManagerInfo: Added rdd_32_8 in memory on spark-worker1:40225 (size: 635.0 B, free: 413.8 MiB)
+[2026-10-09T18:32:17.195+0545] {subprocess.py:93} INFO - 26/10/09 12:47:17 INFO TaskSetManager: Starting task 40.0 in stage 8.0 (TID 9) (spark-worker1, executor 1, partition 40, NODE_LOCAL, 7777 bytes)
+[2026-10-09T18:32:17.197+0545] {subprocess.py:93} INFO - 26/10/09 12:47:17 INFO TaskSetManager: Finished task 8.0 in stage 8.0 (TID 8) in 815 ms on spark-worker1 (executor 1) (2/50)
+[2026-10-09T18:32:17.783+0545] {subprocess.py:93} INFO - 26/10/09 12:47:17 INFO BlockManagerInfo: Added rdd_32_40 in memory on spark-worker1:40225 (size: 635.0 B, free: 413.8 MiB)
+[2026-10-09T18:32:18.084+0545] {subprocess.py:93} INFO - 26/10/09 12:47:18 INFO TaskSetManager: Starting task 42.0 in stage 8.0 (TID 10) (spark-worker1, executor 1, partition 42, NODE_LOCAL, 7777 bytes)
+[2026-10-09T18:32:18.086+0545] {subprocess.py:93} INFO - 26/10/09 12:47:18 INFO TaskSetManager: Finished task 40.0 in stage 8.0 (TID 9) in 891 ms on spark-worker1 (executor 1) (3/50)
+[2026-10-09T18:32:19.689+0545] {subprocess.py:93} INFO - 26/10/09 12:47:19 INFO BlockManagerInfo: Added rdd_32_42 in memory on spark-worker1:40225 (size: 545.0 B, free: 413.8 MiB)
+[2026-10-09T18:32:19.886+0545] {subprocess.py:93} INFO - 26/10/09 12:47:19 INFO TaskSetManager: Starting task 44.0 in stage 8.0 (TID 11) (spark-worker1, executor 1, partition 44, NODE_LOCAL, 7777 bytes)
+[2026-10-09T18:32:19.887+0545] {subprocess.py:93} INFO - 26/10/09 12:47:19 INFO TaskSetManager: Finished task 42.0 in stage 8.0 (TID 10) in 1803 ms on spark-worker1 (executor 1) (4/50)
+[2026-10-09T18:32:20.006+0545] {subprocess.py:93} INFO - 26/10/09 12:47:20 INFO BlockManagerInfo: Added rdd_32_1 in memory on spark-worker2:33221 (size: 46.0 B, free: 413.8 MiB)
+[2026-10-09T18:32:20.382+0545] {subprocess.py:93} INFO - 26/10/09 12:47:20 INFO BlockManagerInfo: Added rdd_32_44 in memory on spark-worker1:40225 (size: 634.0 B, free: 413.8 MiB)
+[2026-10-09T18:32:20.592+0545] {subprocess.py:93} INFO - 26/10/09 12:47:20 INFO TaskSetManager: Starting task 2.0 in stage 8.0 (TID 12) (spark-worker1, executor 1, partition 2, PROCESS_LOCAL, 7777 bytes)
+[2026-10-09T18:32:20.593+0545] {subprocess.py:93} INFO - 26/10/09 12:47:20 INFO TaskSetManager: Finished task 44.0 in stage 8.0 (TID 11) in 709 ms on spark-worker1 (executor 1) (5/50)
+[2026-10-09T18:32:20.990+0545] {subprocess.py:93} INFO - 26/10/09 12:47:20 INFO BlockManagerInfo: Added rdd_32_2 in memory on spark-worker1:40225 (size: 46.0 B, free: 413.8 MiB)
+[2026-10-09T18:32:21.188+0545] {subprocess.py:93} INFO - 26/10/09 12:47:21 INFO TaskSetManager: Starting task 3.0 in stage 8.0 (TID 13) (spark-worker1, executor 1, partition 3, PROCESS_LOCAL, 7777 bytes)
+[2026-10-09T18:32:21.189+0545] {subprocess.py:93} INFO - 26/10/09 12:47:21 INFO TaskSetManager: Finished task 2.0 in stage 8.0 (TID 12) in 597 ms on spark-worker1 (executor 1) (6/50)
+[2026-10-09T18:32:21.480+0545] {subprocess.py:93} INFO - 26/10/09 12:47:21 INFO BlockManagerInfo: Added rdd_32_3 in memory on spark-worker1:40225 (size: 46.0 B, free: 413.8 MiB)
+[2026-10-09T18:32:21.683+0545] {subprocess.py:93} INFO - 26/10/09 12:47:21 INFO TaskSetManager: Starting task 4.0 in stage 8.0 (TID 14) (spark-worker1, executor 1, partition 4, PROCESS_LOCAL, 7777 bytes)
+[2026-10-09T18:32:21.684+0545] {subprocess.py:93} INFO - 26/10/09 12:47:21 INFO TaskSetManager: Finished task 3.0 in stage 8.0 (TID 13) in 496 ms on spark-worker1 (executor 1) (7/50)
+[2026-10-09T18:32:21.989+0545] {subprocess.py:93} INFO - 26/10/09 12:47:21 INFO BlockManagerInfo: Added rdd_32_4 in memory on spark-worker1:40225 (size: 46.0 B, free: 413.8 MiB)
+[2026-10-09T18:32:22.188+0545] {subprocess.py:93} INFO - 26/10/09 12:47:22 INFO TaskSetManager: Starting task 5.0 in stage 8.0 (TID 15) (spark-worker1, executor 1, partition 5, PROCESS_LOCAL, 7777 bytes)
+[2026-10-09T18:32:22.189+0545] {subprocess.py:93} INFO - 26/10/09 12:47:22 INFO TaskSetManager: Finished task 4.0 in stage 8.0 (TID 14) in 506 ms on spark-worker1 (executor 1) (8/50)
+[2026-10-09T18:32:22.492+0545] {subprocess.py:93} INFO - 26/10/09 12:47:22 INFO BlockManagerInfo: Added rdd_32_5 in memory on spark-worker1:40225 (size: 46.0 B, free: 413.8 MiB)
+[2026-10-09T18:32:22.689+0545] {subprocess.py:93} INFO - 26/10/09 12:47:22 INFO TaskSetManager: Starting task 6.0 in stage 8.0 (TID 16) (spark-worker1, executor 1, partition 6, PROCESS_LOCAL, 7777 bytes)
+[2026-10-09T18:32:22.689+0545] {subprocess.py:93} INFO - 26/10/09 12:47:22 INFO TaskSetManager: Finished task 5.0 in stage 8.0 (TID 15) in 502 ms on spark-worker1 (executor 1) (9/50)
+[2026-10-09T18:32:22.994+0545] {subprocess.py:93} INFO - 26/10/09 12:47:22 INFO BlockManagerInfo: Added rdd_32_6 in memory on spark-worker1:40225 (size: 46.0 B, free: 413.8 MiB)
+[2026-10-09T18:32:23.178+0545] {subprocess.py:93} INFO - 26/10/09 12:47:23 INFO TaskSetManager: Starting task 7.0 in stage 8.0 (TID 17) (spark-worker1, executor 1, partition 7, PROCESS_LOCAL, 7777 bytes)
+[2026-10-09T18:32:23.178+0545] {subprocess.py:93} INFO - 26/10/09 12:47:23 INFO TaskSetManager: Finished task 6.0 in stage 8.0 (TID 16) in 490 ms on spark-worker1 (executor 1) (10/50)
+[2026-10-09T18:32:23.493+0545] {subprocess.py:93} INFO - 26/10/09 12:47:23 INFO BlockManagerInfo: Added rdd_32_7 in memory on spark-worker1:40225 (size: 46.0 B, free: 413.8 MiB)
+[2026-10-09T18:32:23.687+0545] {subprocess.py:93} INFO - 26/10/09 12:47:23 INFO TaskSetManager: Starting task 9.0 in stage 8.0 (TID 18) (spark-worker1, executor 1, partition 9, PROCESS_LOCAL, 7777 bytes)
+[2026-10-09T18:32:23.688+0545] {subprocess.py:93} INFO - 26/10/09 12:47:23 INFO TaskSetManager: Finished task 7.0 in stage 8.0 (TID 17) in 510 ms on spark-worker1 (executor 1) (11/50)
+[2026-10-09T18:32:23.809+0545] {subprocess.py:93} INFO - 26/10/09 12:47:23 INFO TaskSetManager: Starting task 10.0 in stage 8.0 (TID 19) (spark-worker2, executor 0, partition 10, PROCESS_LOCAL, 7777 bytes)
+[2026-10-09T18:32:23.809+0545] {subprocess.py:93} INFO - 26/10/09 12:47:23 INFO TaskSetManager: Finished task 1.0 in stage 8.0 (TID 7) in 14627 ms on spark-worker2 (executor 0) (12/50)
+[2026-10-09T18:32:23.902+0545] {subprocess.py:93} INFO - 26/10/09 12:47:23 INFO BlockManagerInfo: Added rdd_32_9 in memory on spark-worker1:40225 (size: 46.0 B, free: 413.8 MiB)
+[2026-10-09T18:32:24.082+0545] {subprocess.py:93} INFO - 26/10/09 12:47:24 INFO TaskSetManager: Starting task 11.0 in stage 8.0 (TID 20) (spark-worker1, executor 1, partition 11, PROCESS_LOCAL, 7777 bytes)
+[2026-10-09T18:32:24.083+0545] {subprocess.py:93} INFO - 26/10/09 12:47:24 INFO TaskSetManager: Finished task 9.0 in stage 8.0 (TID 18) in 395 ms on spark-worker1 (executor 1) (13/50)
+[2026-10-09T18:32:24.288+0545] {subprocess.py:93} INFO - 26/10/09 12:47:24 INFO BlockManagerInfo: Added rdd_32_11 in memory on spark-worker1:40225 (size: 46.0 B, free: 413.8 MiB)
+[2026-10-09T18:32:24.289+0545] {subprocess.py:93} INFO - 26/10/09 12:47:24 INFO BlockManagerInfo: Added rdd_32_10 in memory on spark-worker2:33221 (size: 46.0 B, free: 413.8 MiB)
+[2026-10-09T18:32:24.397+0545] {subprocess.py:93} INFO - 26/10/09 12:47:24 INFO TaskSetManager: Starting task 12.0 in stage 8.0 (TID 21) (spark-worker1, executor 1, partition 12, PROCESS_LOCAL, 7777 bytes)
+[2026-10-09T18:32:24.397+0545] {subprocess.py:93} INFO - 26/10/09 12:47:24 INFO TaskSetManager: Finished task 11.0 in stage 8.0 (TID 20) in 315 ms on spark-worker1 (executor 1) (14/50)
+[2026-10-09T18:32:24.499+0545] {subprocess.py:93} INFO - 26/10/09 12:47:24 INFO TaskSetManager: Starting task 13.0 in stage 8.0 (TID 22) (spark-worker2, executor 0, partition 13, PROCESS_LOCAL, 7777 bytes)
+[2026-10-09T18:32:24.500+0545] {subprocess.py:93} INFO - 26/10/09 12:47:24 INFO TaskSetManager: Finished task 10.0 in stage 8.0 (TID 19) in 691 ms on spark-worker2 (executor 0) (15/50)
+[2026-10-09T18:32:24.695+0545] {subprocess.py:93} INFO - 26/10/09 12:47:24 INFO BlockManagerInfo: Added rdd_32_12 in memory on spark-worker1:40225 (size: 46.0 B, free: 413.8 MiB)
+[2026-10-09T18:32:24.885+0545] {subprocess.py:93} INFO - 26/10/09 12:47:24 INFO TaskSetManager: Starting task 14.0 in stage 8.0 (TID 23) (spark-worker1, executor 1, partition 14, PROCESS_LOCAL, 7777 bytes)
+[2026-10-09T18:32:24.886+0545] {subprocess.py:93} INFO - 26/10/09 12:47:24 INFO TaskSetManager: Finished task 12.0 in stage 8.0 (TID 21) in 490 ms on spark-worker1 (executor 1) (16/50)
+[2026-10-09T18:32:25.004+0545] {subprocess.py:93} INFO - 26/10/09 12:47:25 INFO BlockManagerInfo: Added rdd_32_13 in memory on spark-worker2:33221 (size: 46.0 B, free: 413.8 MiB)
+[2026-10-09T18:32:25.183+0545] {subprocess.py:93} INFO - 26/10/09 12:47:25 INFO BlockManagerInfo: Added rdd_32_14 in memory on spark-worker1:40225 (size: 46.0 B, free: 413.8 MiB)
+[2026-10-09T18:32:25.290+0545] {subprocess.py:93} INFO - 26/10/09 12:47:25 INFO TaskSetManager: Starting task 15.0 in stage 8.0 (TID 24) (spark-worker1, executor 1, partition 15, PROCESS_LOCAL, 7777 bytes)
+[2026-10-09T18:32:25.290+0545] {subprocess.py:93} INFO - 26/10/09 12:47:25 INFO TaskSetManager: Finished task 14.0 in stage 8.0 (TID 23) in 406 ms on spark-worker1 (executor 1) (17/50)
+[2026-10-09T18:32:25.300+0545] {subprocess.py:93} INFO - 26/10/09 12:47:25 INFO TaskSetManager: Starting task 16.0 in stage 8.0 (TID 25) (spark-worker2, executor 0, partition 16, PROCESS_LOCAL, 7777 bytes)
+[2026-10-09T18:32:25.300+0545] {subprocess.py:93} INFO - 26/10/09 12:47:25 INFO TaskSetManager: Finished task 13.0 in stage 8.0 (TID 22) in 802 ms on spark-worker2 (executor 0) (18/50)
+[2026-10-09T18:32:25.584+0545] {subprocess.py:93} INFO - 26/10/09 12:47:25 INFO BlockManagerInfo: Added rdd_32_15 in memory on spark-worker1:40225 (size: 46.0 B, free: 413.8 MiB)
+[2026-10-09T18:32:25.686+0545] {subprocess.py:93} INFO - 26/10/09 12:47:25 INFO TaskSetManager: Starting task 17.0 in stage 8.0 (TID 26) (spark-worker1, executor 1, partition 17, PROCESS_LOCAL, 7777 bytes)
+[2026-10-09T18:32:25.686+0545] {subprocess.py:93} INFO - 26/10/09 12:47:25 INFO TaskSetManager: Finished task 15.0 in stage 8.0 (TID 24) in 398 ms on spark-worker1 (executor 1) (19/50)
+[2026-10-09T18:32:25.808+0545] {subprocess.py:93} INFO - 26/10/09 12:47:25 INFO BlockManagerInfo: Added rdd_32_16 in memory on spark-worker2:33221 (size: 46.0 B, free: 413.8 MiB)
+[2026-10-09T18:32:25.904+0545] {subprocess.py:93} INFO - 26/10/09 12:47:25 INFO BlockManagerInfo: Added rdd_32_17 in memory on spark-worker1:40225 (size: 46.0 B, free: 413.8 MiB)
+[2026-10-09T18:32:26.090+0545] {subprocess.py:93} INFO - 26/10/09 12:47:26 INFO TaskSetManager: Starting task 18.0 in stage 8.0 (TID 27) (spark-worker1, executor 1, partition 18, PROCESS_LOCAL, 7777 bytes)
+[2026-10-09T18:32:26.090+0545] {subprocess.py:93} INFO - 26/10/09 12:47:26 INFO TaskSetManager: Finished task 17.0 in stage 8.0 (TID 26) in 405 ms on spark-worker1 (executor 1) (20/50)
+[2026-10-09T18:32:26.092+0545] {subprocess.py:93} INFO - 26/10/09 12:47:26 INFO TaskSetManager: Starting task 19.0 in stage 8.0 (TID 28) (spark-worker2, executor 0, partition 19, PROCESS_LOCAL, 7777 bytes)
+[2026-10-09T18:32:26.093+0545] {subprocess.py:93} INFO - 26/10/09 12:47:26 INFO TaskSetManager: Finished task 16.0 in stage 8.0 (TID 25) in 793 ms on spark-worker2 (executor 0) (21/50)
+[2026-10-09T18:32:26.284+0545] {subprocess.py:93} INFO - 26/10/09 12:47:26 INFO BlockManagerInfo: Added rdd_32_18 in memory on spark-worker1:40225 (size: 46.0 B, free: 413.8 MiB)
+[2026-10-09T18:32:26.380+0545] {subprocess.py:93} INFO - 26/10/09 12:47:26 INFO TaskSetManager: Starting task 20.0 in stage 8.0 (TID 29) (spark-worker1, executor 1, partition 20, PROCESS_LOCAL, 7777 bytes)
+[2026-10-09T18:32:26.380+0545] {subprocess.py:93} INFO - 26/10/09 12:47:26 INFO TaskSetManager: Finished task 18.0 in stage 8.0 (TID 27) in 291 ms on spark-worker1 (executor 1) (22/50)
+[2026-10-09T18:32:26.404+0545] {subprocess.py:93} INFO - 26/10/09 12:47:26 INFO BlockManagerInfo: Added rdd_32_19 in memory on spark-worker2:33221 (size: 46.0 B, free: 413.8 MiB)
+[2026-10-09T18:32:26.581+0545] {subprocess.py:93} INFO - 26/10/09 12:47:26 INFO BlockManagerInfo: Added rdd_32_20 in memory on spark-worker1:40225 (size: 46.0 B, free: 413.8 MiB)
+[2026-10-09T18:32:26.683+0545] {subprocess.py:93} INFO - 26/10/09 12:47:26 INFO TaskSetManager: Starting task 21.0 in stage 8.0 (TID 30) (spark-worker1, executor 1, partition 21, PROCESS_LOCAL, 7777 bytes)
+[2026-10-09T18:32:26.684+0545] {subprocess.py:93} INFO - 26/10/09 12:47:26 INFO TaskSetManager: Finished task 20.0 in stage 8.0 (TID 29) in 304 ms on spark-worker1 (executor 1) (23/50)
+[2026-10-09T18:32:26.693+0545] {subprocess.py:93} INFO - 26/10/09 12:47:26 INFO TaskSetManager: Starting task 22.0 in stage 8.0 (TID 31) (spark-worker2, executor 0, partition 22, PROCESS_LOCAL, 7777 bytes)
+[2026-10-09T18:32:26.693+0545] {subprocess.py:93} INFO - 26/10/09 12:47:26 INFO TaskSetManager: Finished task 19.0 in stage 8.0 (TID 28) in 602 ms on spark-worker2 (executor 0) (24/50)
+[2026-10-09T18:32:26.905+0545] {subprocess.py:93} INFO - 26/10/09 12:47:26 INFO BlockManagerInfo: Added rdd_32_22 in memory on spark-worker2:33221 (size: 46.0 B, free: 413.8 MiB)
+[2026-10-09T18:32:26.981+0545] {subprocess.py:93} INFO - 26/10/09 12:47:26 INFO BlockManagerInfo: Added rdd_32_21 in memory on spark-worker1:40225 (size: 46.0 B, free: 413.8 MiB)
+[2026-10-09T18:32:27.083+0545] {subprocess.py:93} INFO - 26/10/09 12:47:27 INFO TaskSetManager: Starting task 23.0 in stage 8.0 (TID 32) (spark-worker1, executor 1, partition 23, PROCESS_LOCAL, 7777 bytes)
+[2026-10-09T18:32:27.083+0545] {subprocess.py:93} INFO - 26/10/09 12:47:27 INFO TaskSetManager: Finished task 21.0 in stage 8.0 (TID 30) in 401 ms on spark-worker1 (executor 1) (25/50)
+[2026-10-09T18:32:27.102+0545] {subprocess.py:93} INFO - 26/10/09 12:47:27 INFO TaskSetManager: Starting task 24.0 in stage 8.0 (TID 33) (spark-worker2, executor 0, partition 24, PROCESS_LOCAL, 7777 bytes)
+[2026-10-09T18:32:27.103+0545] {subprocess.py:93} INFO - 26/10/09 12:47:27 INFO TaskSetManager: Finished task 22.0 in stage 8.0 (TID 31) in 411 ms on spark-worker2 (executor 0) (26/50)
+[2026-10-09T18:32:27.283+0545] {subprocess.py:93} INFO - 26/10/09 12:47:27 INFO BlockManagerInfo: Added rdd_32_23 in memory on spark-worker1:40225 (size: 46.0 B, free: 413.8 MiB)
+[2026-10-09T18:32:27.386+0545] {subprocess.py:93} INFO - 26/10/09 12:47:27 INFO TaskSetManager: Starting task 25.0 in stage 8.0 (TID 34) (spark-worker1, executor 1, partition 25, PROCESS_LOCAL, 7777 bytes)
+[2026-10-09T18:32:27.386+0545] {subprocess.py:93} INFO - 26/10/09 12:47:27 INFO TaskSetManager: Finished task 23.0 in stage 8.0 (TID 32) in 305 ms on spark-worker1 (executor 1) (27/50)
+[2026-10-09T18:32:27.393+0545] {subprocess.py:93} INFO - 26/10/09 12:47:27 INFO BlockManagerInfo: Added rdd_32_24 in memory on spark-worker2:33221 (size: 46.0 B, free: 413.8 MiB)
+[2026-10-09T18:32:27.593+0545] {subprocess.py:93} INFO - 26/10/09 12:47:27 INFO BlockManagerInfo: Added rdd_32_25 in memory on spark-worker1:40225 (size: 46.0 B, free: 413.8 MiB)
+[2026-10-09T18:32:27.594+0545] {subprocess.py:93} INFO - 26/10/09 12:47:27 INFO TaskSetManager: Starting task 26.0 in stage 8.0 (TID 35) (spark-worker2, executor 0, partition 26, PROCESS_LOCAL, 7777 bytes)
+[2026-10-09T18:32:27.594+0545] {subprocess.py:93} INFO - 26/10/09 12:47:27 INFO TaskSetManager: Finished task 24.0 in stage 8.0 (TID 33) in 492 ms on spark-worker2 (executor 0) (28/50)
+[2026-10-09T18:32:27.784+0545] {subprocess.py:93} INFO - 26/10/09 12:47:27 INFO TaskSetManager: Starting task 27.0 in stage 8.0 (TID 36) (spark-worker1, executor 1, partition 27, PROCESS_LOCAL, 7777 bytes)
+[2026-10-09T18:32:27.785+0545] {subprocess.py:93} INFO - 26/10/09 12:47:27 INFO TaskSetManager: Finished task 25.0 in stage 8.0 (TID 34) in 399 ms on spark-worker1 (executor 1) (29/50)
+[2026-10-09T18:32:27.805+0545] {subprocess.py:93} INFO - 26/10/09 12:47:27 INFO BlockManagerInfo: Added rdd_32_26 in memory on spark-worker2:33221 (size: 46.0 B, free: 413.8 MiB)
+[2026-10-09T18:32:27.988+0545] {subprocess.py:93} INFO - 26/10/09 12:47:27 INFO BlockManagerInfo: Added rdd_32_27 in memory on spark-worker1:40225 (size: 46.0 B, free: 413.8 MiB)
+[2026-10-09T18:32:27.989+0545] {subprocess.py:93} INFO - 26/10/09 12:47:27 INFO TaskSetManager: Starting task 28.0 in stage 8.0 (TID 37) (spark-worker2, executor 0, partition 28, PROCESS_LOCAL, 7777 bytes)
+[2026-10-09T18:32:27.990+0545] {subprocess.py:93} INFO - 26/10/09 12:47:27 INFO TaskSetManager: Finished task 26.0 in stage 8.0 (TID 35) in 398 ms on spark-worker2 (executor 0) (30/50)
+[2026-10-09T18:32:28.094+0545] {subprocess.py:93} INFO - 26/10/09 12:47:28 INFO TaskSetManager: Starting task 29.0 in stage 8.0 (TID 38) (spark-worker1, executor 1, partition 29, PROCESS_LOCAL, 7777 bytes)
+[2026-10-09T18:32:28.095+0545] {subprocess.py:93} INFO - 26/10/09 12:47:28 INFO TaskSetManager: Finished task 27.0 in stage 8.0 (TID 36) in 311 ms on spark-worker1 (executor 1) (31/50)
+[2026-10-09T18:32:28.110+0545] {subprocess.py:93} INFO - 26/10/09 12:47:28 INFO BlockManagerInfo: Added rdd_32_28 in memory on spark-worker2:33221 (size: 46.0 B, free: 413.8 MiB)
+[2026-10-09T18:32:28.297+0545] {subprocess.py:93} INFO - 26/10/09 12:47:28 INFO BlockManagerInfo: Added rdd_32_29 in memory on spark-worker1:40225 (size: 46.0 B, free: 413.8 MiB)
+[2026-10-09T18:32:28.298+0545] {subprocess.py:93} INFO - 26/10/09 12:47:28 INFO TaskSetManager: Starting task 30.0 in stage 8.0 (TID 39) (spark-worker2, executor 0, partition 30, PROCESS_LOCAL, 7777 bytes)
+[2026-10-09T18:32:28.299+0545] {subprocess.py:93} INFO - 26/10/09 12:47:28 INFO TaskSetManager: Finished task 28.0 in stage 8.0 (TID 37) in 310 ms on spark-worker2 (executor 0) (32/50)
+[2026-10-09T18:32:28.485+0545] {subprocess.py:93} INFO - 26/10/09 12:47:28 INFO TaskSetManager: Starting task 31.0 in stage 8.0 (TID 40) (spark-worker1, executor 1, partition 31, PROCESS_LOCAL, 7777 bytes)
+[2026-10-09T18:32:28.486+0545] {subprocess.py:93} INFO - 26/10/09 12:47:28 INFO TaskSetManager: Finished task 29.0 in stage 8.0 (TID 38) in 391 ms on spark-worker1 (executor 1) (33/50)
+[2026-10-09T18:32:28.506+0545] {subprocess.py:93} INFO - 26/10/09 12:47:28 INFO BlockManagerInfo: Added rdd_32_30 in memory on spark-worker2:33221 (size: 46.0 B, free: 413.8 MiB)
+[2026-10-09T18:32:28.692+0545] {subprocess.py:93} INFO - 26/10/09 12:47:28 INFO TaskSetManager: Starting task 32.0 in stage 8.0 (TID 41) (spark-worker2, executor 0, partition 32, PROCESS_LOCAL, 7777 bytes)
+[2026-10-09T18:32:28.692+0545] {subprocess.py:93} INFO - 26/10/09 12:47:28 INFO TaskSetManager: Finished task 30.0 in stage 8.0 (TID 39) in 394 ms on spark-worker2 (executor 0) (34/50)
+[2026-10-09T18:32:28.698+0545] {subprocess.py:93} INFO - 26/10/09 12:47:28 INFO BlockManagerInfo: Added rdd_32_31 in memory on spark-worker1:40225 (size: 46.0 B, free: 413.8 MiB)
+[2026-10-09T18:32:28.793+0545] {subprocess.py:93} INFO - 26/10/09 12:47:28 INFO TaskSetManager: Starting task 33.0 in stage 8.0 (TID 42) (spark-worker1, executor 1, partition 33, PROCESS_LOCAL, 7777 bytes)
+[2026-10-09T18:32:28.794+0545] {subprocess.py:93} INFO - 26/10/09 12:47:28 INFO TaskSetManager: Finished task 31.0 in stage 8.0 (TID 40) in 308 ms on spark-worker1 (executor 1) (35/50)
+[2026-10-09T18:32:28.897+0545] {subprocess.py:93} INFO - 26/10/09 12:47:28 INFO BlockManagerInfo: Added rdd_32_32 in memory on spark-worker2:33221 (size: 46.0 B, free: 413.8 MiB)
+[2026-10-09T18:32:29.006+0545] {subprocess.py:93} INFO - 26/10/09 12:47:29 INFO TaskSetManager: Starting task 34.0 in stage 8.0 (TID 43) (spark-worker2, executor 0, partition 34, PROCESS_LOCAL, 7777 bytes)
+[2026-10-09T18:32:29.006+0545] {subprocess.py:93} INFO - 26/10/09 12:47:29 INFO TaskSetManager: Finished task 32.0 in stage 8.0 (TID 41) in 315 ms on spark-worker2 (executor 0) (36/50)
+[2026-10-09T18:32:29.086+0545] {subprocess.py:93} INFO - 26/10/09 12:47:29 INFO BlockManagerInfo: Added rdd_32_33 in memory on spark-worker1:40225 (size: 46.0 B, free: 413.8 MiB)
+[2026-10-09T18:32:29.188+0545] {subprocess.py:93} INFO - 26/10/09 12:47:29 INFO TaskSetManager: Starting task 35.0 in stage 8.0 (TID 44) (spark-worker1, executor 1, partition 35, PROCESS_LOCAL, 7777 bytes)
+[2026-10-09T18:32:29.189+0545] {subprocess.py:93} INFO - 26/10/09 12:47:29 INFO TaskSetManager: Finished task 33.0 in stage 8.0 (TID 42) in 396 ms on spark-worker1 (executor 1) (37/50)
+[2026-10-09T18:32:29.296+0545] {subprocess.py:93} INFO - 26/10/09 12:47:29 INFO BlockManagerInfo: Added rdd_32_34 in memory on spark-worker2:33221 (size: 46.0 B, free: 413.8 MiB)
+[2026-10-09T18:32:29.407+0545] {subprocess.py:93} INFO - 26/10/09 12:47:29 INFO TaskSetManager: Starting task 36.0 in stage 8.0 (TID 45) (spark-worker2, executor 0, partition 36, PROCESS_LOCAL, 7777 bytes)
+[2026-10-09T18:32:29.407+0545] {subprocess.py:93} INFO - 26/10/09 12:47:29 INFO TaskSetManager: Finished task 34.0 in stage 8.0 (TID 43) in 402 ms on spark-worker2 (executor 0) (38/50)
+[2026-10-09T18:32:29.481+0545] {subprocess.py:93} INFO - 26/10/09 12:47:29 INFO BlockManagerInfo: Added rdd_32_35 in memory on spark-worker1:40225 (size: 46.0 B, free: 413.8 MiB)
+[2026-10-09T18:32:29.591+0545] {subprocess.py:93} INFO - 26/10/09 12:47:29 INFO TaskSetManager: Starting task 37.0 in stage 8.0 (TID 46) (spark-worker1, executor 1, partition 37, PROCESS_LOCAL, 7777 bytes)
+[2026-10-09T18:32:29.594+0545] {subprocess.py:93} INFO - 26/10/09 12:47:29 INFO TaskSetManager: Finished task 35.0 in stage 8.0 (TID 44) in 404 ms on spark-worker1 (executor 1) (39/50)
+[2026-10-09T18:32:29.708+0545] {subprocess.py:93} INFO - 26/10/09 12:47:29 INFO BlockManagerInfo: Added rdd_32_36 in memory on spark-worker2:33221 (size: 46.0 B, free: 413.8 MiB)
+[2026-10-09T18:32:29.792+0545] {subprocess.py:93} INFO - 26/10/09 12:47:29 INFO BlockManagerInfo: Added rdd_32_37 in memory on spark-worker1:40225 (size: 46.0 B, free: 413.8 MiB)
+[2026-10-09T18:32:29.892+0545] {subprocess.py:93} INFO - 26/10/09 12:47:29 INFO TaskSetManager: Starting task 38.0 in stage 8.0 (TID 47) (spark-worker1, executor 1, partition 38, PROCESS_LOCAL, 7777 bytes)
+[2026-10-09T18:32:29.892+0545] {subprocess.py:93} INFO - 26/10/09 12:47:29 INFO TaskSetManager: Finished task 37.0 in stage 8.0 (TID 46) in 302 ms on spark-worker1 (executor 1) (40/50)
+[2026-10-09T18:32:29.894+0545] {subprocess.py:93} INFO - 26/10/09 12:47:29 INFO TaskSetManager: Starting task 39.0 in stage 8.0 (TID 48) (spark-worker2, executor 0, partition 39, PROCESS_LOCAL, 7777 bytes)
+[2026-10-09T18:32:29.895+0545] {subprocess.py:93} INFO - 26/10/09 12:47:29 INFO TaskSetManager: Finished task 36.0 in stage 8.0 (TID 45) in 489 ms on spark-worker2 (executor 0) (41/50)
+[2026-10-09T18:32:30.091+0545] {subprocess.py:93} INFO - 26/10/09 12:47:30 INFO BlockManagerInfo: Added rdd_32_39 in memory on spark-worker2:33221 (size: 46.0 B, free: 413.8 MiB)
+[2026-10-09T18:32:30.181+0545] {subprocess.py:93} INFO - 26/10/09 12:47:30 INFO BlockManagerInfo: Added rdd_32_38 in memory on spark-worker1:40225 (size: 46.0 B, free: 413.8 MiB)
+[2026-10-09T18:32:30.195+0545] {subprocess.py:93} INFO - 26/10/09 12:47:30 INFO TaskSetManager: Starting task 41.0 in stage 8.0 (TID 49) (spark-worker2, executor 0, partition 41, PROCESS_LOCAL, 7777 bytes)
+[2026-10-09T18:32:30.196+0545] {subprocess.py:93} INFO - 26/10/09 12:47:30 INFO TaskSetManager: Finished task 39.0 in stage 8.0 (TID 48) in 302 ms on spark-worker2 (executor 0) (42/50)
+[2026-10-09T18:32:30.287+0545] {subprocess.py:93} INFO - 26/10/09 12:47:30 INFO TaskSetManager: Starting task 43.0 in stage 8.0 (TID 50) (spark-worker1, executor 1, partition 43, PROCESS_LOCAL, 7777 bytes)
+[2026-10-09T18:32:30.288+0545] {subprocess.py:93} INFO - 26/10/09 12:47:30 INFO TaskSetManager: Finished task 38.0 in stage 8.0 (TID 47) in 396 ms on spark-worker1 (executor 1) (43/50)
+[2026-10-09T18:32:30.392+0545] {subprocess.py:93} INFO - 26/10/09 12:47:30 INFO BlockManagerInfo: Added rdd_32_41 in memory on spark-worker2:33221 (size: 46.0 B, free: 413.8 MiB)
+[2026-10-09T18:32:30.499+0545] {subprocess.py:93} INFO - 26/10/09 12:47:30 INFO BlockManagerInfo: Added rdd_32_43 in memory on spark-worker1:40225 (size: 46.0 B, free: 413.8 MiB)
+[2026-10-09T18:32:30.594+0545] {subprocess.py:93} INFO - 26/10/09 12:47:30 INFO TaskSetManager: Starting task 45.0 in stage 8.0 (TID 51) (spark-worker2, executor 0, partition 45, PROCESS_LOCAL, 7777 bytes)
+[2026-10-09T18:32:30.594+0545] {subprocess.py:93} INFO - 26/10/09 12:47:30 INFO TaskSetManager: Finished task 41.0 in stage 8.0 (TID 49) in 399 ms on spark-worker2 (executor 0) (44/50)
+[2026-10-09T18:32:30.595+0545] {subprocess.py:93} INFO - 26/10/09 12:47:30 INFO TaskSetManager: Starting task 46.0 in stage 8.0 (TID 52) (spark-worker1, executor 1, partition 46, PROCESS_LOCAL, 7777 bytes)
+[2026-10-09T18:32:30.596+0545] {subprocess.py:93} INFO - 26/10/09 12:47:30 INFO TaskSetManager: Finished task 43.0 in stage 8.0 (TID 50) in 309 ms on spark-worker1 (executor 1) (45/50)
+[2026-10-09T18:32:30.792+0545] {subprocess.py:93} INFO - 26/10/09 12:47:30 INFO BlockManagerInfo: Added rdd_32_46 in memory on spark-worker1:40225 (size: 46.0 B, free: 413.8 MiB)
+[2026-10-09T18:32:30.805+0545] {subprocess.py:93} INFO - 26/10/09 12:47:30 INFO BlockManagerInfo: Added rdd_32_45 in memory on spark-worker2:33221 (size: 46.0 B, free: 413.8 MiB)
+[2026-10-09T18:32:30.981+0545] {subprocess.py:93} INFO - 26/10/09 12:47:30 INFO TaskSetManager: Starting task 47.0 in stage 8.0 (TID 53) (spark-worker1, executor 1, partition 47, PROCESS_LOCAL, 7777 bytes)
+[2026-10-09T18:32:30.982+0545] {subprocess.py:93} INFO - 26/10/09 12:47:30 INFO TaskSetManager: Finished task 46.0 in stage 8.0 (TID 52) in 386 ms on spark-worker1 (executor 1) (46/50)
+[2026-10-09T18:32:30.995+0545] {subprocess.py:93} INFO - 26/10/09 12:47:30 INFO TaskSetManager: Starting task 48.0 in stage 8.0 (TID 54) (spark-worker2, executor 0, partition 48, PROCESS_LOCAL, 7777 bytes)
+[2026-10-09T18:32:30.997+0545] {subprocess.py:93} INFO - 26/10/09 12:47:30 INFO TaskSetManager: Finished task 45.0 in stage 8.0 (TID 51) in 402 ms on spark-worker2 (executor 0) (47/50)
+[2026-10-09T18:32:31.179+0545] {subprocess.py:93} INFO - 26/10/09 12:47:31 INFO BlockManagerInfo: Added rdd_32_47 in memory on spark-worker1:40225 (size: 46.0 B, free: 413.8 MiB)
+[2026-10-09T18:32:31.192+0545] {subprocess.py:93} INFO - 26/10/09 12:47:31 INFO BlockManagerInfo: Added rdd_32_48 in memory on spark-worker2:33221 (size: 46.0 B, free: 413.8 MiB)
+[2026-10-09T18:32:31.287+0545] {subprocess.py:93} INFO - 26/10/09 12:47:31 INFO TaskSetManager: Starting task 49.0 in stage 8.0 (TID 55) (spark-worker1, executor 1, partition 49, PROCESS_LOCAL, 7777 bytes)
+[2026-10-09T18:32:31.287+0545] {subprocess.py:93} INFO - 26/10/09 12:47:31 INFO TaskSetManager: Finished task 47.0 in stage 8.0 (TID 53) in 307 ms on spark-worker1 (executor 1) (48/50)
+[2026-10-09T18:32:31.299+0545] {subprocess.py:93} INFO - 26/10/09 12:47:31 INFO TaskSetManager: Finished task 48.0 in stage 8.0 (TID 54) in 304 ms on spark-worker2 (executor 0) (49/50)
+[2026-10-09T18:32:31.484+0545] {subprocess.py:93} INFO - 26/10/09 12:47:31 INFO BlockManagerInfo: Added rdd_32_49 in memory on spark-worker1:40225 (size: 46.0 B, free: 413.8 MiB)
+[2026-10-09T18:32:31.500+0545] {subprocess.py:93} INFO - 26/10/09 12:47:31 INFO TaskSetManager: Finished task 49.0 in stage 8.0 (TID 55) in 214 ms on spark-worker1 (executor 1) (50/50)
+[2026-10-09T18:32:31.500+0545] {subprocess.py:93} INFO - 26/10/09 12:47:31 INFO TaskSchedulerImpl: Removed TaskSet 8.0, whose tasks have all completed, from pool
+[2026-10-09T18:32:31.501+0545] {subprocess.py:93} INFO - 26/10/09 12:47:31 INFO DAGScheduler: ShuffleMapStage 8 (save at <unknown>:0) finished in 22.723 s
+[2026-10-09T18:32:31.501+0545] {subprocess.py:93} INFO - 26/10/09 12:47:31 INFO DAGScheduler: looking for newly runnable stages
+[2026-10-09T18:32:31.501+0545] {subprocess.py:93} INFO - 26/10/09 12:47:31 INFO DAGScheduler: running: Set()
+[2026-10-09T18:32:31.501+0545] {subprocess.py:93} INFO - 26/10/09 12:47:31 INFO DAGScheduler: waiting: Set()
+[2026-10-09T18:32:31.501+0545] {subprocess.py:93} INFO - 26/10/09 12:47:31 INFO DAGScheduler: failed: Set()
+[2026-10-09T18:32:31.580+0545] {subprocess.py:93} INFO - 26/10/09 12:47:31 INFO SparkContext: Starting job: save at <unknown>:0
+[2026-10-09T18:32:31.581+0545] {subprocess.py:93} INFO - 26/10/09 12:47:31 INFO DAGScheduler: Got job 7 (save at <unknown>:0) with 1 output partitions
+[2026-10-09T18:32:31.582+0545] {subprocess.py:93} INFO - 26/10/09 12:47:31 INFO DAGScheduler: Final stage: ResultStage 11 (save at <unknown>:0)
+[2026-10-09T18:32:31.582+0545] {subprocess.py:93} INFO - 26/10/09 12:47:31 INFO DAGScheduler: Parents of final stage: List(ShuffleMapStage 10)
+[2026-10-09T18:32:31.582+0545] {subprocess.py:93} INFO - 26/10/09 12:47:31 INFO DAGScheduler: Missing parents: List()
+[2026-10-09T18:32:31.664+0545] {subprocess.py:93} INFO - 26/10/09 12:47:31 INFO DAGScheduler: Submitting ResultStage 11 (MapPartitionsRDD[38] at save at <unknown>:0), which has no missing parents
+[2026-10-09T18:32:31.673+0545] {subprocess.py:93} INFO - 26/10/09 12:47:31 INFO MemoryStore: Block broadcast_10 stored as values in memory (estimated size 533.1 KiB, free 412.2 MiB)
+[2026-10-09T18:32:31.675+0545] {subprocess.py:93} INFO - 26/10/09 12:47:31 INFO MemoryStore: Block broadcast_10_piece0 stored as bytes in memory (estimated size 124.3 KiB, free 412.1 MiB)
+[2026-10-09T18:32:31.676+0545] {subprocess.py:93} INFO - 26/10/09 12:47:31 INFO BlockManagerInfo: Added broadcast_10_piece0 in memory on 8564da8b8b58:36445 (size: 124.3 KiB, free: 413.6 MiB)
+[2026-10-09T18:32:31.676+0545] {subprocess.py:93} INFO - 26/10/09 12:47:31 INFO SparkContext: Created broadcast 10 from broadcast at DAGScheduler.scala:1580
+[2026-10-09T18:32:31.677+0545] {subprocess.py:93} INFO - 26/10/09 12:47:31 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 11 (MapPartitionsRDD[38] at save at <unknown>:0) (first 15 tasks are for partitions Vector(0))
+[2026-10-09T18:32:31.677+0545] {subprocess.py:93} INFO - 26/10/09 12:47:31 INFO TaskSchedulerImpl: Adding task set 11.0 with 1 tasks resource profile 0
+[2026-10-09T18:32:31.763+0545] {subprocess.py:93} INFO - 26/10/09 12:47:31 INFO TaskSetManager: Starting task 0.0 in stage 11.0 (TID 56) (spark-worker1, executor 1, partition 0, NODE_LOCAL, 7788 bytes)
+[2026-10-09T18:32:31.775+0545] {subprocess.py:93} INFO - 26/10/09 12:47:31 INFO BlockManagerInfo: Added broadcast_10_piece0 in memory on spark-worker1:40225 (size: 124.3 KiB, free: 413.6 MiB)
+[2026-10-09T18:32:31.788+0545] {subprocess.py:93} INFO - 26/10/09 12:47:31 INFO MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 2 to 172.19.0.6:39346
+[2026-10-09T18:32:32.190+0545] {subprocess.py:93} INFO - 26/10/09 12:47:32 INFO TaskSetManager: Finished task 0.0 in stage 11.0 (TID 56) in 427 ms on spark-worker1 (executor 1) (1/1)
+[2026-10-09T18:32:32.191+0545] {subprocess.py:93} INFO - 26/10/09 12:47:32 INFO TaskSchedulerImpl: Removed TaskSet 11.0, whose tasks have all completed, from pool
+[2026-10-09T18:32:32.191+0545] {subprocess.py:93} INFO - 26/10/09 12:47:32 INFO DAGScheduler: ResultStage 11 (save at <unknown>:0) finished in 0.525 s
+[2026-10-09T18:32:32.191+0545] {subprocess.py:93} INFO - 26/10/09 12:47:32 INFO DAGScheduler: Job 7 is finished. Cancelling potential speculative or zombie tasks for this job
+[2026-10-09T18:32:32.191+0545] {subprocess.py:93} INFO - 26/10/09 12:47:32 INFO TaskSchedulerImpl: Killing all running tasks in stage 11: Stage finished
+[2026-10-09T18:32:32.191+0545] {subprocess.py:93} INFO - 26/10/09 12:47:32 INFO DAGScheduler: Job 7 finished: save at <unknown>:0, took 0.611645 s
+[2026-10-09T18:32:32.385+0545] {subprocess.py:93} INFO - 26/10/09 12:47:32 INFO BlockManagerInfo: Removed broadcast_10_piece0 on 8564da8b8b58:36445 in memory (size: 124.3 KiB, free: 413.7 MiB)
+[2026-10-09T18:32:32.467+0545] {subprocess.py:93} INFO - 26/10/09 12:47:32 INFO BlockManagerInfo: Removed broadcast_10_piece0 on spark-worker1:40225 in memory (size: 124.3 KiB, free: 413.8 MiB)
+[2026-10-09T18:32:32.471+0545] {subprocess.py:93} INFO - 26/10/09 12:47:32 INFO CodeGenerator: Code generated in 193.975103 ms
+[2026-10-09T18:32:32.474+0545] {subprocess.py:93} INFO - 26/10/09 12:47:32 INFO Snapshot: [tableId=b59afd4b-2c44-46ec-8670-2602bf465064] DELTA: Done
+[2026-10-09T18:32:32.568+0545] {subprocess.py:93} INFO - 26/10/09 12:47:32 INFO BlockManagerInfo: Removed broadcast_9_piece0 on 8564da8b8b58:36445 in memory (size: 138.0 KiB, free: 413.9 MiB)
+[2026-10-09T18:32:32.572+0545] {subprocess.py:93} INFO - 26/10/09 12:47:32 INFO BlockManagerInfo: Removed broadcast_9_piece0 on spark-worker2:33221 in memory (size: 138.0 KiB, free: 413.9 MiB)
+[2026-10-09T18:32:32.666+0545] {subprocess.py:93} INFO - 26/10/09 12:47:32 INFO BlockManagerInfo: Removed broadcast_9_piece0 on spark-worker1:40225 in memory (size: 138.0 KiB, free: 413.9 MiB)
+[2026-10-09T18:32:33.287+0545] {subprocess.py:93} INFO - 26/10/09 12:47:33 INFO ParquetUtils: Using default output committer for Parquet: org.apache.parquet.hadoop.ParquetOutputCommitter
+[2026-10-09T18:32:33.475+0545] {subprocess.py:93} INFO - 26/10/09 12:47:33 INFO CodeGenerator: Code generated in 5.983226 ms
+[2026-10-09T18:32:33.482+0545] {subprocess.py:93} INFO - 26/10/09 12:47:33 INFO DAGScheduler: Registering RDD 41 (save at <unknown>:0) as input to shuffle 3
+[2026-10-09T18:32:33.482+0545] {subprocess.py:93} INFO - 26/10/09 12:47:33 INFO DAGScheduler: Got map stage job 8 (save at <unknown>:0) with 2 output partitions
+[2026-10-09T18:32:33.483+0545] {subprocess.py:93} INFO - 26/10/09 12:47:33 INFO DAGScheduler: Final stage: ShuffleMapStage 12 (save at <unknown>:0)
+[2026-10-09T18:32:33.483+0545] {subprocess.py:93} INFO - 26/10/09 12:47:33 INFO DAGScheduler: Parents of final stage: List()
+[2026-10-09T18:32:33.483+0545] {subprocess.py:93} INFO - 26/10/09 12:47:33 INFO DAGScheduler: Missing parents: List()
+[2026-10-09T18:32:33.483+0545] {subprocess.py:93} INFO - 26/10/09 12:47:33 INFO DAGScheduler: Submitting ShuffleMapStage 12 (MapPartitionsRDD[41] at save at <unknown>:0), which has no missing parents
+[2026-10-09T18:32:33.578+0545] {subprocess.py:93} INFO - 26/10/09 12:47:33 INFO MemoryStore: Block broadcast_11 stored as values in memory (estimated size 16.6 KiB, free 413.4 MiB)
+[2026-10-09T18:32:33.579+0545] {subprocess.py:93} INFO - 26/10/09 12:47:33 INFO MemoryStore: Block broadcast_11_piece0 stored as bytes in memory (estimated size 8.4 KiB, free 413.4 MiB)
+[2026-10-09T18:32:33.580+0545] {subprocess.py:93} INFO - 26/10/09 12:47:33 INFO BlockManagerInfo: Added broadcast_11_piece0 in memory on 8564da8b8b58:36445 (size: 8.4 KiB, free: 413.8 MiB)
+[2026-10-09T18:32:33.580+0545] {subprocess.py:93} INFO - 26/10/09 12:47:33 INFO SparkContext: Created broadcast 11 from broadcast at DAGScheduler.scala:1580
+[2026-10-09T18:32:33.581+0545] {subprocess.py:93} INFO - 26/10/09 12:47:33 INFO DAGScheduler: Submitting 2 missing tasks from ShuffleMapStage 12 (MapPartitionsRDD[41] at save at <unknown>:0) (first 15 tasks are for partitions Vector(0, 1))
+[2026-10-09T18:32:33.582+0545] {subprocess.py:93} INFO - 26/10/09 12:47:33 INFO TaskSchedulerImpl: Adding task set 12.0 with 2 tasks resource profile 0
+[2026-10-09T18:32:33.584+0545] {subprocess.py:93} INFO - 26/10/09 12:47:33 INFO TaskSetManager: Starting task 0.0 in stage 12.0 (TID 57) (spark-worker2, executor 0, partition 0, PROCESS_LOCAL, 268762 bytes)
+[2026-10-09T18:32:33.585+0545] {subprocess.py:93} INFO - 26/10/09 12:47:33 INFO TaskSetManager: Starting task 1.0 in stage 12.0 (TID 58) (spark-worker1, executor 1, partition 1, PROCESS_LOCAL, 256775 bytes)
+[2026-10-09T18:32:33.684+0545] {subprocess.py:93} INFO - 26/10/09 12:47:33 INFO BlockManagerInfo: Added broadcast_11_piece0 in memory on spark-worker1:40225 (size: 8.4 KiB, free: 413.9 MiB)
+[2026-10-09T18:32:33.690+0545] {subprocess.py:93} INFO - 26/10/09 12:47:33 INFO BlockManagerInfo: Added broadcast_11_piece0 in memory on spark-worker2:33221 (size: 8.4 KiB, free: 413.9 MiB)
+[2026-10-09T18:32:35.792+0545] {subprocess.py:93} INFO - 26/10/09 12:47:35 INFO TaskSetManager: Finished task 1.0 in stage 12.0 (TID 58) in 2207 ms on spark-worker1 (executor 1) (1/2)
+[2026-10-09T18:32:35.796+0545] {subprocess.py:93} INFO - 26/10/09 12:47:35 INFO PythonAccumulatorV2: Connected to AccumulatorServer at host: 127.0.0.1 port: 35105
+[2026-10-09T18:32:36.291+0545] {subprocess.py:93} INFO - 26/10/09 12:47:36 INFO TaskSetManager: Finished task 0.0 in stage 12.0 (TID 57) in 2708 ms on spark-worker2 (executor 0) (2/2)
+[2026-10-09T18:32:36.291+0545] {subprocess.py:93} INFO - 26/10/09 12:47:36 INFO TaskSchedulerImpl: Removed TaskSet 12.0, whose tasks have all completed, from pool
+[2026-10-09T18:32:36.292+0545] {subprocess.py:93} INFO - 26/10/09 12:47:36 INFO DAGScheduler: ShuffleMapStage 12 (save at <unknown>:0) finished in 2.807 s
+[2026-10-09T18:32:36.293+0545] {subprocess.py:93} INFO - 26/10/09 12:47:36 INFO DAGScheduler: looking for newly runnable stages
+[2026-10-09T18:32:36.293+0545] {subprocess.py:93} INFO - 26/10/09 12:47:36 INFO DAGScheduler: running: Set()
+[2026-10-09T18:32:36.294+0545] {subprocess.py:93} INFO - 26/10/09 12:47:36 INFO DAGScheduler: waiting: Set()
+[2026-10-09T18:32:36.294+0545] {subprocess.py:93} INFO - 26/10/09 12:47:36 INFO DAGScheduler: failed: Set()
+[2026-10-09T18:32:36.483+0545] {subprocess.py:93} INFO - 26/10/09 12:47:36 INFO BlockManagerInfo: Removed broadcast_11_piece0 on 8564da8b8b58:36445 in memory (size: 8.4 KiB, free: 413.9 MiB)
+[2026-10-09T18:32:36.486+0545] {subprocess.py:93} INFO - 26/10/09 12:47:36 INFO BlockManagerInfo: Removed broadcast_11_piece0 on spark-worker1:40225 in memory (size: 8.4 KiB, free: 413.9 MiB)
+[2026-10-09T18:32:36.565+0545] {subprocess.py:93} INFO - 26/10/09 12:47:36 INFO BlockManagerInfo: Removed broadcast_11_piece0 on spark-worker2:33221 in memory (size: 8.4 KiB, free: 413.9 MiB)
+[2026-10-09T18:32:36.569+0545] {subprocess.py:93} INFO - 26/10/09 12:47:36 INFO SparkContext: Starting job: save at <unknown>:0
+[2026-10-09T18:32:36.570+0545] {subprocess.py:93} INFO - 26/10/09 12:47:36 INFO DAGScheduler: Got job 9 (save at <unknown>:0) with 4 output partitions
+[2026-10-09T18:32:36.570+0545] {subprocess.py:93} INFO - 26/10/09 12:47:36 INFO DAGScheduler: Final stage: ResultStage 14 (save at <unknown>:0)
+[2026-10-09T18:32:36.570+0545] {subprocess.py:93} INFO - 26/10/09 12:47:36 INFO DAGScheduler: Parents of final stage: List(ShuffleMapStage 13)
+[2026-10-09T18:32:36.570+0545] {subprocess.py:93} INFO - 26/10/09 12:47:36 INFO DAGScheduler: Missing parents: List()
+[2026-10-09T18:32:36.571+0545] {subprocess.py:93} INFO - 26/10/09 12:47:36 INFO DAGScheduler: Submitting ResultStage 14 (ShuffledRowRDD[42] at save at <unknown>:0), which has no missing parents
+[2026-10-09T18:32:36.680+0545] {subprocess.py:93} INFO - 26/10/09 12:47:36 INFO MemoryStore: Block broadcast_12 stored as values in memory (estimated size 326.5 KiB, free 413.1 MiB)
+[2026-10-09T18:32:36.682+0545] {subprocess.py:93} INFO - 26/10/09 12:47:36 INFO MemoryStore: Block broadcast_12_piece0 stored as bytes in memory (estimated size 117.7 KiB, free 413.0 MiB)
+[2026-10-09T18:32:36.682+0545] {subprocess.py:93} INFO - 26/10/09 12:47:36 INFO BlockManagerInfo: Added broadcast_12_piece0 in memory on 8564da8b8b58:36445 (size: 117.7 KiB, free: 413.7 MiB)
+[2026-10-09T18:32:36.682+0545] {subprocess.py:93} INFO - 26/10/09 12:47:36 INFO SparkContext: Created broadcast 12 from broadcast at DAGScheduler.scala:1580
+[2026-10-09T18:32:36.683+0545] {subprocess.py:93} INFO - 26/10/09 12:47:36 INFO DAGScheduler: Submitting 4 missing tasks from ResultStage 14 (ShuffledRowRDD[42] at save at <unknown>:0) (first 15 tasks are for partitions Vector(0, 1, 2, 3))
+[2026-10-09T18:32:36.683+0545] {subprocess.py:93} INFO - 26/10/09 12:47:36 INFO TaskSchedulerImpl: Adding task set 14.0 with 4 tasks resource profile 0
+[2026-10-09T18:32:36.684+0545] {subprocess.py:93} INFO - 26/10/09 12:47:36 INFO TaskSetManager: Starting task 0.0 in stage 14.0 (TID 59) (spark-worker2, executor 0, partition 0, NODE_LOCAL, 7788 bytes)
+[2026-10-09T18:32:36.684+0545] {subprocess.py:93} INFO - 26/10/09 12:47:36 INFO TaskSetManager: Starting task 1.0 in stage 14.0 (TID 60) (spark-worker1, executor 1, partition 1, NODE_LOCAL, 7788 bytes)
+[2026-10-09T18:32:36.774+0545] {subprocess.py:93} INFO - 26/10/09 12:47:36 INFO BlockManagerInfo: Added broadcast_12_piece0 in memory on spark-worker1:40225 (size: 117.7 KiB, free: 413.8 MiB)
+[2026-10-09T18:32:36.774+0545] {subprocess.py:93} INFO - 26/10/09 12:47:36 INFO BlockManagerInfo: Added broadcast_12_piece0 in memory on spark-worker2:33221 (size: 117.7 KiB, free: 413.8 MiB)
+[2026-10-09T18:32:36.996+0545] {subprocess.py:93} INFO - 26/10/09 12:47:36 INFO MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 3 to 172.19.0.6:39346
+[2026-10-09T18:32:37.009+0545] {subprocess.py:93} INFO - 26/10/09 12:47:37 INFO MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 3 to 172.19.0.5:59088
+[2026-10-09T18:32:40.588+0545] {subprocess.py:93} INFO - 26/10/09 12:47:40 INFO TaskSetManager: Starting task 2.0 in stage 14.0 (TID 61) (spark-worker1, executor 1, partition 2, NODE_LOCAL, 7788 bytes)
+[2026-10-09T18:32:40.598+0545] {subprocess.py:93} INFO - 26/10/09 12:47:40 INFO TaskSetManager: Finished task 1.0 in stage 14.0 (TID 60) in 3913 ms on spark-worker1 (executor 1) (1/4)
+[2026-10-09T18:32:41.201+0545] {subprocess.py:93} INFO - 26/10/09 12:47:41 INFO TaskSetManager: Starting task 3.0 in stage 14.0 (TID 62) (spark-worker1, executor 1, partition 3, NODE_LOCAL, 7788 bytes)
+[2026-10-09T18:32:41.202+0545] {subprocess.py:93} INFO - 26/10/09 12:47:41 INFO TaskSetManager: Finished task 2.0 in stage 14.0 (TID 61) in 614 ms on spark-worker1 (executor 1) (2/4)
+[2026-10-09T18:32:41.789+0545] {subprocess.py:93} INFO - 26/10/09 12:47:41 INFO TaskSetManager: Finished task 3.0 in stage 14.0 (TID 62) in 588 ms on spark-worker1 (executor 1) (3/4)
+[2026-10-09T18:32:42.405+0545] {subprocess.py:93} INFO - 26/10/09 12:47:42 INFO TaskSetManager: Finished task 0.0 in stage 14.0 (TID 59) in 5721 ms on spark-worker2 (executor 0) (4/4)
+[2026-10-09T18:32:42.406+0545] {subprocess.py:93} INFO - 26/10/09 12:47:42 INFO TaskSchedulerImpl: Removed TaskSet 14.0, whose tasks have all completed, from pool
+[2026-10-09T18:32:42.406+0545] {subprocess.py:93} INFO - 26/10/09 12:47:42 INFO DAGScheduler: ResultStage 14 (save at <unknown>:0) finished in 5.742 s
+[2026-10-09T18:32:42.406+0545] {subprocess.py:93} INFO - 26/10/09 12:47:42 INFO DAGScheduler: Job 9 is finished. Cancelling potential speculative or zombie tasks for this job
+[2026-10-09T18:32:42.407+0545] {subprocess.py:93} INFO - 26/10/09 12:47:42 INFO TaskSchedulerImpl: Killing all running tasks in stage 14: Stage finished
+[2026-10-09T18:32:42.407+0545] {subprocess.py:93} INFO - 26/10/09 12:47:42 INFO DAGScheduler: Job 9 finished: save at <unknown>:0, took 5.837854 s
+[2026-10-09T18:32:42.409+0545] {subprocess.py:93} INFO - 26/10/09 12:47:42 INFO DeltaFileFormatWriter: Start to commit write Job dc8ba0dc-93f6-4338-bcc5-8e46c1cbe8f1.
+[2026-10-09T18:32:42.410+0545] {subprocess.py:93} INFO - 26/10/09 12:47:42 INFO DeltaFileFormatWriter: Write Job dc8ba0dc-93f6-4338-bcc5-8e46c1cbe8f1 committed. Elapsed time: 0 ms.
+[2026-10-09T18:32:42.413+0545] {subprocess.py:93} INFO - 26/10/09 12:47:42 INFO DeltaFileFormatWriter: Finished processing stats for write job dc8ba0dc-93f6-4338-bcc5-8e46c1cbe8f1.
+[2026-10-09T18:32:42.965+0545] {subprocess.py:93} INFO - 26/10/09 12:47:42 INFO BlockManagerInfo: Removed broadcast_12_piece0 on 8564da8b8b58:36445 in memory (size: 117.7 KiB, free: 413.9 MiB)
+[2026-10-09T18:32:42.969+0545] {subprocess.py:93} INFO - 26/10/09 12:47:42 INFO BlockManagerInfo: Removed broadcast_12_piece0 on spark-worker1:40225 in memory (size: 117.7 KiB, free: 413.9 MiB)
+[2026-10-09T18:32:42.970+0545] {subprocess.py:93} INFO - 26/10/09 12:47:42 INFO BlockManagerInfo: Removed broadcast_12_piece0 on spark-worker2:33221 in memory (size: 117.7 KiB, free: 413.9 MiB)
+[2026-10-09T18:32:44.082+0545] {subprocess.py:93} INFO - 26/10/09 12:47:44 INFO CodeGenerator: Code generated in 404.469865 ms
+[2026-10-09T18:32:44.175+0545] {subprocess.py:93} INFO - 26/10/09 12:47:44 INFO SparkContext: Starting job: $anonfun$recordDeltaOperationInternal$1 at DatabricksLogging.scala:128
+[2026-10-09T18:32:44.176+0545] {subprocess.py:93} INFO - 26/10/09 12:47:44 INFO DAGScheduler: Got job 10 ($anonfun$recordDeltaOperationInternal$1 at DatabricksLogging.scala:128) with 50 output partitions
+[2026-10-09T18:32:44.176+0545] {subprocess.py:93} INFO - 26/10/09 12:47:44 INFO DAGScheduler: Final stage: ResultStage 16 ($anonfun$recordDeltaOperationInternal$1 at DatabricksLogging.scala:128)
+[2026-10-09T18:32:44.177+0545] {subprocess.py:93} INFO - 26/10/09 12:47:44 INFO DAGScheduler: Parents of final stage: List(ShuffleMapStage 15)
+[2026-10-09T18:32:44.177+0545] {subprocess.py:93} INFO - 26/10/09 12:47:44 INFO DAGScheduler: Missing parents: List()
+[2026-10-09T18:32:44.178+0545] {subprocess.py:93} INFO - 26/10/09 12:47:44 INFO DAGScheduler: Submitting ResultStage 16 (MapPartitionsRDD[44] at $anonfun$recordDeltaOperationInternal$1 at DatabricksLogging.scala:128), which has no missing parents
+[2026-10-09T18:32:44.263+0545] {subprocess.py:93} INFO - 26/10/09 12:47:44 INFO MemoryStore: Block broadcast_13 stored as values in memory (estimated size 684.1 KiB, free 412.8 MiB)
+[2026-10-09T18:32:44.268+0545] {subprocess.py:93} INFO - 26/10/09 12:47:44 INFO MemoryStore: Block broadcast_13_piece0 stored as bytes in memory (estimated size 154.1 KiB, free 412.6 MiB)
+[2026-10-09T18:32:44.269+0545] {subprocess.py:93} INFO - 26/10/09 12:47:44 INFO BlockManagerInfo: Added broadcast_13_piece0 in memory on 8564da8b8b58:36445 (size: 154.1 KiB, free: 413.7 MiB)
+[2026-10-09T18:32:44.270+0545] {subprocess.py:93} INFO - 26/10/09 12:47:44 INFO SparkContext: Created broadcast 13 from broadcast at DAGScheduler.scala:1580
+[2026-10-09T18:32:44.271+0545] {subprocess.py:93} INFO - 26/10/09 12:47:44 INFO DAGScheduler: Submitting 50 missing tasks from ResultStage 16 (MapPartitionsRDD[44] at $anonfun$recordDeltaOperationInternal$1 at DatabricksLogging.scala:128) (first 15 tasks are for partitions Vector(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14))
+[2026-10-09T18:32:44.271+0545] {subprocess.py:93} INFO - 26/10/09 12:47:44 INFO TaskSchedulerImpl: Adding task set 16.0 with 50 tasks resource profile 0
+[2026-10-09T18:32:44.274+0545] {subprocess.py:93} INFO - 26/10/09 12:47:44 INFO TaskSetManager: Starting task 0.0 in stage 16.0 (TID 63) (spark-worker1, executor 1, partition 0, PROCESS_LOCAL, 7788 bytes)
+[2026-10-09T18:32:44.274+0545] {subprocess.py:93} INFO - 26/10/09 12:47:44 INFO TaskSetManager: Starting task 1.0 in stage 16.0 (TID 64) (spark-worker2, executor 0, partition 1, PROCESS_LOCAL, 7788 bytes)
+[2026-10-09T18:32:44.290+0545] {subprocess.py:93} INFO - 26/10/09 12:47:44 INFO BlockManagerInfo: Added broadcast_13_piece0 in memory on spark-worker1:40225 (size: 154.1 KiB, free: 413.7 MiB)
+[2026-10-09T18:32:44.390+0545] {subprocess.py:93} INFO - 26/10/09 12:47:44 INFO BlockManagerInfo: Added broadcast_13_piece0 in memory on spark-worker2:33221 (size: 154.1 KiB, free: 413.8 MiB)
+[2026-10-09T18:32:45.009+0545] {subprocess.py:93} INFO - 26/10/09 12:47:45 INFO TaskSetManager: Starting task 10.0 in stage 16.0 (TID 65) (spark-worker2, executor 0, partition 10, PROCESS_LOCAL, 7788 bytes)
+[2026-10-09T18:32:45.010+0545] {subprocess.py:93} INFO - 26/10/09 12:47:45 INFO TaskSetManager: Finished task 1.0 in stage 16.0 (TID 64) in 735 ms on spark-worker2 (executor 0) (1/50)
+[2026-10-09T18:32:45.098+0545] {subprocess.py:93} INFO - 26/10/09 12:47:45 INFO TaskSetManager: Starting task 13.0 in stage 16.0 (TID 66) (spark-worker2, executor 0, partition 13, PROCESS_LOCAL, 7788 bytes)
+[2026-10-09T18:32:45.099+0545] {subprocess.py:93} INFO - 26/10/09 12:47:45 INFO TaskSetManager: Finished task 10.0 in stage 16.0 (TID 65) in 90 ms on spark-worker2 (executor 0) (2/50)
+[2026-10-09T18:32:45.189+0545] {subprocess.py:93} INFO - 26/10/09 12:47:45 INFO TaskSetManager: Starting task 2.0 in stage 16.0 (TID 67) (spark-worker1, executor 1, partition 2, PROCESS_LOCAL, 7788 bytes)
+[2026-10-09T18:32:45.190+0545] {subprocess.py:93} INFO - 26/10/09 12:47:45 INFO TaskSetManager: Finished task 0.0 in stage 16.0 (TID 63) in 916 ms on spark-worker1 (executor 1) (3/50)
+[2026-10-09T18:32:45.191+0545] {subprocess.py:93} INFO - 26/10/09 12:47:45 INFO TaskSetManager: Starting task 16.0 in stage 16.0 (TID 68) (spark-worker2, executor 0, partition 16, PROCESS_LOCAL, 7788 bytes)
+[2026-10-09T18:32:45.192+0545] {subprocess.py:93} INFO - 26/10/09 12:47:45 INFO TaskSetManager: Finished task 13.0 in stage 16.0 (TID 66) in 94 ms on spark-worker2 (executor 0) (4/50)
+[2026-10-09T18:32:45.207+0545] {subprocess.py:93} INFO - 26/10/09 12:47:45 INFO TaskSetManager: Starting task 19.0 in stage 16.0 (TID 69) (spark-worker2, executor 0, partition 19, PROCESS_LOCAL, 7788 bytes)
+[2026-10-09T18:32:45.208+0545] {subprocess.py:93} INFO - 26/10/09 12:47:45 INFO TaskSetManager: Finished task 16.0 in stage 16.0 (TID 68) in 17 ms on spark-worker2 (executor 0) (5/50)
+[2026-10-09T18:32:45.285+0545] {subprocess.py:93} INFO - 26/10/09 12:47:45 INFO TaskSetManager: Starting task 3.0 in stage 16.0 (TID 70) (spark-worker1, executor 1, partition 3, PROCESS_LOCAL, 7788 bytes)
+[2026-10-09T18:32:45.285+0545] {subprocess.py:93} INFO - 26/10/09 12:47:45 INFO TaskSetManager: Finished task 2.0 in stage 16.0 (TID 67) in 97 ms on spark-worker1 (executor 1) (6/50)
+[2026-10-09T18:32:45.299+0545] {subprocess.py:93} INFO - 26/10/09 12:47:45 INFO TaskSetManager: Starting task 4.0 in stage 16.0 (TID 71) (spark-worker1, executor 1, partition 4, PROCESS_LOCAL, 7788 bytes)
+[2026-10-09T18:32:45.300+0545] {subprocess.py:93} INFO - 26/10/09 12:47:45 INFO TaskSetManager: Finished task 3.0 in stage 16.0 (TID 70) in 15 ms on spark-worker1 (executor 1) (7/50)
+[2026-10-09T18:32:45.303+0545] {subprocess.py:93} INFO - 26/10/09 12:47:45 INFO TaskSetManager: Starting task 22.0 in stage 16.0 (TID 72) (spark-worker2, executor 0, partition 22, PROCESS_LOCAL, 7788 bytes)
+[2026-10-09T18:32:45.304+0545] {subprocess.py:93} INFO - 26/10/09 12:47:45 INFO TaskSetManager: Finished task 19.0 in stage 16.0 (TID 69) in 96 ms on spark-worker2 (executor 0) (8/50)
+[2026-10-09T18:32:45.392+0545] {subprocess.py:93} INFO - 26/10/09 12:47:45 INFO TaskSetManager: Starting task 5.0 in stage 16.0 (TID 73) (spark-worker1, executor 1, partition 5, PROCESS_LOCAL, 7788 bytes)
+[2026-10-09T18:32:45.393+0545] {subprocess.py:93} INFO - 26/10/09 12:47:45 INFO TaskSetManager: Finished task 4.0 in stage 16.0 (TID 71) in 94 ms on spark-worker1 (executor 1) (9/50)
+[2026-10-09T18:32:45.394+0545] {subprocess.py:93} INFO - 26/10/09 12:47:45 INFO TaskSetManager: Starting task 24.0 in stage 16.0 (TID 74) (spark-worker2, executor 0, partition 24, PROCESS_LOCAL, 7788 bytes)
+[2026-10-09T18:32:45.396+0545] {subprocess.py:93} INFO - 26/10/09 12:47:45 INFO TaskSetManager: Finished task 22.0 in stage 16.0 (TID 72) in 92 ms on spark-worker2 (executor 0) (10/50)
+[2026-10-09T18:32:45.488+0545] {subprocess.py:93} INFO - 26/10/09 12:47:45 INFO TaskSetManager: Starting task 6.0 in stage 16.0 (TID 75) (spark-worker1, executor 1, partition 6, PROCESS_LOCAL, 7788 bytes)
+[2026-10-09T18:32:45.488+0545] {subprocess.py:93} INFO - 26/10/09 12:47:45 INFO TaskSetManager: Finished task 5.0 in stage 16.0 (TID 73) in 97 ms on spark-worker1 (executor 1) (11/50)
+[2026-10-09T18:32:45.490+0545] {subprocess.py:93} INFO - 26/10/09 12:47:45 INFO TaskSetManager: Starting task 26.0 in stage 16.0 (TID 76) (spark-worker2, executor 0, partition 26, PROCESS_LOCAL, 7788 bytes)
+[2026-10-09T18:32:45.491+0545] {subprocess.py:93} INFO - 26/10/09 12:47:45 INFO TaskSetManager: Finished task 24.0 in stage 16.0 (TID 74) in 97 ms on spark-worker2 (executor 0) (12/50)
+[2026-10-09T18:32:45.508+0545] {subprocess.py:93} INFO - 26/10/09 12:47:45 INFO TaskSetManager: Starting task 28.0 in stage 16.0 (TID 77) (spark-worker2, executor 0, partition 28, PROCESS_LOCAL, 7788 bytes)
+[2026-10-09T18:32:45.509+0545] {subprocess.py:93} INFO - 26/10/09 12:47:45 INFO TaskSetManager: Finished task 26.0 in stage 16.0 (TID 76) in 20 ms on spark-worker2 (executor 0) (13/50)
+[2026-10-09T18:32:45.585+0545] {subprocess.py:93} INFO - 26/10/09 12:47:45 INFO TaskSetManager: Starting task 7.0 in stage 16.0 (TID 78) (spark-worker1, executor 1, partition 7, PROCESS_LOCAL, 7788 bytes)
+[2026-10-09T18:32:45.585+0545] {subprocess.py:93} INFO - 26/10/09 12:47:45 INFO TaskSetManager: Finished task 6.0 in stage 16.0 (TID 75) in 98 ms on spark-worker1 (executor 1) (14/50)
+[2026-10-09T18:32:45.605+0545] {subprocess.py:93} INFO - 26/10/09 12:47:45 INFO TaskSetManager: Starting task 30.0 in stage 16.0 (TID 79) (spark-worker2, executor 0, partition 30, PROCESS_LOCAL, 7788 bytes)
+[2026-10-09T18:32:45.606+0545] {subprocess.py:93} INFO - 26/10/09 12:47:45 INFO TaskSetManager: Finished task 28.0 in stage 16.0 (TID 77) in 97 ms on spark-worker2 (executor 0) (15/50)
+[2026-10-09T18:32:45.679+0545] {subprocess.py:93} INFO - 26/10/09 12:47:45 INFO TaskSetManager: Starting task 8.0 in stage 16.0 (TID 80) (spark-worker1, executor 1, partition 8, PROCESS_LOCAL, 7788 bytes)
+[2026-10-09T18:32:45.680+0545] {subprocess.py:93} INFO - 26/10/09 12:47:45 INFO TaskSetManager: Finished task 7.0 in stage 16.0 (TID 78) in 95 ms on spark-worker1 (executor 1) (16/50)
+[2026-10-09T18:32:45.693+0545] {subprocess.py:93} INFO - 26/10/09 12:47:45 INFO TaskSetManager: Starting task 32.0 in stage 16.0 (TID 81) (spark-worker2, executor 0, partition 32, PROCESS_LOCAL, 7788 bytes)
+[2026-10-09T18:32:45.693+0545] {subprocess.py:93} INFO - 26/10/09 12:47:45 INFO TaskSetManager: Finished task 30.0 in stage 16.0 (TID 79) in 88 ms on spark-worker2 (executor 0) (17/50)
+[2026-10-09T18:32:45.706+0545] {subprocess.py:93} INFO - 26/10/09 12:47:45 INFO TaskSetManager: Starting task 34.0 in stage 16.0 (TID 82) (spark-worker2, executor 0, partition 34, PROCESS_LOCAL, 7788 bytes)
+[2026-10-09T18:32:45.707+0545] {subprocess.py:93} INFO - 26/10/09 12:47:45 INFO TaskSetManager: Finished task 32.0 in stage 16.0 (TID 81) in 15 ms on spark-worker2 (executor 0) (18/50)
+[2026-10-09T18:32:45.794+0545] {subprocess.py:93} INFO - 26/10/09 12:47:45 INFO TaskSetManager: Starting task 9.0 in stage 16.0 (TID 83) (spark-worker1, executor 1, partition 9, PROCESS_LOCAL, 7788 bytes)
+[2026-10-09T18:32:45.795+0545] {subprocess.py:93} INFO - 26/10/09 12:47:45 INFO TaskSetManager: Finished task 8.0 in stage 16.0 (TID 80) in 116 ms on spark-worker1 (executor 1) (19/50)
+[2026-10-09T18:32:45.809+0545] {subprocess.py:93} INFO - 26/10/09 12:47:45 INFO TaskSetManager: Starting task 36.0 in stage 16.0 (TID 84) (spark-worker2, executor 0, partition 36, PROCESS_LOCAL, 7788 bytes)
+[2026-10-09T18:32:45.809+0545] {subprocess.py:93} INFO - 26/10/09 12:47:45 INFO TaskSetManager: Finished task 34.0 in stage 16.0 (TID 82) in 103 ms on spark-worker2 (executor 0) (20/50)
+[2026-10-09T18:32:45.888+0545] {subprocess.py:93} INFO - 26/10/09 12:47:45 INFO TaskSetManager: Starting task 11.0 in stage 16.0 (TID 85) (spark-worker1, executor 1, partition 11, PROCESS_LOCAL, 7788 bytes)
+[2026-10-09T18:32:45.889+0545] {subprocess.py:93} INFO - 26/10/09 12:47:45 INFO TaskSetManager: Finished task 9.0 in stage 16.0 (TID 83) in 95 ms on spark-worker1 (executor 1) (21/50)
+[2026-10-09T18:32:45.902+0545] {subprocess.py:93} INFO - 26/10/09 12:47:45 INFO TaskSetManager: Starting task 39.0 in stage 16.0 (TID 86) (spark-worker2, executor 0, partition 39, PROCESS_LOCAL, 7788 bytes)
+[2026-10-09T18:32:45.903+0545] {subprocess.py:93} INFO - 26/10/09 12:47:45 INFO TaskSetManager: Finished task 36.0 in stage 16.0 (TID 84) in 94 ms on spark-worker2 (executor 0) (22/50)
+[2026-10-09T18:32:45.986+0545] {subprocess.py:93} INFO - 26/10/09 12:47:45 INFO TaskSetManager: Starting task 12.0 in stage 16.0 (TID 87) (spark-worker1, executor 1, partition 12, PROCESS_LOCAL, 7788 bytes)
+[2026-10-09T18:32:45.987+0545] {subprocess.py:93} INFO - 26/10/09 12:47:45 INFO TaskSetManager: Finished task 11.0 in stage 16.0 (TID 85) in 99 ms on spark-worker1 (executor 1) (23/50)
+[2026-10-09T18:32:45.992+0545] {subprocess.py:93} INFO - 26/10/09 12:47:45 INFO TaskSetManager: Starting task 41.0 in stage 16.0 (TID 88) (spark-worker2, executor 0, partition 41, PROCESS_LOCAL, 7788 bytes)
+[2026-10-09T18:32:45.993+0545] {subprocess.py:93} INFO - 26/10/09 12:47:45 INFO TaskSetManager: Finished task 39.0 in stage 16.0 (TID 86) in 92 ms on spark-worker2 (executor 0) (24/50)
+[2026-10-09T18:32:46.008+0545] {subprocess.py:93} INFO - 26/10/09 12:47:46 INFO TaskSetManager: Starting task 45.0 in stage 16.0 (TID 89) (spark-worker2, executor 0, partition 45, PROCESS_LOCAL, 7788 bytes)
+[2026-10-09T18:32:46.008+0545] {subprocess.py:93} INFO - 26/10/09 12:47:46 INFO TaskSetManager: Finished task 41.0 in stage 16.0 (TID 88) in 17 ms on spark-worker2 (executor 0) (25/50)
+[2026-10-09T18:32:46.085+0545] {subprocess.py:93} INFO - 26/10/09 12:47:46 INFO TaskSetManager: Starting task 14.0 in stage 16.0 (TID 90) (spark-worker1, executor 1, partition 14, PROCESS_LOCAL, 7788 bytes)
+[2026-10-09T18:32:46.086+0545] {subprocess.py:93} INFO - 26/10/09 12:47:46 INFO TaskSetManager: Finished task 12.0 in stage 16.0 (TID 87) in 100 ms on spark-worker1 (executor 1) (26/50)
+[2026-10-09T18:32:46.101+0545] {subprocess.py:93} INFO - 26/10/09 12:47:46 INFO TaskSetManager: Starting task 48.0 in stage 16.0 (TID 91) (spark-worker2, executor 0, partition 48, PROCESS_LOCAL, 7788 bytes)
+[2026-10-09T18:32:46.102+0545] {subprocess.py:93} INFO - 26/10/09 12:47:46 INFO TaskSetManager: Finished task 45.0 in stage 16.0 (TID 89) in 94 ms on spark-worker2 (executor 0) (27/50)
+[2026-10-09T18:32:46.112+0545] {subprocess.py:93} INFO - 26/10/09 12:47:46 INFO TaskSetManager: Finished task 48.0 in stage 16.0 (TID 91) in 12 ms on spark-worker2 (executor 0) (28/50)
+[2026-10-09T18:32:46.183+0545] {subprocess.py:93} INFO - 26/10/09 12:47:46 INFO TaskSetManager: Starting task 15.0 in stage 16.0 (TID 92) (spark-worker1, executor 1, partition 15, PROCESS_LOCAL, 7788 bytes)
+[2026-10-09T18:32:46.183+0545] {subprocess.py:93} INFO - 26/10/09 12:47:46 INFO TaskSetManager: Finished task 14.0 in stage 16.0 (TID 90) in 99 ms on spark-worker1 (executor 1) (29/50)
+[2026-10-09T18:32:46.194+0545] {subprocess.py:93} INFO - 26/10/09 12:47:46 INFO TaskSetManager: Starting task 17.0 in stage 16.0 (TID 93) (spark-worker1, executor 1, partition 17, PROCESS_LOCAL, 7788 bytes)
+[2026-10-09T18:32:46.194+0545] {subprocess.py:93} INFO - 26/10/09 12:47:46 INFO TaskSetManager: Finished task 15.0 in stage 16.0 (TID 92) in 12 ms on spark-worker1 (executor 1) (30/50)
+[2026-10-09T18:32:46.283+0545] {subprocess.py:93} INFO - 26/10/09 12:47:46 INFO TaskSetManager: Starting task 18.0 in stage 16.0 (TID 94) (spark-worker1, executor 1, partition 18, PROCESS_LOCAL, 7788 bytes)
+[2026-10-09T18:32:46.284+0545] {subprocess.py:93} INFO - 26/10/09 12:47:46 INFO TaskSetManager: Finished task 17.0 in stage 16.0 (TID 93) in 90 ms on spark-worker1 (executor 1) (31/50)
+[2026-10-09T18:32:46.298+0545] {subprocess.py:93} INFO - 26/10/09 12:47:46 INFO TaskSetManager: Starting task 20.0 in stage 16.0 (TID 95) (spark-worker1, executor 1, partition 20, PROCESS_LOCAL, 7788 bytes)
+[2026-10-09T18:32:46.299+0545] {subprocess.py:93} INFO - 26/10/09 12:47:46 INFO TaskSetManager: Finished task 18.0 in stage 16.0 (TID 94) in 16 ms on spark-worker1 (executor 1) (32/50)
+[2026-10-09T18:32:46.388+0545] {subprocess.py:93} INFO - 26/10/09 12:47:46 INFO TaskSetManager: Starting task 21.0 in stage 16.0 (TID 96) (spark-worker1, executor 1, partition 21, PROCESS_LOCAL, 7788 bytes)
+[2026-10-09T18:32:46.389+0545] {subprocess.py:93} INFO - 26/10/09 12:47:46 INFO TaskSetManager: Finished task 20.0 in stage 16.0 (TID 95) in 91 ms on spark-worker1 (executor 1) (33/50)
+[2026-10-09T18:32:46.481+0545] {subprocess.py:93} INFO - 26/10/09 12:47:46 INFO TaskSetManager: Starting task 23.0 in stage 16.0 (TID 97) (spark-worker1, executor 1, partition 23, PROCESS_LOCAL, 7788 bytes)
+[2026-10-09T18:32:46.481+0545] {subprocess.py:93} INFO - 26/10/09 12:47:46 INFO TaskSetManager: Finished task 21.0 in stage 16.0 (TID 96) in 93 ms on spark-worker1 (executor 1) (34/50)
+[2026-10-09T18:32:46.494+0545] {subprocess.py:93} INFO - 26/10/09 12:47:46 INFO TaskSetManager: Starting task 25.0 in stage 16.0 (TID 98) (spark-worker1, executor 1, partition 25, PROCESS_LOCAL, 7788 bytes)
+[2026-10-09T18:32:46.494+0545] {subprocess.py:93} INFO - 26/10/09 12:47:46 INFO TaskSetManager: Finished task 23.0 in stage 16.0 (TID 97) in 14 ms on spark-worker1 (executor 1) (35/50)
+[2026-10-09T18:32:46.581+0545] {subprocess.py:93} INFO - 26/10/09 12:47:46 INFO TaskSetManager: Starting task 27.0 in stage 16.0 (TID 99) (spark-worker1, executor 1, partition 27, PROCESS_LOCAL, 7788 bytes)
+[2026-10-09T18:32:46.582+0545] {subprocess.py:93} INFO - 26/10/09 12:47:46 INFO TaskSetManager: Finished task 25.0 in stage 16.0 (TID 98) in 88 ms on spark-worker1 (executor 1) (36/50)
+[2026-10-09T18:32:46.592+0545] {subprocess.py:93} INFO - 26/10/09 12:47:46 INFO TaskSetManager: Starting task 29.0 in stage 16.0 (TID 100) (spark-worker1, executor 1, partition 29, PROCESS_LOCAL, 7788 bytes)
+[2026-10-09T18:32:46.592+0545] {subprocess.py:93} INFO - 26/10/09 12:47:46 INFO TaskSetManager: Finished task 27.0 in stage 16.0 (TID 99) in 12 ms on spark-worker1 (executor 1) (37/50)
+[2026-10-09T18:32:46.682+0545] {subprocess.py:93} INFO - 26/10/09 12:47:46 INFO TaskSetManager: Starting task 31.0 in stage 16.0 (TID 101) (spark-worker1, executor 1, partition 31, PROCESS_LOCAL, 7788 bytes)
+[2026-10-09T18:32:46.683+0545] {subprocess.py:93} INFO - 26/10/09 12:47:46 INFO TaskSetManager: Finished task 29.0 in stage 16.0 (TID 100) in 91 ms on spark-worker1 (executor 1) (38/50)
+[2026-10-09T18:32:46.781+0545] {subprocess.py:93} INFO - 26/10/09 12:47:46 INFO TaskSetManager: Starting task 33.0 in stage 16.0 (TID 102) (spark-worker1, executor 1, partition 33, PROCESS_LOCAL, 7788 bytes)
+[2026-10-09T18:32:46.782+0545] {subprocess.py:93} INFO - 26/10/09 12:47:46 INFO TaskSetManager: Finished task 31.0 in stage 16.0 (TID 101) in 100 ms on spark-worker1 (executor 1) (39/50)
+[2026-10-09T18:32:46.793+0545] {subprocess.py:93} INFO - 26/10/09 12:47:46 INFO TaskSetManager: Starting task 35.0 in stage 16.0 (TID 103) (spark-worker1, executor 1, partition 35, PROCESS_LOCAL, 7788 bytes)
+[2026-10-09T18:32:46.793+0545] {subprocess.py:93} INFO - 26/10/09 12:47:46 INFO TaskSetManager: Finished task 33.0 in stage 16.0 (TID 102) in 13 ms on spark-worker1 (executor 1) (40/50)
+[2026-10-09T18:32:46.882+0545] {subprocess.py:93} INFO - 26/10/09 12:47:46 INFO TaskSetManager: Starting task 37.0 in stage 16.0 (TID 104) (spark-worker1, executor 1, partition 37, PROCESS_LOCAL, 7788 bytes)
+[2026-10-09T18:32:46.883+0545] {subprocess.py:93} INFO - 26/10/09 12:47:46 INFO TaskSetManager: Finished task 35.0 in stage 16.0 (TID 103) in 90 ms on spark-worker1 (executor 1) (41/50)
+[2026-10-09T18:32:46.893+0545] {subprocess.py:93} INFO - 26/10/09 12:47:46 INFO TaskSetManager: Starting task 38.0 in stage 16.0 (TID 105) (spark-worker1, executor 1, partition 38, PROCESS_LOCAL, 7788 bytes)
+[2026-10-09T18:32:46.893+0545] {subprocess.py:93} INFO - 26/10/09 12:47:46 INFO TaskSetManager: Finished task 37.0 in stage 16.0 (TID 104) in 12 ms on spark-worker1 (executor 1) (42/50)
+[2026-10-09T18:32:46.979+0545] {subprocess.py:93} INFO - 26/10/09 12:47:46 INFO TaskSetManager: Starting task 40.0 in stage 16.0 (TID 106) (spark-worker1, executor 1, partition 40, PROCESS_LOCAL, 7788 bytes)
+[2026-10-09T18:32:46.979+0545] {subprocess.py:93} INFO - 26/10/09 12:47:46 INFO TaskSetManager: Finished task 38.0 in stage 16.0 (TID 105) in 87 ms on spark-worker1 (executor 1) (43/50)
+[2026-10-09T18:32:46.990+0545] {subprocess.py:93} INFO - 26/10/09 12:47:46 INFO TaskSetManager: Starting task 42.0 in stage 16.0 (TID 107) (spark-worker1, executor 1, partition 42, PROCESS_LOCAL, 7788 bytes)
+[2026-10-09T18:32:46.991+0545] {subprocess.py:93} INFO - 26/10/09 12:47:46 INFO TaskSetManager: Finished task 40.0 in stage 16.0 (TID 106) in 13 ms on spark-worker1 (executor 1) (44/50)
+[2026-10-09T18:32:47.085+0545] {subprocess.py:93} INFO - 26/10/09 12:47:47 INFO TaskSetManager: Starting task 43.0 in stage 16.0 (TID 108) (spark-worker1, executor 1, partition 43, PROCESS_LOCAL, 7788 bytes)
+[2026-10-09T18:32:47.085+0545] {subprocess.py:93} INFO - 26/10/09 12:47:47 INFO TaskSetManager: Finished task 42.0 in stage 16.0 (TID 107) in 95 ms on spark-worker1 (executor 1) (45/50)
+[2026-10-09T18:32:47.183+0545] {subprocess.py:93} INFO - 26/10/09 12:47:47 INFO TaskSetManager: Starting task 44.0 in stage 16.0 (TID 109) (spark-worker1, executor 1, partition 44, PROCESS_LOCAL, 7788 bytes)
+[2026-10-09T18:32:47.184+0545] {subprocess.py:93} INFO - 26/10/09 12:47:47 INFO TaskSetManager: Finished task 43.0 in stage 16.0 (TID 108) in 99 ms on spark-worker1 (executor 1) (46/50)
+[2026-10-09T18:32:47.195+0545] {subprocess.py:93} INFO - 26/10/09 12:47:47 INFO TaskSetManager: Starting task 46.0 in stage 16.0 (TID 110) (spark-worker1, executor 1, partition 46, PROCESS_LOCAL, 7788 bytes)
+[2026-10-09T18:32:47.196+0545] {subprocess.py:93} INFO - 26/10/09 12:47:47 INFO TaskSetManager: Finished task 44.0 in stage 16.0 (TID 109) in 13 ms on spark-worker1 (executor 1) (47/50)
+[2026-10-09T18:32:47.288+0545] {subprocess.py:93} INFO - 26/10/09 12:47:47 INFO TaskSetManager: Starting task 47.0 in stage 16.0 (TID 111) (spark-worker1, executor 1, partition 47, PROCESS_LOCAL, 7788 bytes)
+[2026-10-09T18:32:47.288+0545] {subprocess.py:93} INFO - 26/10/09 12:47:47 INFO TaskSetManager: Finished task 46.0 in stage 16.0 (TID 110) in 94 ms on spark-worker1 (executor 1) (48/50)
+[2026-10-09T18:32:47.299+0545] {subprocess.py:93} INFO - 26/10/09 12:47:47 INFO TaskSetManager: Starting task 49.0 in stage 16.0 (TID 112) (spark-worker1, executor 1, partition 49, PROCESS_LOCAL, 7788 bytes)
+[2026-10-09T18:32:47.299+0545] {subprocess.py:93} INFO - 26/10/09 12:47:47 INFO TaskSetManager: Finished task 47.0 in stage 16.0 (TID 111) in 12 ms on spark-worker1 (executor 1) (49/50)
+[2026-10-09T18:32:47.388+0545] {subprocess.py:93} INFO - 26/10/09 12:47:47 INFO TaskSetManager: Finished task 49.0 in stage 16.0 (TID 112) in 89 ms on spark-worker1 (executor 1) (50/50)
+[2026-10-09T18:32:47.388+0545] {subprocess.py:93} INFO - 26/10/09 12:47:47 INFO TaskSchedulerImpl: Removed TaskSet 16.0, whose tasks have all completed, from pool
+[2026-10-09T18:32:47.388+0545] {subprocess.py:93} INFO - 26/10/09 12:47:47 INFO DAGScheduler: ResultStage 16 ($anonfun$recordDeltaOperationInternal$1 at DatabricksLogging.scala:128) finished in 3.207 s
+[2026-10-09T18:32:47.388+0545] {subprocess.py:93} INFO - 26/10/09 12:47:47 INFO DAGScheduler: Job 10 is finished. Cancelling potential speculative or zombie tasks for this job
+[2026-10-09T18:32:47.388+0545] {subprocess.py:93} INFO - 26/10/09 12:47:47 INFO TaskSchedulerImpl: Killing all running tasks in stage 16: Stage finished
+[2026-10-09T18:32:47.388+0545] {subprocess.py:93} INFO - 26/10/09 12:47:47 INFO DAGScheduler: Job 10 finished: $anonfun$recordDeltaOperationInternal$1 at DatabricksLogging.scala:128, took 3.212981 s
+[2026-10-09T18:32:47.405+0545] {subprocess.py:93} INFO - 26/10/09 12:47:47 INFO CodeGenerator: Code generated in 11.15509 ms
+[2026-10-09T18:32:47.488+0545] {subprocess.py:93} INFO - 26/10/09 12:47:47 INFO BlockManagerInfo: Removed broadcast_13_piece0 on 8564da8b8b58:36445 in memory (size: 154.1 KiB, free: 413.9 MiB)
+[2026-10-09T18:32:47.563+0545] {subprocess.py:93} INFO - 26/10/09 12:47:47 INFO BlockManagerInfo: Removed broadcast_13_piece0 on spark-worker1:40225 in memory (size: 154.1 KiB, free: 413.9 MiB)
+[2026-10-09T18:32:47.564+0545] {subprocess.py:93} INFO - 26/10/09 12:47:47 INFO BlockManagerInfo: Removed broadcast_13_piece0 on spark-worker2:33221 in memory (size: 154.1 KiB, free: 413.9 MiB)
+[2026-10-09T18:32:47.674+0545] {subprocess.py:93} INFO - 26/10/09 12:47:47 INFO OptimisticTransaction: [tableId=b59afd4b,txnId=1f0b33c1] Attempting to commit version 1 with 9 actions with Serializable isolation level
+[2026-10-09T18:32:48.702+0545] {subprocess.py:93} INFO - 26/10/09 12:47:48 INFO DeltaLog: Creating a new snapshot v1 for commit version 1
+[2026-10-09T18:32:48.702+0545] {subprocess.py:93} INFO - 26/10/09 12:47:48 INFO DeltaLog: Loading version 1.
+[2026-10-09T18:32:48.707+0545] {subprocess.py:93} INFO - 26/10/09 12:47:48 INFO DeltaLogFileIndex: Created DeltaLogFileIndex(JSON, numFilesInSegment: 2, totalFileSize: 8019)
+[2026-10-09T18:32:48.969+0545] {subprocess.py:93} INFO - 26/10/09 12:47:48 INFO DataSourceStrategy: Pruning directories with:
+[2026-10-09T18:32:48.970+0545] {subprocess.py:93} INFO - 26/10/09 12:47:48 INFO FileSourceStrategy: Pushed Filters:
+[2026-10-09T18:32:48.970+0545] {subprocess.py:93} INFO - 26/10/09 12:47:48 INFO FileSourceStrategy: Post-Scan Filters: ((isnotnull(protocol#648.minReaderVersion) OR isnotnull(metaData#647.id)) OR (isnotnull(commitInfo#649.inCommitTimestamp) AND (version#650L = 1)))
+[2026-10-09T18:32:49.170+0545] {subprocess.py:93} INFO - 26/10/09 12:47:49 INFO CodeGenerator: Code generated in 104.139666 ms
+[2026-10-09T18:32:49.175+0545] {subprocess.py:93} INFO - 26/10/09 12:47:49 INFO MemoryStore: Block broadcast_14 stored as values in memory (estimated size 200.9 KiB, free 413.3 MiB)
+[2026-10-09T18:32:49.182+0545] {subprocess.py:93} INFO - 26/10/09 12:47:49 INFO MemoryStore: Block broadcast_14_piece0 stored as bytes in memory (estimated size 34.8 KiB, free 413.2 MiB)
+[2026-10-09T18:32:49.182+0545] {subprocess.py:93} INFO - 26/10/09 12:47:49 INFO BlockManagerInfo: Added broadcast_14_piece0 in memory on 8564da8b8b58:36445 (size: 34.8 KiB, free: 413.8 MiB)
+[2026-10-09T18:32:49.264+0545] {subprocess.py:93} INFO - 26/10/09 12:47:49 INFO SparkContext: Created broadcast 14 from $anonfun$recordDeltaOperationInternal$1 at DatabricksLogging.scala:128
+[2026-10-09T18:32:49.266+0545] {subprocess.py:93} INFO - 26/10/09 12:47:49 INFO FileSourceScanExec: Planning scan with bin packing, max size: 4198313 bytes, open cost is considered as scanning 4194304 bytes.
+[2026-10-09T18:32:49.280+0545] {subprocess.py:93} INFO - 26/10/09 12:47:49 INFO SparkContext: Starting job: $anonfun$recordDeltaOperationInternal$1 at DatabricksLogging.scala:128
+[2026-10-09T18:32:49.281+0545] {subprocess.py:93} INFO - 26/10/09 12:47:49 INFO DAGScheduler: Got job 11 ($anonfun$recordDeltaOperationInternal$1 at DatabricksLogging.scala:128) with 2 output partitions
+[2026-10-09T18:32:49.281+0545] {subprocess.py:93} INFO - 26/10/09 12:47:49 INFO DAGScheduler: Final stage: ResultStage 17 ($anonfun$recordDeltaOperationInternal$1 at DatabricksLogging.scala:128)
+[2026-10-09T18:32:49.281+0545] {subprocess.py:93} INFO - 26/10/09 12:47:49 INFO DAGScheduler: Parents of final stage: List()
+[2026-10-09T18:32:49.281+0545] {subprocess.py:93} INFO - 26/10/09 12:47:49 INFO DAGScheduler: Missing parents: List()
+[2026-10-09T18:32:49.282+0545] {subprocess.py:93} INFO - 26/10/09 12:47:49 INFO DAGScheduler: Submitting ResultStage 17 (MapPartitionsRDD[48] at $anonfun$recordDeltaOperationInternal$1 at DatabricksLogging.scala:128), which has no missing parents
+[2026-10-09T18:32:49.365+0545] {subprocess.py:93} INFO - 26/10/09 12:47:49 INFO MemoryStore: Block broadcast_15 stored as values in memory (estimated size 55.2 KiB, free 413.2 MiB)
+[2026-10-09T18:32:49.367+0545] {subprocess.py:93} INFO - 26/10/09 12:47:49 INFO MemoryStore: Block broadcast_15_piece0 stored as bytes in memory (estimated size 17.2 KiB, free 413.2 MiB)
+[2026-10-09T18:32:49.367+0545] {subprocess.py:93} INFO - 26/10/09 12:47:49 INFO BlockManagerInfo: Added broadcast_15_piece0 in memory on 8564da8b8b58:36445 (size: 17.2 KiB, free: 413.8 MiB)
+[2026-10-09T18:32:49.368+0545] {subprocess.py:93} INFO - 26/10/09 12:47:49 INFO SparkContext: Created broadcast 15 from broadcast at DAGScheduler.scala:1580
+[2026-10-09T18:32:49.369+0545] {subprocess.py:93} INFO - 26/10/09 12:47:49 INFO DAGScheduler: Submitting 2 missing tasks from ResultStage 17 (MapPartitionsRDD[48] at $anonfun$recordDeltaOperationInternal$1 at DatabricksLogging.scala:128) (first 15 tasks are for partitions Vector(0, 1))
+[2026-10-09T18:32:49.369+0545] {subprocess.py:93} INFO - 26/10/09 12:47:49 INFO TaskSchedulerImpl: Adding task set 17.0 with 2 tasks resource profile 0
+[2026-10-09T18:32:49.371+0545] {subprocess.py:93} INFO - 26/10/09 12:47:49 INFO TaskSetManager: Starting task 0.0 in stage 17.0 (TID 113) (spark-worker1, executor 1, partition 0, PROCESS_LOCAL, 8445 bytes)
+[2026-10-09T18:32:49.371+0545] {subprocess.py:93} INFO - 26/10/09 12:47:49 INFO TaskSetManager: Starting task 1.0 in stage 17.0 (TID 114) (spark-worker2, executor 0, partition 1, PROCESS_LOCAL, 8445 bytes)
+[2026-10-09T18:32:49.467+0545] {subprocess.py:93} INFO - 26/10/09 12:47:49 INFO BlockManagerInfo: Added broadcast_15_piece0 in memory on spark-worker1:40225 (size: 17.2 KiB, free: 413.9 MiB)
+[2026-10-09T18:32:49.474+0545] {subprocess.py:93} INFO - 26/10/09 12:47:49 INFO BlockManagerInfo: Added broadcast_15_piece0 in memory on spark-worker2:33221 (size: 17.2 KiB, free: 413.9 MiB)
+[2026-10-09T18:32:49.596+0545] {subprocess.py:93} INFO - 26/10/09 12:47:49 INFO BlockManagerInfo: Added broadcast_14_piece0 in memory on spark-worker1:40225 (size: 34.8 KiB, free: 413.8 MiB)
+[2026-10-09T18:32:49.699+0545] {subprocess.py:93} INFO - 26/10/09 12:47:49 INFO TaskSetManager: Finished task 0.0 in stage 17.0 (TID 113) in 328 ms on spark-worker1 (executor 1) (1/2)
+[2026-10-09T18:32:49.890+0545] {subprocess.py:93} INFO - 26/10/09 12:47:49 INFO BlockManagerInfo: Added broadcast_14_piece0 in memory on spark-worker2:33221 (size: 34.8 KiB, free: 413.9 MiB)
+[2026-10-09T18:32:50.504+0545] {subprocess.py:93} INFO - 26/10/09 12:47:50 INFO TaskSetManager: Finished task 1.0 in stage 17.0 (TID 114) in 1132 ms on spark-worker2 (executor 0) (2/2)
+[2026-10-09T18:32:50.504+0545] {subprocess.py:93} INFO - 26/10/09 12:47:50 INFO TaskSchedulerImpl: Removed TaskSet 17.0, whose tasks have all completed, from pool
+[2026-10-09T18:32:50.504+0545] {subprocess.py:93} INFO - 26/10/09 12:47:50 INFO DAGScheduler: ResultStage 17 ($anonfun$recordDeltaOperationInternal$1 at DatabricksLogging.scala:128) finished in 1.221 s
+[2026-10-09T18:32:50.505+0545] {subprocess.py:93} INFO - 26/10/09 12:47:50 INFO DAGScheduler: Job 11 is finished. Cancelling potential speculative or zombie tasks for this job
+[2026-10-09T18:32:50.505+0545] {subprocess.py:93} INFO - 26/10/09 12:47:50 INFO TaskSchedulerImpl: Killing all running tasks in stage 17: Stage finished
+[2026-10-09T18:32:50.505+0545] {subprocess.py:93} INFO - 26/10/09 12:47:50 INFO DAGScheduler: Job 11 finished: $anonfun$recordDeltaOperationInternal$1 at DatabricksLogging.scala:128, took 1.224450 s
+[2026-10-09T18:32:50.520+0545] {subprocess.py:93} INFO - 26/10/09 12:47:50 INFO BlockManagerInfo: Removed broadcast_15_piece0 on 8564da8b8b58:36445 in memory (size: 17.2 KiB, free: 413.8 MiB)
+[2026-10-09T18:32:50.521+0545] {subprocess.py:93} INFO - 26/10/09 12:47:50 INFO BlockManagerInfo: Removed broadcast_15_piece0 on spark-worker1:40225 in memory (size: 17.2 KiB, free: 413.9 MiB)
+[2026-10-09T18:32:50.522+0545] {subprocess.py:93} INFO - 26/10/09 12:47:50 INFO Snapshot: [tableId=b59afd4b-2c44-46ec-8670-2602bf465064] Created snapshot Snapshot(path=hdfs://namenode:9000/user/demo/network_data/_delta_log, version=1, metadata=Metadata(b59afd4b-2c44-46ec-8670-2602bf465064,null,null,Format(parquet,Map()),{"type":"struct","fields":[{"name":"ID","type":"long","nullable":true,"metadata":{}},{"name":"PIXEL_TEMP_C","type":"double","nullable":true,"metadata":{}},{"name":"LAR_PRESSURE_BAR","type":"double","nullable":true,"metadata":{}},{"name":"LV_VOLTAGE_V","type":"double","nullable":true,"metadata":{}},{"name":"HV_CURRENT_UA","type":"double","nullable":true,"metadata":{}},{"name":"COOLING_FLOW_LPM","type":"double","nullable":true,"metadata":{}}]},List(),Map(),Some(1785832476623)), logSegment=LogSegment(hdfs://namenode:9000/user/demo/network_data/_delta_log,1,ArrayBuffer(HdfsNamedFileStatus{path=hdfs://namenode:9000/user/demo/network_data/_delta_log/00000000000000000000.json; isDirectory=false; length=3977; replication=2; blocksize=134217728; modification_time=1785832518300; access_time=1785832517282; owner=spark; group=supergroup; permission=rw-r--r--; isSymlink=false; hasAcl=false; isEncrypted=false; isErasureCoded=false}, HdfsNamedFileStatus{path=hdfs://namenode:9000/user/demo/network_data/_delta_log/00000000000000000001.json; isDirectory=false; length=4042; replication=2; blocksize=134217728; modification_time=1791550068611; access_time=1791550068372; owner=spark; group=supergroup; permission=rw-r--r--; isSymlink=false; hasAcl=false; isEncrypted=false; isErasureCoded=false}),org.apache.spark.sql.delta.EmptyCheckpointProvider$@4440dc59,1791550068611), checksumOpt=None)
+[2026-10-09T18:32:50.524+0545] {subprocess.py:93} INFO - 26/10/09 12:47:50 INFO DeltaLog: Updated snapshot to Snapshot(path=hdfs://namenode:9000/user/demo/network_data/_delta_log, version=1, metadata=Metadata(b59afd4b-2c44-46ec-8670-2602bf465064,null,null,Format(parquet,Map()),{"type":"struct","fields":[{"name":"ID","type":"long","nullable":true,"metadata":{}},{"name":"PIXEL_TEMP_C","type":"double","nullable":true,"metadata":{}},{"name":"LAR_PRESSURE_BAR","type":"double","nullable":true,"metadata":{}},{"name":"LV_VOLTAGE_V","type":"double","nullable":true,"metadata":{}},{"name":"HV_CURRENT_UA","type":"double","nullable":true,"metadata":{}},{"name":"COOLING_FLOW_LPM","type":"double","nullable":true,"metadata":{}}]},List(),Map(),Some(1785832476623)), logSegment=LogSegment(hdfs://namenode:9000/user/demo/network_data/_delta_log,1,ArrayBuffer(HdfsNamedFileStatus{path=hdfs://namenode:9000/user/demo/network_data/_delta_log/00000000000000000000.json; isDirectory=false; length=3977; replication=2; blocksize=134217728; modification_time=1785832518300; access_time=1785832517282; owner=spark; group=supergroup; permission=rw-r--r--; isSymlink=false; hasAcl=false; isEncrypted=false; isErasureCoded=false}, HdfsNamedFileStatus{path=hdfs://namenode:9000/user/demo/network_data/_delta_log/00000000000000000001.json; isDirectory=false; length=4042; replication=2; blocksize=134217728; modification_time=1791550068611; access_time=1791550068372; owner=spark; group=supergroup; permission=rw-r--r--; isSymlink=false; hasAcl=false; isEncrypted=false; isErasureCoded=false}),org.apache.spark.sql.delta.EmptyCheckpointProvider$@4440dc59,1791550068611), checksumOpt=None)
+[2026-10-09T18:32:50.525+0545] {subprocess.py:93} INFO - 26/10/09 12:47:50 INFO MapPartitionsRDD: Removing RDD 32 from persistence list
+[2026-10-09T18:32:50.570+0545] {subprocess.py:93} INFO - 26/10/09 12:47:50 INFO BlockManager: Removing RDD 32
+[2026-10-09T18:32:50.666+0545] {subprocess.py:93} INFO - 26/10/09 12:47:50 INFO BlockManagerInfo: Removed broadcast_15_piece0 on spark-worker2:33221 in memory (size: 17.2 KiB, free: 413.9 MiB)
+[2026-10-09T18:32:50.775+0545] {subprocess.py:93} INFO - 26/10/09 12:47:50 INFO OptimisticTransaction: [tableId=b59afd4b,txnId=1f0b33c1] Committed delta #1 to hdfs://namenode:9000/user/demo/network_data/_delta_log
+[2026-10-09T18:32:50.780+0545] {subprocess.py:93} INFO - Data successfully written to hdfs://namenode:9000/user/demo/network_data
+[2026-10-09T18:32:50.781+0545] {subprocess.py:93} INFO - 26/10/09 12:47:50 INFO SparkContext: SparkContext is stopping with exitCode 0.
+[2026-10-09T18:32:50.870+0545] {subprocess.py:93} INFO - 26/10/09 12:47:50 INFO SparkUI: Stopped Spark web UI at http://8564da8b8b58:4040
+[2026-10-09T18:32:50.875+0545] {subprocess.py:93} INFO - 26/10/09 12:47:50 INFO StandaloneSchedulerBackend: Shutting down all executors
+[2026-10-09T18:32:50.876+0545] {subprocess.py:93} INFO - 26/10/09 12:47:50 INFO StandaloneSchedulerBackend$StandaloneDriverEndpoint: Asking each executor to shut down
+[2026-10-09T18:32:51.065+0545] {subprocess.py:93} INFO - 26/10/09 12:47:51 INFO MapOutputTrackerMasterEndpoint: MapOutputTrackerMasterEndpoint stopped!
+[2026-10-09T18:32:51.264+0545] {subprocess.py:93} INFO - 26/10/09 12:47:51 INFO MemoryStore: MemoryStore cleared
+[2026-10-09T18:32:51.265+0545] {subprocess.py:93} INFO - 26/10/09 12:47:51 INFO BlockManager: BlockManager stopped
+[2026-10-09T18:32:51.270+0545] {subprocess.py:93} INFO - 26/10/09 12:47:51 INFO BlockManagerMaster: BlockManagerMaster stopped
+[2026-10-09T18:32:51.369+0545] {subprocess.py:93} INFO - 26/10/09 12:47:51 INFO OutputCommitCoordinator$OutputCommitCoordinatorEndpoint: OutputCommitCoordinator stopped!
+[2026-10-09T18:32:51.376+0545] {subprocess.py:93} INFO - 26/10/09 12:47:51 INFO SparkContext: Successfully stopped SparkContext
+[2026-10-09T18:32:52.406+0545] {subprocess.py:93} INFO - 26/10/09 12:47:52 INFO ShutdownHookManager: Shutdown hook called
+[2026-10-09T18:32:52.406+0545] {subprocess.py:93} INFO - 26/10/09 12:47:52 INFO ShutdownHookManager: Deleting directory /tmp/spark-0fbb7d9f-6ffe-4071-b3db-4e919b624589
+[2026-10-09T18:32:52.408+0545] {subprocess.py:93} INFO - 26/10/09 12:47:52 INFO ShutdownHookManager: Deleting directory /tmp/spark-cd067615-3a9b-46fc-abda-0e35357fc23c
+[2026-10-09T18:32:52.410+0545] {subprocess.py:93} INFO - 26/10/09 12:47:52 INFO ShutdownHookManager: Deleting directory /tmp/spark-cd067615-3a9b-46fc-abda-0e35357fc23c/pyspark-12eb50cf-d5e4-4a30-961a-457c9b7b5850
+[2026-10-09T18:32:52.871+0545] {subprocess.py:97} INFO - Command exited with return code 0
+[2026-10-09T18:32:52.873+0545] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-10-09T18:32:52.888+0545] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=network_traffic_pipeline, task_id=run_etl, run_id=manual__2026-10-09T12:44:44.888343+00:00, execution_date=20261009T124444, start_date=20261009T124524, end_date=20261009T124752
+[2026-10-09T18:32:52.938+0545] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2026-10-09T18:32:52.959+0545] {taskinstance.py:3503} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2026-10-09T18:32:52.962+0545] {local_task_job_runner.py:222} INFO - ::endgroup::

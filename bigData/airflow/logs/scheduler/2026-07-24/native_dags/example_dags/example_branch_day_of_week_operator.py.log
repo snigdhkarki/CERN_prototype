@@ -1,0 +1,7 @@
+[2026-07-24T13:01:48.834+0545] {processor.py:161} INFO - Started process (PID=51880) to work on /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_branch_day_of_week_operator.py
+[2026-07-24T13:01:48.835+0545] {processor.py:830} INFO - Processing file /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_branch_day_of_week_operator.py for tasks to queue
+[2026-07-24T13:01:48.839+0545] {logging_mixin.py:188} INFO - [2026-07-24T13:01:48.838+0545] {dagbag.py:545} INFO - Filling up the DagBag from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_branch_day_of_week_operator.py
+[2026-07-24T13:01:48.850+0545] {processor.py:840} INFO - DAG(s) 'example_weekday_branch_operator' retrieved from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_branch_day_of_week_operator.py
+[2026-07-24T13:01:48.876+0545] {logging_mixin.py:188} INFO - [2026-07-24T13:01:48.876+0545] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-07-24T13:01:48.901+0545] {logging_mixin.py:188} INFO - [2026-07-24T13:01:48.901+0545] {dag.py:3947} INFO - Setting next_dagrun for example_weekday_branch_operator to 2026-07-23 00:00:00+00:00, run_after=2026-07-24 00:00:00+00:00
+[2026-07-24T13:01:48.939+0545] {processor.py:183} INFO - Processing /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_branch_day_of_week_operator.py took 0.115 seconds

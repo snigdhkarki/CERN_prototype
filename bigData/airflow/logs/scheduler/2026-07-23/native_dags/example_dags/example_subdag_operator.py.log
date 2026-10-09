@@ -1,0 +1,24 @@
+[2026-07-23T15:52:20.615+0545] {processor.py:161} INFO - Started process (PID=149141) to work on /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_subdag_operator.py
+[2026-07-23T15:52:20.616+0545] {processor.py:830} INFO - Processing file /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_subdag_operator.py for tasks to queue
+[2026-07-23T15:52:20.616+0545] {logging_mixin.py:188} INFO - [2026-07-23T15:52:20.616+0545] {dagbag.py:545} INFO - Filling up the DagBag from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_subdag_operator.py
+[2026-07-23T15:52:20.630+0545] {processor.py:840} INFO - DAG(s) 'example_subdag_operator.section-1', 'example_subdag_operator.section-2', 'example_subdag_operator' retrieved from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_subdag_operator.py
+[2026-07-23T15:52:20.641+0545] {logging_mixin.py:188} INFO - [2026-07-23T15:52:20.640+0545] {dag.py:3089} INFO - Sync 3 DAGs
+[2026-07-23T15:52:20.651+0545] {logging_mixin.py:188} INFO - [2026-07-23T15:52:20.651+0545] {dag.py:3947} INFO - Setting next_dagrun for example_subdag_operator to 2022-01-01 00:00:00+00:00, run_after=2022-01-01 00:00:00+00:00
+[2026-07-23T15:52:20.652+0545] {logging_mixin.py:188} INFO - [2026-07-23T15:52:20.652+0545] {dag.py:3947} INFO - Setting next_dagrun for example_subdag_operator.section-1 to None, run_after=None
+[2026-07-23T15:52:20.653+0545] {logging_mixin.py:188} INFO - [2026-07-23T15:52:20.653+0545] {dag.py:3947} INFO - Setting next_dagrun for example_subdag_operator.section-2 to None, run_after=None
+[2026-07-23T15:52:20.655+0545] {logging_mixin.py:188} INFO - [2026-07-23T15:52:20.655+0545] {dag.py:3089} INFO - Sync 2 DAGs
+[2026-07-23T15:52:20.658+0545] {logging_mixin.py:188} INFO - [2026-07-23T15:52:20.657+0545] {dag.py:3947} INFO - Setting next_dagrun for example_subdag_operator.section-1 to None, run_after=None
+[2026-07-23T15:52:20.658+0545] {logging_mixin.py:188} INFO - [2026-07-23T15:52:20.658+0545] {dag.py:3947} INFO - Setting next_dagrun for example_subdag_operator.section-2 to None, run_after=None
+[2026-07-23T15:52:20.667+0545] {processor.py:183} INFO - Processing /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_subdag_operator.py took 0.055 seconds
+[2026-07-23T15:53:09.749+0545] {processor.py:161} INFO - Started process (PID=149524) to work on /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_subdag_operator.py
+[2026-07-23T15:53:09.751+0545] {processor.py:830} INFO - Processing file /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_subdag_operator.py for tasks to queue
+[2026-07-23T15:53:09.752+0545] {logging_mixin.py:188} INFO - [2026-07-23T15:53:09.752+0545] {dagbag.py:545} INFO - Filling up the DagBag from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_subdag_operator.py
+[2026-07-23T15:53:09.762+0545] {processor.py:840} INFO - DAG(s) 'example_subdag_operator.section-1', 'example_subdag_operator.section-2', 'example_subdag_operator' retrieved from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_subdag_operator.py
+[2026-07-23T15:53:09.768+0545] {logging_mixin.py:188} INFO - [2026-07-23T15:53:09.768+0545] {dag.py:3089} INFO - Sync 3 DAGs
+[2026-07-23T15:53:09.777+0545] {logging_mixin.py:188} INFO - [2026-07-23T15:53:09.777+0545] {dag.py:3947} INFO - Setting next_dagrun for example_subdag_operator to 2022-01-01 00:00:00+00:00, run_after=2022-01-01 00:00:00+00:00
+[2026-07-23T15:53:09.779+0545] {logging_mixin.py:188} INFO - [2026-07-23T15:53:09.779+0545] {dag.py:3947} INFO - Setting next_dagrun for example_subdag_operator.section-1 to None, run_after=None
+[2026-07-23T15:53:09.779+0545] {logging_mixin.py:188} INFO - [2026-07-23T15:53:09.779+0545] {dag.py:3947} INFO - Setting next_dagrun for example_subdag_operator.section-2 to None, run_after=None
+[2026-07-23T15:53:09.782+0545] {logging_mixin.py:188} INFO - [2026-07-23T15:53:09.782+0545] {dag.py:3089} INFO - Sync 2 DAGs
+[2026-07-23T15:53:09.784+0545] {logging_mixin.py:188} INFO - [2026-07-23T15:53:09.784+0545] {dag.py:3947} INFO - Setting next_dagrun for example_subdag_operator.section-1 to None, run_after=None
+[2026-07-23T15:53:09.784+0545] {logging_mixin.py:188} INFO - [2026-07-23T15:53:09.784+0545] {dag.py:3947} INFO - Setting next_dagrun for example_subdag_operator.section-2 to None, run_after=None
+[2026-07-23T15:53:09.794+0545] {processor.py:183} INFO - Processing /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_subdag_operator.py took 0.049 seconds

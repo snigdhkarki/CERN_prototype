@@ -1,0 +1,14 @@
+[2026-07-23T15:52:19.297+0545] {processor.py:161} INFO - Started process (PID=149135) to work on /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_task_group.py
+[2026-07-23T15:52:19.297+0545] {processor.py:830} INFO - Processing file /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_task_group.py for tasks to queue
+[2026-07-23T15:52:19.298+0545] {logging_mixin.py:188} INFO - [2026-07-23T15:52:19.298+0545] {dagbag.py:545} INFO - Filling up the DagBag from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_task_group.py
+[2026-07-23T15:52:19.303+0545] {processor.py:840} INFO - DAG(s) 'example_task_group' retrieved from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_task_group.py
+[2026-07-23T15:52:19.315+0545] {logging_mixin.py:188} INFO - [2026-07-23T15:52:19.315+0545] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-07-23T15:52:19.325+0545] {logging_mixin.py:188} INFO - [2026-07-23T15:52:19.325+0545] {dag.py:3947} INFO - Setting next_dagrun for example_task_group to 2026-07-22 00:00:00+00:00, run_after=2026-07-23 00:00:00+00:00
+[2026-07-23T15:52:19.340+0545] {processor.py:183} INFO - Processing /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_task_group.py took 0.046 seconds
+[2026-07-23T15:53:07.389+0545] {processor.py:161} INFO - Started process (PID=149508) to work on /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_task_group.py
+[2026-07-23T15:53:07.400+0545] {processor.py:830} INFO - Processing file /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_task_group.py for tasks to queue
+[2026-07-23T15:53:07.401+0545] {logging_mixin.py:188} INFO - [2026-07-23T15:53:07.401+0545] {dagbag.py:545} INFO - Filling up the DagBag from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_task_group.py
+[2026-07-23T15:53:07.406+0545] {processor.py:840} INFO - DAG(s) 'example_task_group' retrieved from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_task_group.py
+[2026-07-23T15:53:07.415+0545] {logging_mixin.py:188} INFO - [2026-07-23T15:53:07.415+0545] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-07-23T15:53:07.426+0545] {logging_mixin.py:188} INFO - [2026-07-23T15:53:07.426+0545] {dag.py:3947} INFO - Setting next_dagrun for example_task_group to 2026-07-22 00:00:00+00:00, run_after=2026-07-23 00:00:00+00:00
+[2026-07-23T15:53:07.448+0545] {processor.py:183} INFO - Processing /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/example_task_group.py took 0.064 seconds

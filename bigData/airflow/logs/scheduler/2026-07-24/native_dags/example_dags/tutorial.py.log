@@ -1,0 +1,21 @@
+[2026-07-24T13:01:13.803+0545] {processor.py:161} INFO - Started process (PID=51655) to work on /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/tutorial.py
+[2026-07-24T13:01:13.803+0545] {processor.py:830} INFO - Processing file /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/tutorial.py for tasks to queue
+[2026-07-24T13:01:13.805+0545] {logging_mixin.py:188} INFO - [2026-07-24T13:01:13.805+0545] {dagbag.py:545} INFO - Filling up the DagBag from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/tutorial.py
+[2026-07-24T13:01:13.814+0545] {processor.py:840} INFO - DAG(s) 'tutorial' retrieved from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/tutorial.py
+[2026-07-24T13:01:13.839+0545] {logging_mixin.py:188} INFO - [2026-07-24T13:01:13.838+0545] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-07-24T13:01:13.864+0545] {logging_mixin.py:188} INFO - [2026-07-24T13:01:13.864+0545] {dag.py:3947} INFO - Setting next_dagrun for tutorial to 2026-07-23 00:00:00+00:00, run_after=2026-07-24 00:00:00+00:00
+[2026-07-24T13:01:13.889+0545] {processor.py:183} INFO - Processing /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/tutorial.py took 0.093 seconds
+[2026-07-24T13:02:12.291+0545] {processor.py:161} INFO - Started process (PID=52030) to work on /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/tutorial.py
+[2026-07-24T13:02:12.295+0545] {processor.py:830} INFO - Processing file /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/tutorial.py for tasks to queue
+[2026-07-24T13:02:12.297+0545] {logging_mixin.py:188} INFO - [2026-07-24T13:02:12.297+0545] {dagbag.py:545} INFO - Filling up the DagBag from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/tutorial.py
+[2026-07-24T13:02:12.307+0545] {processor.py:840} INFO - DAG(s) 'tutorial' retrieved from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/tutorial.py
+[2026-07-24T13:02:12.330+0545] {logging_mixin.py:188} INFO - [2026-07-24T13:02:12.330+0545] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-07-24T13:02:12.354+0545] {logging_mixin.py:188} INFO - [2026-07-24T13:02:12.354+0545] {dag.py:3947} INFO - Setting next_dagrun for tutorial to 2026-07-23 00:00:00+00:00, run_after=2026-07-24 00:00:00+00:00
+[2026-07-24T13:02:12.394+0545] {processor.py:183} INFO - Processing /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/tutorial.py took 0.112 seconds
+[2026-07-24T13:06:14.658+0545] {processor.py:161} INFO - Started process (PID=57089) to work on /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/tutorial.py
+[2026-07-24T13:06:14.661+0545] {processor.py:830} INFO - Processing file /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/tutorial.py for tasks to queue
+[2026-07-24T13:06:14.663+0545] {logging_mixin.py:188} INFO - [2026-07-24T13:06:14.662+0545] {dagbag.py:545} INFO - Filling up the DagBag from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/tutorial.py
+[2026-07-24T13:06:14.671+0545] {processor.py:840} INFO - DAG(s) 'tutorial' retrieved from /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/tutorial.py
+[2026-07-24T13:06:14.704+0545] {logging_mixin.py:188} INFO - [2026-07-24T13:06:14.704+0545] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-07-24T13:06:14.724+0545] {logging_mixin.py:188} INFO - [2026-07-24T13:06:14.724+0545] {dag.py:3947} INFO - Setting next_dagrun for tutorial to 2026-07-23 00:00:00+00:00, run_after=2026-07-24 00:00:00+00:00
+[2026-07-24T13:06:14.888+0545] {processor.py:183} INFO - Processing /home/snigdh/repos/bigData/spark_demo_env/lib/python3.12/site-packages/airflow/example_dags/tutorial.py took 0.237 seconds
